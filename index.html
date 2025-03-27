@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- LOGIN FORM -->
+        <div id="loginForm">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter email" required>
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+            <p>Don't have an account? <a href="#" onclick="switchToSignup()">Sign up</a></p>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div id="signupForm" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" placeholder="Enter email" required>
+
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" placeholder="Enter password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signupMessage"></p>
+            <p>Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
