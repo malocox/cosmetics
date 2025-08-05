@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Beauty & Cosmetics Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/payments.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logoo.png" alt="Beauty Store Logo">
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./homepage.html">Home</a></li>
+    
+                <li class="dropdown">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./skincare.html">Skincare</a></li>
+                        <li><a href="./deodorants.html">Deodorants</a></li>
+                        <li><a href="./haircare.html">Haircare</a></li>
+                        <li><a href="./Beautytool.html">Beauty Tools</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="cart-login-container">
+            <a href="cart.html" class="cart-btn">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="login-btn">
+                <i class="fa-solid fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <section class="payment-page">
+        <h2>Complete Your Order</h2>
+        <div class="payment-instructions">
+            <h3>Payment Instructions</h3>
+            <p>Please send payment to the following till number:</p>
+            <p class="till-number">Till Number: 1234567</p>
+            <p>After payment, fill in your delivery details below. For any issues, contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+        </div>
+        <h3>Delivery Details</h3>
+        <form id="delivery-form">
+            <table class="delivery-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Name"><input type="text" id="name" name="name" required></td>
+                        <td data-label="Address"><input type="text" id="address" name="address" required></td>
+                        <td data-label="City"><input type="text" id="city" name="city" required></td>
+                        <td data-label="Phone"><input type="tel" id="phone" name="phone" required></td>
+                        <td data-label="Email"><input type="email" id="email" name="email" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+    </section>
+
+
+
+    <!-- footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Contact Details -->
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> support@beautystore.com</p>
+            <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Official Links -->
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="footer-section contact-form">
+            <h3>Get in Touch</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 BeautyStore. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

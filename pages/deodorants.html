@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deodorants - Beauty & Cosmetics Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/products.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../images/logoo.png" alt="Beauty Store Logo">
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./homepage.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-login-container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <i class="fas fa-search"></i>
+            </div>
+            <a href="./cart.html" class="cart-btn">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="login-btn">
+                <i class="fa-solid fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('../images/deodorants-hero.jpg');">
+        <div class="hero-content">
+            <h1>Deodorants & Fragrances</h1>
+            <p>Explore our collection of deodorants and fragrances, offering long-lasting freshness and captivating scents for all.</p>
+        </div>
+    </section>
+
+    <section class="products-container">
+        <div class="product" data-id="1" data-name="NIVEA Fresh Natural" data-price="450" data-image="../images/deodorants/NIVEA Fresh Natural Spray.jpeg" data-description="48-hour odor protection with crisp, citrusy scent for all-day unisex freshness.">
+            <img src="../images/deodorants/NIVEA Fresh Natural Spray.jpeg" alt="NIVEA Fresh Natural">
+            <h3>NIVEA Fresh Natural</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour odor protection with crisp, citrusy scent for all-day unisex freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Rexona Active Shield" data-price="480" data-image="../images/deodorants/Rexona Active Shield Spray.jpeg" data-description="48-hour sweat and odor protection with clean, invigorating unisex scent daily.">
+            <img src="../images/deodorants/Rexona Active Shield Spray.jpeg" alt="Rexona Active Shield">
+            <h3>Rexona Active Shield</h3>
+            <p class="price">Ksh 480</p>
+            <p class="description">48-hour sweat and odor protection with clean, invigorating unisex scent daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Dove Go Fresh" data-price="420" data-image="../images/deodorants/Dove Go Fresh Spray.jpeg" data-description="24-hour odor protection with soothing floral scent and moisturizing feminine care daily.">
+            <img src="../images/deodorants/Dove Go Fresh Spray.jpeg" alt="Dove Go Fresh">
+            <h3>Dove Go Fresh</h3>
+            <p class="price">Ksh 420</p>
+            <p class="description">24-hour odor protection with soothing floral scent and moisturizing feminine care daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4" data-name="Axe Dark Temptation" data-price="500" data-image="../images/deodorants/Axe Dark Temptation Spray.jpeg" data-description="48-hour odor protection with rich, chocolate-infused masculine scent for confident freshness.">
+            <img src="../images/deodorants/Axe Dark Temptation Spray.jpeg" alt="Axe Dark Temptation">
+            <h3>Axe Dark Temptation</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">48-hour odor protection with rich, chocolate-infused masculine scent for confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="5" data-name="Garnier Mineral Protection" data-price="430" data-image="../images/deodorants/Garnier Mineral Protection Spray.jpeg" data-description="48-hour odor control with fresh, mineral-based unisex scent for lasting confidence.">
+            <img src="../images/deodorants/Garnier Mineral Protection Spray.jpeg" alt="Garnier Mineral Protection">
+            <h3>Garnier Mineral Protection</h3>
+            <p class="price">Ksh 430</p>
+            <p class="description">48-hour odor control with fresh, mineral-based unisex scent for lasting confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="6" data-name="Old Spice Bearglove" data-price="550" data-image="../images/deodorants/Old Spice Bearglove Spray.jpeg" data-description="48-hour odor protection with bold, woody masculine scent for rugged daily freshness.">
+            <img src="../images/deodorants/Old Spice Bearglove Spray.jpeg" alt="Old Spice Bearglove">
+            <h3>Old Spice Bearglove</h3>
+            <p class="price">Ksh 550</p>
+            <p class="description">48-hour odor protection with bold, woody masculine scent for rugged daily freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="7" data-name="Fa Pink Passion" data-price="350" data-image="../images/deodorants/Fa Pink Passion Spray.jpeg" data-description="24-hour odor protection with vibrant, fruity-floral feminine scent for daily allure.">
+            <img src="../images/deodorants/Fa Pink Passion Spray.jpeg" alt="Fa Pink Passion">
+            <h3>Fa Pink Passion</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">24-hour odor protection with vibrant, fruity-floral feminine scent for daily allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="8" data-name="Adidas Cool & Dry" data-price="460" data-image="../images/deodorants/Adidas Cool & Dry Spray.jpeg" data-description="48-hour sweat protection with crisp, sporty unisex scent for active daily freshness.">
+            <img src="../images/deodorants/Adidas Cool & Dry Spray.jpeg" alt="Adidas Cool & Dry">
+            <h3>Adidas Cool & Dry</h3>
+            <p class="price">Ksh 460</p>
+            <p class="description">48-hour sweat protection with crisp, sporty unisex scent for active daily freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="9" data-name="Mitchum Powder Fresh" data-price="400" data-image="../images/deodorants/Mitchum Powder Fresh.jpeg" data-description="Long-lasting odor protection with soft, powdery unisex scent for daily gentle freshness.">
+            <img src="../images/deodorants/Mitchum Powder Fresh.jpeg" alt="Mitchum Powder Fresh">
+            <h3>Mitchum Powder Fresh</h3>
+            <p class="price">Ksh 400</p>
+            <p class="description">Long-lasting odor protection with soft, powdery unisex scent for daily gentle freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="10" data-name="Degree Pure Clean" data-price="470" data-image="../images/deodorants/Degree Pure Clean Spray.jpeg" data-description="48-hour odor protection with fresh, clean unisex scent, no white marks daily.">
+            <img src="../images/deodorants/Degree Pure Clean Spray.jpeg" alt="Degree Pure Clean">
+            <h3>Degree Pure Clean</h3>
+            <p class="price">Ksh 470</p>
+            <p class="description">48-hour odor protection with fresh, clean unisex scent, no white marks daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="11" data-name="Secret Vanilla" data-price="500" data-image="../images/deodorants/Secret Vanilla Spray.jpeg" data-description="48-hour odor protection with warm, comforting vanilla feminine scent for daily elegance.">
+            <img src="../images/deodorants/Secret Vanilla Spray.jpeg" alt="Secret Vanilla">
+            <h3>Secret Vanilla</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">48-hour odor protection with warm, comforting vanilla feminine scent for daily elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="12" data-name="Right Guard Sport" data-price="450" data-image="../images/deodorants/Right Guard Sport Spray.jpeg" data-description="48-hour sweat and odor protection with fresh, sporty masculine scent daily.">
+            <img src="../images/deodorants/Right Guard Sport Spray.jpeg" alt="Right Guard Sport">
+            <h3>Right Guard Sport</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour sweat and odor protection with fresh, sporty masculine scent daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="13" data-name="Lady Speed Stick Fresh" data-price="380" data-image="../images/deodorants/Lady Speed Stick Fresh Spray.jpeg" data-description="24-hour odor protection with light, floral feminine scent for daily confident freshness.">
+            <img src="../images/deodorants/Lady Speed Stick Fresh Spray.jpeg" alt="Lady Speed Stick Fresh">
+            <h3>Lady Speed Stick Fresh</h3>
+            <p class="price">Ksh 380</p>
+            <p class="description">24-hour odor protection with light, floral feminine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="14" data-name="Brut Original" data-price="420" data-image="../images/deodorants/Brut Original Spray.jpeg" data-description="24-hour odor protection with classic, spicy masculine scent for bold daily freshness.">
+            <img src="../images/deodorants/Brut Original Spray.jpeg" alt="Brut Original">
+            <h3>Brut Original</h3>
+            <p class="price">Ksh 420</p>
+            <p class="description">24-hour odor protection with classic, spicy masculine scent for bold daily freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="15" data-name="Yardley English Lavender" data-price="390" data-image="../images/deodorants/Yardley English Lavender Spray.jpeg" data-description="24-hour odor protection with calming, floral lavender feminine scent for daily elegance.">
+            <img src="../images/deodorants/Yardley English Lavender Spray.jpeg" alt="Yardley English Lavender">
+            <h3>Yardley English Lavender</h3>
+            <p class="price">Ksh 390</p>
+            <p class="description">24-hour odor protection with calming, floral lavender feminine scent for daily elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="16" data-name="Lattafa Yara" data-price="600" data-image="../images/deodorants/Lattafa Yara Spray.jpeg" data-description="Long-lasting exotic fruity-floral feminine scent with captivating elegance for daily allure.">
+            <img src="../images/deodorants/Lattafa Yara Spray.jpeg" alt="Lattafa Yara">
+            <h3>Lattafa Yara</h3>
+            <p class="price">Ksh 600</p>
+            <p class="description">Long-lasting exotic fruity-floral feminine scent with captivating elegance for daily allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="17" data-name="Versace Bright Crystal" data-price="800" data-image="../images/deodorants/Versace Bright Crystal Spray.jpeg" data-description="Vibrant floral-fruity feminine scent with lasting elegance for captivating daily charm.">
+            <img src="../images/deodorants/Versace Bright Crystal Spray.jpeg" alt="Versace Bright Crystal">
+            <h3>Versace Bright Crystal</h3>
+            <p class="price">Ksh 800</p>
+            <p class="description">Vibrant floral-fruity feminine scent with lasting elegance for captivating daily charm.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="18" data-name="David Beckham Instinct" data-price="550" data-image="../images/deodorants/David Beckham Instinct Spray.jpeg" data-description="Bold woody-citrus masculine scent with lasting freshness for confident daily appeal.">
+            <img src="../images/deodorants/David Beckham Instinct Spray.jpeg" alt="David Beckham Instinct">
+            <h3>David Beckham Instinct</h3>
+            <p class="price">Ksh 550</p>
+            <p class="description">Bold woody-citrus masculine scent with lasting freshness for confident daily appeal.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="19" data-name="Enchanteur Romantic" data-price="360" data-image="../images/deodorants/Enchanteur Romantic Spray.jpeg" data-description="Sweet floral feminine scent with lasting romantic charm for daily elegant allure.">
+            <img src="../images/deodorants/Enchanteur Romantic Spray.jpeg" alt="Enchanteur Romantic">
+            <h3>Enchanteur Romantic</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Sweet floral feminine scent with lasting romantic charm for daily elegant allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="20" data-name="Lynx Black" data-price="480" data-image="../images/deodorants/Lynx Black Spray.jpeg" data-description="48-hour odor protection with subtle, woody masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/Lynx Black Spray.jpeg" alt="Lynx Black">
+            <h3>Lynx Black</h3>
+            <p class="price">Ksh 480</p>
+            <p class="description">48-hour odor protection with subtle, woody masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="21" data-name="Native Coconut & Vanilla" data-price="650" data-image="../images/deodorants/Native Coconut & Vanilla Spray.jpeg" data-description="Natural aluminum-free protection with tropical, creamy unisex scent for daily freshness.">
+            <img src="../images/deodorants/Native Coconut & Vanilla Spray.jpeg" alt="Native Coconut & Vanilla">
+            <h3>Native Coconut & Vanilla</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Natural aluminum-free protection with tropical, creamy unisex scent for daily freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="22" data-name="Fogg Fresh Oriental" data-price="340" data-image="../images/deodorants/Fogg Fresh Oriental Spray.jpeg" data-description="Vibrant spicy oriental unisex scent with lasting freshness for daily confident allure.">
+            <img src="../images/deodorants/Fogg Fresh Oriental Spray.jpeg" alt="Fogg Fresh Oriental">
+            <h3>Fogg Fresh Oriental</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">Vibrant spicy oriental unisex scent with lasting freshness for daily confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="23" data-name="Gillette Cool Wave" data-price="500" data-image="../images/deodorants/Gillette Cool Wave Spray.jpeg" data-description="48-hour odor protection with crisp, aquatic masculine scent for daily refreshing confidence.">
+            <img src="../images/deodorants/Gillette Cool Wave Spray.jpeg" alt="Gillette Cool Wave">
+            <h3>Gillette Cool Wave</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">48-hour odor protection with crisp, aquatic masculine scent for daily refreshing confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="24" data-name="Sure Men Active" data-price="450" data-image="../images/deodorants/Sure Men Active Spray.jpeg" data-description="48-hour sweat and odor protection with dynamic, sporty masculine scent daily.">
+            <img src="../images/deodorants/Sure Men Active Spray.jpeg" alt="Sure Men Active">
+            <h3>Sure Men Active</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour sweat and odor protection with dynamic, sporty masculine scent daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="25" data-name="Balea Fresh Breeze" data-price="370" data-image="../images/deodorants/Balea Fresh Breeze Spray.jpeg" data-description="24-hour odor protection with light, airy unisex scent for daily refreshing confidence.">
+            <img src="../images/deodorants/Balea Fresh Breeze Spray.jpeg" alt="Balea Fresh Breeze">
+            <h3>Balea Fresh Breeze</h3>
+            <p class="price">Ksh 370</p>
+            <p class="description">24-hour odor protection with light, airy unisex scent for daily refreshing confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="26" data-name="Beverly Hills Polo Club" data-price="520" data-image="../images/deodorants/Beverly Hills Polo Club Spray.jpeg" data-description="Refined woody masculine scent with lasting sophistication for daily elegant confidence.">
+            <img src="../images/deodorants/Beverly Hills Polo Club Spray.jpeg" alt="Beverly Hills Polo Club">
+            <h3>Beverly Hills Polo Club</h3>
+            <p class="price">Ksh 520</p>
+            <p class="description">Refined woody masculine scent with lasting sophistication for daily elegant confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="27" data-name="Armaf Club de Nuit" data-price="600" data-image="../images/deodorants/Armaf Club de Nuit Spray.jpeg" data-description="Luxurious fruity-woody unisex scent with lasting elegance for daily captivating charm.">
+            <img src="../images/deodorants/Armaf Club de Nuit Spray.jpeg" alt="Armaf Club de Nuit">
+            <h3>Armaf Club de Nuit</h3>
+            <p class="price">Ksh 600</p>
+            <p class="description">Luxurious fruity-woody unisex scent with lasting elegance for daily captivating charm.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="28" data-name="Bruno Banani Pure Man" data-price="400" data-image="../images/deodorants/Bruno Banani Pure Man Perfume.jpeg" data-description="Bold citrusy masculine scent with lasting vibrant charm for daily confident freshness.">
+            <img src="../images/deodorants/Bruno Banani Pure Man Perfume.jpeg" alt="Bruno Banani Pure Man">
+            <h3>Bruno Banani Pure Man</h3>
+            <p class="price">Ksh 400</p>
+            <p class="description">Bold citrusy masculine scent with lasting vibrant charm for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="29" data-name="Chris Adams Active" data-price="380" data-image="../images/deodorants/Chris Adams Active Perfume.jpeg" data-description="Fresh citrus-woody masculine scent with lasting vibrancy for daily active confidence.">
+            <img src="../images/deodorants/Chris Adams Active Perfume.jpeg" alt="Chris Adams Active">
+            <h3>Chris Adams Active</h3>
+            <p class="price">Ksh 400</p>
+            <p class="description">Fresh citrus-woody masculine scent with lasting vibrancy for daily active confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="30" data-name="Confetti London Floral" data-price="350" data-image="../images/deodorants/Confetti London Floral Perfume.jpeg" data-description="Vibrant floral feminine scent with lasting allure for daily elegant confidence.">
+            <img src="../images/deodorants/Confetti London Floral Perfume.jpeg" alt="Confetti London Floral">
+            <h3>Confetti London Floral</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">Vibrant floral feminine scent with lasting allure for daily elegant confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="31" data-name="Denver Hamilton" data-price="390" data-image="../images/deodorants/Denver Hamilton Perfume.jpeg" data-description="Rich musky-spice masculine scent with lasting bold appeal for daily confidence.">
+            <img src="../images/deodorants/Denver Hamilton Perfume.jpeg" alt="Denver Hamilton">
+            <h3>Denver Hamilton</h3>
+            <p class="price">Ksh 390</p>
+            <p class="description">Rich musky-spice masculine scent with lasting bold appeal for daily confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="32" data-name="Hamidi Oud" data-price="580" data-image="../images/deodorants/Hamidi Oud Perfume.jpeg" data-description="Rich exotic oud unisex scent with lasting depth for daily luxurious allure.">
+            <img src="../images/deodorants/Hamidi Oud Perfume.jpeg" alt="Hamidi Oud">
+            <h3>Hamidi Oud</h3>
+            <p class="price">Ksh 580</p>
+            <p class="description">Rich exotic oud unisex scent with lasting depth for daily luxurious allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="33" data-name="Milano Fresh" data-price="370" data-image="../images/deodorants/Milano Fresh Perfume.jpeg" data-description="Clean citrusy unisex scent with lasting freshness for daily confident vibrancy.">
+            <img src="../images/deodorants/Milano Fresh Perfume.jpeg" alt="Milano Fresh">
+            <h3>Milano Fresh</h3>
+            <p class="price">Ksh 370</p>
+            <p class="description">Clean citrusy unisex scent with lasting freshness for daily confident vibrancy.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="34" data-name="Royale" data-price="550" data-image="../images/deodorants/Royale Perfume.jpeg" data-description="Luxurious woody-floral unisex scent with lasting sophistication for daily elegant charm.">
+            <img src="../images/deodorants/Royale Perfume.jpeg" alt="Royale">
+            <h3>Royale</h3>
+            <p class="price">Ksh 550</p>
+            <p class="description">Luxurious woody-floral unisex scent with lasting sophistication for daily elegant charm.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="35" data-name="Sapil Intense" data-price="360" data-image="../images/deodorants/Sapil Intense Perfume.jpeg" data-description="Bold spicy masculine scent with lasting vibrant energy for daily confident freshness.">
+            <img src="../images/deodorants/Sapil Intense Perfume.jpeg" alt="Sapil Intense">
+            <h3>Sapil Intense</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Bold spicy masculine scent with lasting vibrant energy for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="36" data-name="Umbro Power" data-price="350" data-image="../images/deodorants/Umbro Power Spray (2).jpeg" data-description="24-hour odor protection with dynamic, sporty masculine scent for daily active freshness.">
+            <img src="../images/deodorants/Umbro Power Spray (2).jpeg" alt="Umbro Power">
+            <h3>Umbro Power</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">24-hour odor protection with dynamic, sporty masculine scent for daily active freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="37" data-name="Brown Orchid Bliss" data-price="360" data-image="../images/deodorants/Brown Orchid Bliss Perfume.jpeg" data-description="Rich floral feminine scent with lasting elegance for daily captivating daily allure.">
+            <img src="../images/deodorants/Brown Orchid Bliss Perfume.jpeg" alt="Brown Orchid Bliss">
+            <h3>Brown Orchid Bliss</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Rich floral feminine scent with lasting elegance for daily captivating daily allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="38" data-name="Forest Essentials" data-price="340" data-image="../images/deodorants/Forest Essentials Perfume.jpeg" data-description="Delicate floral feminine scent with lasting charm for daily elegant refreshing allure.">
+            <img src="../images/deodorants/Forest Essentials Perfume.jpeg" alt="Forest Essentials">
+            <h3>Forest Essentials</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">Delicate floral feminine scent with lasting charm for daily elegant refreshing allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="39" data-name="Aris" data-price="350" data-image="../images/deodorants/Aris Perfume.jpeg" data-description="Vibrant floral feminine scent with lasting allure for daily confident elegant charm.">
+            <img src="../images/deodorants/Aris Perfume.jpeg" alt="Aris">
+            <h3>Aris</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">Vibrant floral feminine scent with lasting allure for daily confident elegant charm.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="40" data-name="Pearl Bouquet Body Mist" data-price="360" data-image="../images/deodorants/Pearl Bouquet Body Mist (2).jpeg" data-description="Light floral feminine mist with refreshing charm for daily elegant lasting allure.">
+            <img src="../images/deodorants/Pearl Bouquet Body Mist (2).jpeg" alt="Pearl Bouquet Body Mist">
+            <h3>Pearl Bouquet Body Mist</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Light floral feminine mist with refreshing charm for daily elegant lasting allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="41" data-name="Saviour 200ml" data-price="330" data-image="../images/deodorants/Saviour 200ml Spray.jpeg" data-description="24-hour odor protection with clean, refreshing unisex scent for daily confident freshness.">
+            <img src="../images/deodorants/Saviour 200ml Spray.jpeg" alt="Saviour 200ml">
+            <h3>Saviour 200ml</h3>
+            <p class="price">Ksh 330</p>
+            <p class="description">24-hour odor protection with clean, refreshing unisex scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="42" data-name="Fogg Body" data-price="340" data-image="../images/deodorants/Fogg Body Spray (2).jpeg" data-description="24-hour odor protection with crisp, refreshing unisex scent for daily confident freshness.">
+            <img src="../images/deodorants/Fogg Body Spray (2).jpeg" alt="Fogg Body">
+            <h3>Fogg Body</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">24-hour odor protection with crisp, refreshing unisex scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="43" data-name="Body Secrets Bloom" data-price="350" data-image="../images/deodorants/Body Secrets Bloom Perfume.jpeg" data-description="Vibrant floral feminine scent with lasting charm for daily elegant confident allure.">
+            <img src="../images/deodorants/Body Secrets Bloom Perfume.jpeg" alt="Body Secrets Bloom">
+            <h3>Body Secrets Bloom</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">Vibrant floral feminine scent with lasting charm for daily elegant confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="44" data-name="Crown" data-price="340" data-image="../images/deodorants/Crown Perfume (2).jpeg" data-description="Subtle floral feminine scent with lasting elegance for daily confident refreshing allure.">
+            <img src="../images/deodorants/Crown Perfume (2).jpeg" alt="Crown">
+            <h3>Crown</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">Subtle floral feminine scent with lasting elegance for daily confident refreshing allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="45" data-name="Obsessed Body Splash 200ml" data-price "¿350" data-image="../images/deodorants/Obsessed Body Splash 200ml (2).jpeg" data-description="Light aquatic unisex mist with refreshing appeal for daily confident lasting freshness.">
+            <img src="../images/deodorants/Obsessed Body Splash 200ml (2).jpeg" alt="Obsessed Body Splash 200ml">
+            <h3>Obsessed Body Splash 200ml</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">Light aquatic unisex mist with refreshing appeal for daily confident lasting freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="46" data-name="Dr. Organic Aloe" data-price="600" data-image="../images/deodorants/Dr. Organic Aloe Spray.jpeg" data-description="Natural aluminum-free protection with soothing aloe unisex scent for daily gentle freshness.">
+            <img src="../images/deodorants/Dr. Organic Aloe Spray.jpeg" alt="Dr. Organic Aloe">
+            <h3>Dr. Organic Aloe</h3>
+            <p class="price">Ksh 600</p>
+            <p class="description">Natural aluminum-free protection with soothing aloe unisex scent for daily gentle freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="47" data-name="Fashion Fresh Citrus" data-price="340" data-image="../images/deodorants/Fashion Fresh Citrus Spray.jpeg" data-description="24-hour odor protection with zesty, citrusy unisex scent for daily vibrant freshness.">
+            <img src="../images/deodorants/Fashion Fresh Citrus Spray.jpeg" alt="Fashion Fresh Citrus">
+            <h3>Fashion Fresh Citrus</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">24-hour odor protection with zesty, citrusy unisex scent for daily vibrant freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="48" data-name="Fragrance World Pure" data-price="350" data-image="../images/deodorants/Fragrance World Pure Spray.jpeg" data-description="Clean unisex scent with lasting pure freshness for daily confident vibrant allure.">
+            <img src="../images/deodorants/Fragrance World Pure Spray.jpeg" alt="Fragrance World Pure">
+            <h3>Fragrance World Pure</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">Clean unisex scent with lasting pure freshness for daily confident vibrant allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="49" data-name="Mineral Fresh" data-price="360" data-image="../images/deodorants/Mineral Fresh Spray.jpeg" data-description="24-hour odor protection with natural, clean unisex scent for daily confident freshness.">
+            <img src="../images/deodorants/Mineral Fresh Spray.jpeg" alt="Mineral Fresh">
+            <h3>Mineral Fresh</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">24-hour odor protection with natural, clean unisex scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="50" data-name="Armaf Unisex" data-price="340" data-image="../images/deodorants/Armaf Unisex Spray.jpeg" data-description="Delicate floral-woody unisex scent with lasting freshness for daily confident allure.">
+            <img src="../images/deodorants/Armaf Unisex Spray.jpeg" alt="Armaf Unisex">
+            <h3>Armaf Unisex</h3>
+            <p class="price">Ksh 340</p>
+            <p class="description">Delicate floral-woody unisex scent with lasting freshness for daily confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="51" data-name="Adjanis Mint" data-price="350" data-image="../images/deodorants/adjanis mint spray.jpeg" data-description="24-hour odor protection with cool, refreshing minty unisex scent for daily freshness.">
+            <img src="../images/deodorants/adjanis mint spray.jpeg" alt="Adjanis Mint">
+            <h3>Adjanis Mint</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">24-hour odor protection with cool, refreshing minty unisex scent for daily freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="52" data-name="Victoria’s Secret Tease" data-price="700" data-image="../images/deodorants/Victoria’s Secret Tease Spray.jpeg" data-description="Seductive floral-fruity feminine scent with lasting allure for daily captivating elegance.">
+            <img src="../images/deodorants/Victoria’s Secret Tease Spray.jpeg" alt="Victoria’s Secret Tease">
+            <h3>Victoria’s Secret Tease</h3>
+            <p class="price">Ksh 700</p>
+            <p class="description">Seductive floral-fruity feminine scent with lasting allure for daily captivating elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="53" data-name="YARA Fresh Bloom" data-price="360" data-image="../images/deodorants/YARA Fresh Bloom.jpeg" data-description="Vibrant floral feminine scent with lasting charm for daily confident elegant allure.">
+            <img src="../images/deodorants/YARA Fresh Bloom.jpeg" alt="YARA Fresh Bloom">
+            <h3>YARA Fresh Bloom</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Vibrant floral feminine scent with lasting charm for daily confident elegant allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="54" data-name="Degree Fresh Bloom" data-price="360" data-image="../images/deodorants/Degree Fresh Bloom Perfume.jpeg" data-description="Vibrant floral feminine scent with lasting allure for daily confident elegant freshness.">
+            <img src="../images/deodorants/Degree Fresh Bloom Perfume.jpeg" alt="Degree Fresh Bloom">
+            <h3>Degree Fresh Bloom</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Vibrant floral feminine scent with lasting allure for daily confident elegant freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="55" data-name="NIVEA Men Deep" data-price="450" data-image="../images/deodorants/NIVEA Men Deep Spray.jpeg" data-description="48-hour odor protection with bold, woody masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/NIVEA Men Deep Spray.jpeg" alt="NIVEA Men Deep">
+            <h3>NIVEA Men Deep</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour odor protection with bold, woody masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="56" data-name="Rexona 50ml Fresh" data-price="360" data-image="../images/deodorants/Rexona 50ml Fresh Spray.jpeg" data-description="24-hour odor protection with clean, refreshing unisex scent for daily confident freshness.">
+            <img src="../images/deodorants/Rexona 50ml Fresh Spray.jpeg" alt="Rexona 50ml Fresh">
+            <h3>Rexona 50ml Fresh</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">24-hour odor protection with clean, refreshing unisex scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="57" data-name="Old Spice Whitewater" data-price="550" data-image="../images/deodorants/Old Spice Whitewater Spray.jpeg" data-description="48-hour odor protection with crisp, aquatic masculine scent for daily refreshing confidence.">
+            <img src="../images/deodorants/Old Spice Whitewater Spray.jpeg" alt="Old Spice Whitewater">
+            <h3>Old Spice Whitewater</h3>
+            <p class="price">Ksh 550</p>
+            <p class="description">48-hour odor protection with crisp, aquatic masculine scent for daily refreshing confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="58" data-name="Axe Black Body" data-price="500" data-image="../images/deodorants/Axe Black Body Spray.jpeg" data-description="48-hour odor protection with subtle, woody masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/Axe Black Body Spray.jpeg" alt="Axe Black Body">
+            <h3>Axe Black Body</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">48-hour odor protection with subtle, woody masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="59" data-name="Dove Men Care" data-price="420" data-image="../images/deodorants/Dove Men Care Spray.jpeg" data-description="24-hour odor protection with fresh, masculine scent and moisturizing care daily.">
+            <img src="../images/deodorants/Dove Men Care Spray.jpeg" alt="Dove Men Care">
+            <h3>Dove Men Care</h3>
+            <p class="price">Ksh 420</p>
+            <p class="description">24-hour odor protection with fresh, masculine scent and moisturizing care daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="60" data-name="L’Oreal Men Expert" data-price="500" data-image="../images/deodorants/L’Oreal Men Expert Spray.jpeg" data-description="48-hour odor protection with bold, woody masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/L’Oreal Men Expert Spray.jpeg" alt="L’Oreal Men Expert">
+            <h3>L’Oreal Men Expert</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">48-hour odor protection with bold, woody masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="61" data-name="NIVEA Black & White" data-price="450" data-image="../images/deodorants/NIVEA Black & White Spray.jpeg" data-description="48-hour odor protection with fresh, clean unisex scent, no white marks daily.">
+            <img src="../images/deodorants/NIVEA Black & White Spray.jpeg" alt="NIVEA Black & White">
+            <h3>NIVEA Black & White</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour odor protection with fresh, clean unisex scent, no white marks daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="62" data-name="Adidas Ice Dive" data-price="460" data-image="../images/deodorants/Adidas Ice Dive Spray.jpeg" data-description="48-hour odor protection with cool, citrusy masculine scent for daily refreshing confidence.">
+            <img src="../images/deodorants/Adidas Ice Dive Spray.jpeg" alt="Adidas Ice Dive">
+            <h3>Adidas Ice Dive</h3>
+            <p class="price">Ksh 460</p>
+            <p class="description">48-hour odor protection with cool, citrusy masculine scent for daily refreshing confidence.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="63" data-name="Fa Caribbean Lemon" data-price="350" data-image="../images/deodorants/Fa Caribbean Lemon Spray.jpeg" data-description="24-hour odor protection with zesty, tropical unisex scent for daily vibrant freshness.">
+            <img src="../images/deodorants/Fa Caribbean Lemon Spray.jpeg" alt="Fa Caribbean Lemon">
+            <h3>Fa Caribbean Lemon</h3>
+            <p class="price">Ksh 350</p>
+            <p class="description">24-hour odor protection with zesty, tropical unisex scent for daily vibrant freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="64" data-name="Garnier Men Mineral" data-price="430" data-image="../images/deodorants/Garnier Men Mineral Spray.jpeg" data-description="48-hour odor protection with fresh, mineral-based masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/Garnier Men Mineral Spray.jpeg" alt="Garnier Men Mineral">
+            <h3>Garnier Men Mineral</h3>
+            <p class="price">Ksh 430</p>
+            <p class="description">48-hour odor protection with fresh, mineral-based masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="65" data-name="Lynx Exotic" data-price="480" data-image="../images/deodorants/Lynx Exotic Spray.jpeg" data-description="48-hour odor protection with bold, exotic masculine scent for daily confident freshness.">
+            <img src="../images/deodorants/Lynx Exotic Spray.jpeg" alt="Lynx Exotic">
+            <h3>Lynx Exotic</h3>
+            <p class="price">Ksh 480</p>
+            <p class="description">48-hour odor protection with bold, exotic masculine scent for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="66" data-name="Mitchum Men Fresh" data-price="400" data-image="../images/deodorants/Mitchum Men Fresh Spray.jpeg" data-description="48-hour odor protection with clean, masculine scent for daily confident refreshing vitality.">
+            <img src="../images/deodorants/Mitchum Men Fresh Spray.jpeg" alt="Mitchum Men Fresh">
+            <h3>Mitchum Men Fresh</h3>
+            <p class="price">Ksh 400</p>
+            <p class="description">48-hour odor protection with clean, masculine scent for daily confident refreshing vitality.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="67" data-name="Right Guard Xtreme" data-price="450" data-image="../images/deodorants/Right Guard Xtreme Spray.jpeg" data-description="48-hour odor protection with bold, masculine scent for daily confident extreme freshness.">
+            <img src="../images/deodorants/Right Guard Xtreme Spray.jpeg" alt="Right Guard Xtreme">
+            <h3>Right Guard Xtreme</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour odor protection with bold, masculine scent for daily confident extreme freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="68" data-name="Secret Wild Rose" data-price="500" data-image="../images/deodorants/Secret Wild Rose Perfume.jpeg" data-description="Vibrant floral feminine scent with lasting allure for daily confident elegant charm.">
+            <img src="../images/deodorants/Secret Wild Rose Perfume.jpeg" alt="Secret Wild Rose">
+            <h3>Secret Wild Rose</h3>
+            <p class="price">Ksh 500</p>
+            <p class="description">Vibrant floral feminine scent with lasting allure for daily confident elegant charm.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="69" data-name="Yardley London Mist" data-price="390" data-image="../images/deodorants/Yardley London Mist Perfume.jpeg" data-description="Delicate floral feminine mist with lasting elegance for daily confident refreshing allure.">
+            <img src="../images/deodorants/Yardley London Mist Perfume.jpeg" alt="Yardley London Mist">
+            <h3>Yardley London Mist</h3>
+            <p class="price">Ksh 390</p>
+            <p class="description">Delicate floral feminine mist with lasting elegance for daily confident refreshing allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="70" data-name="Brut Musk" data-price="420" data-image="../images/deodorants/Brut Musk Perfume.jpeg" data-description="Classic musky masculine scent with lasting bold appeal for daily confident freshness.">
+            <img src="../images/deodorants/Brut Musk Perfume.jpeg" alt="Brut Musk">
+            <h3>Brut Musk</h3>
+            <p class="price">Ksh 420</p>
+            <p class="description">Classic musky masculine scent with lasting bold appeal for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="71" data-name="Enchanteur Charming" data-price="360" data-image="../images/deodorants/Enchanteur Charming Perfume.jpeg" data-description="Sweet floral feminine scent with lasting charm for daily confident elegant allure.">
+            <img src="../images/deodorants/Enchanteur Charming Perfume.jpeg" alt="Enchanteur Charming">
+            <h3>Enchanteur Charming</h3>
+            <p class="price">Ksh 360</p>
+            <p class="description">Sweet floral feminine scent with lasting charm for daily confident elegant allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="72" data-name="Lattafa Pride" data-price="600" data-image="../images/deodorants/Lattafa Pride Perfume.jpeg" data-description="Premium exotic unisex scent with lasting elegance for daily confident captivating allure.">
+            <img src="../images/deodorants/Lattafa Pride Perfume.jpeg" alt="Lattafa Pride">
+            <h3>Lattafa Pride</h3>
+            <p class="price">Ksh 600</p>
+            <p class="description">Premium exotic unisex scent with lasting elegance for daily confident captivating allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="73" data-name="Versace Eros" data-price="800" data-image="../images/deodorants/Versace Eros Perfume.jpeg" data-description="Bold woody-citrus masculine scent with lasting allure for daily confident freshness.">
+            <img src="../images/deodorants/Versace Eros Perfume.jpeg" alt="Versace Eros">
+            <h3>Versace Eros</h3>
+            <p class="price">Ksh 800</p>
+            <p class="description">Bold woody-citrus masculine scent with lasting allure for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="74" data-name="Native Lavender" data-price="650" data-image="../images/deodorants/Native Lavender Spray.jpeg" data-description="Natural aluminum-free protection with calming lavender unisex scent for daily gentle freshness.">
+            <img src="../images/deodorants/Native Lavender Spray.jpeg" alt="Native Lavender">
+            <h3>Native Lavender</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Natural aluminum-free protection with calming lavender unisex scent for daily gentle freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="75" data-name="French Essence" data-price="650" data-image="../images/deodorants/french essence.jpeg" data-description="Elegant floral-fruity unisex scent with lasting charm for daily confident allure.">
+            <img src="../images/deodorants/french essence.jpeg" alt="French Essence">
+            <h3>French Essence</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Elegant floral-fruity unisex scent with lasting charm for daily confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="76" data-name="Black Opium" data-price="650" data-image="../images/deodorants/black opium.jpeg" data-description="Seductive coffee-vanilla feminine scent with lasting allure for daily bold elegance.">
+            <img src="../images/deodorants/black opium.jpeg" alt="Black Opium">
+            <h3>Black Opium</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Seductive coffee-vanilla feminine scent with lasting allure for daily bold elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="77" data-name="Summer Twist" data-price="650" data-image="../images/deodorants/summer twist.jpeg" data-description="Vibrant citrus-floral unisex scent with refreshing twist for daily confident freshness.">
+            <img src="../images/deodorants/summer twist.jpeg" alt="Summer Twist">
+            <h3>Summer Twist</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Vibrant citrus-floral unisex scent with refreshing twist for daily confident freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="78" data-name="Into The Night" data-price="650" data-image="../images/deodorants/INTO THE NIGHT.jpeg" data-description="Mysterious amber-floral feminine scent with lasting allure for daily evening elegance.">
+            <img src="../images/deodorants/INTO THE NIGHT.jpeg" alt="Into The Night">
+            <h3>Into The Night</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Mysterious amber-floral feminine scent with lasting allure for daily evening elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="79" data-name="Pure Wonder" data-price="650" data-image="../images/deodorants/Pure Wonder.jpeg" data-description="Delicate floral-fruity feminine scent with lasting charm for daily confident elegance.">
+            <img src="../images/deodorants/Pure Wonder.jpeg" alt="Pure Wonder">
+            <h3>Pure Wonder</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Delicate floral-fruity feminine scent with lasting charm for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="80" data-name="Victoria Secret Very Sexy" data-price="650" data-image="../images/deodorants/Victoria Secret Very Sexy.jpeg" data-description="Seductive floral-fruity feminine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/Victoria Secret Very Sexy.jpeg" alt="Victoria Secret Very Sexy">
+            <h3>Victoria Secret Very Sexy</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Seductive floral-fruity feminine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="81" data-name="Love Spell" data-price="650" data-image="../images/deodorants/Love Spell.jpeg" data-description="Sweet fruity-floral feminine scent with lasting charm for daily confident romantic allure.">
+            <img src="../images/deodorants/Love Spell.jpeg" alt="Love Spell">
+            <h3>Love Spell</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Sweet fruity-floral feminine scent with lasting charm for daily confident romantic allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="82" data-name="Angham" data-price="650" data-image="../images/deodorants/Angham.jpeg" data-description="Exotic floral-woody unisex scent with lasting elegance for daily confident allure.">
+            <img src="../images/deodorants/Angham.jpeg" alt="Angham">
+            <h3>Angham</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Exotic floral-woody unisex scent with lasting elegance for daily confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="83" data-name="Versace Crystal Noir" data-price="650" data-image="../images/deodorants/Versace Crystal Noir.jpeg" data-description="Rich oriental-floral feminine scent with lasting elegance for daily confident allure.">
+            <img src="../images/deodorants/Versace Crystal Noir.jpeg" alt="Versace Crystal Noir">
+            <h3>Versace Crystal Noir</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Rich oriental-floral feminine scent with lasting elegance for daily confident allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="84" data-name="21 Club Code Black" data-price="650" data-image="../images/deodorants/21 Club Code Black Perfume.jpeg" data-description="Bold woody-spicy masculine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/21 Club Code Black Perfume.jpeg" alt="21 Club Code Black">
+            <h3>21 Club Code Black</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Bold woody-spicy masculine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="85" data-name="Brown Orchid" data-price="650" data-image="../images/deodorants/Brown Orchid.jpeg" data-description="Rich floral feminine scent with lasting elegance for daily confident captivating allure.">
+            <img src="../images/deodorants/Brown Orchid.jpeg" alt="Brown Orchid">
+            <h3>Brown Orchid</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Rich floral feminine scent with lasting elegance for daily confident captivating allure.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="86" data-name="Suave Intense 100ml" data-price="650" data-image="../images/deodorants/Suave Intense 100ml.jpeg" data-description="Bold spicy unisex scent with lasting intensity for daily confident vibrant freshness.">
+            <img src="../images/deodorants/Suave Intense 100ml.jpeg" alt="Suave Intense 100ml">
+            <h3>Suave Intense 100ml</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Bold spicy unisex scent with lasting intensity for daily confident vibrant freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="87" data-name="YVES SAINT LAURENT MYSLF" data-price="650" data-image="../images/deodorants/YVES SAINT LAURENT MYSLF.jpeg" data-description="Modern woody-citrus masculine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/YVES SAINT LAURENT MYSLF.jpeg" alt="YVES SAINT LAURENT MYSLF">
+            <h3>YVES SAINT LAURENT MYSLF</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Modern woody-citrus masculine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="88" data-name="BULGARI Bvlgari Man In Black" data-price="650" data-image="../images/deodorants/BULGARI Bvlgari Man In Black.jpeg" data-description="Bold spicy-woody masculine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/BULGARI Bvlgari Man In Black.jpeg" alt="BULGARI Bvlgari Man In Black">
+            <h3>BULGARI Bvlgari Man In Black</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Bold spicy-woody masculine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="89" data-name="Zara Man" data-price="650" data-image="../images/deodorants/Zara Man.jpeg" data-description="Clean woody-citrus masculine scent with lasting freshness for daily confident elegance.">
+            <img src="../images/deodorants/Zara Man.jpeg" alt="Zara Man">
+            <h3>Zara Man</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Clean woody-citrus masculine scent with lasting freshness for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="90" data-name="Hugo Hugo Boss The Scent" data-price="650" data-image="../images/deodorants/Hugo Hugo Boss The Scent.jpeg" data-description="Refined fruity-woody masculine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/Hugo Hugo Boss The Scent.jpeg" alt="Hugo Hugo Boss The Scent">
+            <h3>Hugo Hugo Boss The Scent</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Refined fruity-woody masculine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="91" data-name="Stronger With You Absolutely" data-price="650" data-image="../images/deodorants/Stronger With You Absolutely.jpeg" data-description="Rich vanilla-woody masculine scent with lasting allure for daily confident elegance.">
+            <img src="../images/deodorants/Stronger With You Absolutely.jpeg" alt="Stronger With You Absolutely">
+            <h3>Stronger With You Absolutely</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Rich vanilla-woody masculine scent with lasting allure for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="92" data-name="Ralph Lauren Polo Blue" data-price="650" data-image="../images/deodorants/Ralph Lauren Polo Blue.jpeg" data-description="Crisp aquatic-citrus masculine scent with lasting freshness for daily confident elegance.">
+            <img src="../images/deodorants/Ralph Lauren Polo Blue.jpeg" alt="Ralph Lauren Polo Blue">
+            <h3>Ralph Lauren Polo Blue</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">Crisp aquatic-citrus masculine scent with lasting freshness for daily confident elegance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+     <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> support@beautystore.com</p>
+                <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./homepage.html">Home</a></li>
+                    <li><a href="./skincare.html">Skincare</a></li>
+                    <li><a href="./haircare.html">Haircare</a></li>
+                    <li><a href="./deodorants.html">Deodorants</a></li>
+                    <li><a href="./beautytools.html">Beauty Tools</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="POST" id="contact-form">
+                    <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                    <textarea name="message" id="contact-message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BeautyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/product.js"></script>
+</body>
+</html>

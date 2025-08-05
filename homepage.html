@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Cosmetics Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/products.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+  <div class="logo">
+    <img src="./images/logoo.png" alt="Beauty Store Logo" />
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="./pages/skincare.html">Skincare</a></li>
+      <li><a href="./pages/haircare.html">Haircare</a></li>
+      <li><a href="./pages/deodorants.html">Deodorants</a></li>
+      <li><a href="./pages/beautytools.html">Skincare Tools</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="actions">
+    <button class="search-toggle" aria-label="Toggle search">
+      <i class="fas fa-search"></i>
+    </button>
+
+    <a href="./pages/cart.html" class="cart-btn" aria-label="View cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </a>
+
+    <button class="login-btn">
+      <i class="fa-solid fa-user"></i> Login
+    </button>
+  </div>
+
+  <div class="search-bar-container">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search products..."
+      aria-label="Search products"
+    />
+  </div>
+</header>
+
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+    <ul class="slideshow">
+        <li>
+            <h3>The Seasons Collection</h3>
+            <div class="slide" style="background-image: url('./images/slider1.png');"></div>
+        </li>
+        <li>
+            <div class="slide" style="background-image: url('./images/slider2.png');"></div>
+        </li>
+        <li>
+            <div class="slide" style="background-image: url('./images/slider3.png');"></div>
+        </li>
+        <li>
+            <div class="slide" style="background-image: url('./images/slider4.png');"></div>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- Categories Section -->
+    <section class="categories-container">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card" style="background-image: url('../images/skincare.jpg');">
+                <div class="category-overlay">
+                    <h3>Skincare</h3>
+                    <p>Moisturizers, serums, and cleansers for glowing skin.</p>
+                    <a href="./pages/skincare.html" class="category-btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('../images/haircare.jpg');">
+                <div class="category-overlay">
+                    <h3>Haircare</h3>
+                    <p>Shampoos, conditioners, and styling products.</p>
+                    <a href="./pages/haircare.html" class="category-btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('../images/deodorants.jpg');">
+                <div class="category-overlay">
+                    <h3>Deodorants</h3>
+                    <p>Long-lasting freshness and captivating scents.</p>
+                    <a href="./pages/deodorants.html" class="category-btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('../images/beautytools.jpg');">
+                <div class="category-overlay">
+                    <h3>Skincare Tools</h3>
+                    <p>Premium brushes, rollers, and beauty accessories.</p>
+                    <a href="./pages/beautytools.html" class="category-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="products-container best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="product" data-id="1" data-name="Lip Gloss" data-price="133" data-image="../images/product1.jpg" data-description="A hydrating lip gloss with a glossy finish, available in multiple shades.">
+            <img src="./images/product1.jpg" alt="Lip Gloss">
+            <h3>Lip Gloss</h3>
+            <p class="price">Ksh 133</p>
+            <p class="description">A hydrating lip gloss with a glossy finish, available in multiple shades.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Face Cream" data-price="1200" data-image="../images/product2.jpg" data-description="A nourishing face cream for daily hydration and skin protection.">
+            <img src="./images/product2.jpg" alt="Face Cream">
+            <h3>Face Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">A nourishing face cream for daily hydration and skin protection.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="NIVEA Fresh Natural" data-price="450" data-image="../images/deodorants/NIVEA Fresh Natural Spray.jpeg" data-description="48-hour odor protection with crisp, citrusy scent for all-day unisex freshness.">
+            <img src="./images/deodorants/NIVEA Fresh Natural Spray.jpeg" alt="NIVEA Fresh Natural">
+            <h3>NIVEA Fresh Natural</h3>
+            <p class="price">Ksh 450</p>
+            <p class="description">48-hour odor protection with crisp, citrusy scent for all-day unisex freshness.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"The skincare products transformed my routine! My skin feels amazing."</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Fast delivery and high-quality deodorants. Highly recommend!"</p>
+                <h4>Emily Smith</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The beauty tools are a game-changer. Love the facial roller!"</p>
+                <h4>Sarah Johnson</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to BeautyStore, your one-stop shop for premium beauty and cosmetics products. We are passionate about helping you look and feel your best with our carefully curated range of skincare, haircare, deodorants, and skincare tools. Our mission is to provide high-quality, affordable products that cater to all your beauty needs.</p>
+        <p>Founded in 2020, BeautyStore is committed to customer satisfaction, offering fast delivery and exceptional service. Whether you're looking for hydrating serums, nourishing shampoos, or innovative beauty tools, we've got you covered.</p>
+        <a href="./contact.html" class="contact-btn">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> support@beautystore.com</p>
+                <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./skincare.html">Skincare</a></li>
+                    <li><a href="./haircare.html">Haircare</a></li>
+                    <li><a href="./deodorants.html">Deodorants</a></li>
+                    <li><a href="./beautytools.html">Skincare Tools</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="POST" id="contact-form">
+                    <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                    <textarea name="message" id="contact-message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BeautyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare - Beauty & Cosmetics Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/products.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logoo.png" alt="Beauty Store Logo">
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./homepage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./skincare.html">Skincare</a></li>
+                        <li><a href="./deodorants.html">Deodorants</a></li>
+                        <li><a href="./haircare.html">Haircare</a></li>
+                        <li><a href="./Beautytool.html">Beauty Tools</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart-login-container">
+            <a href="cart.html" class="cart-btn">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="login-btn">
+                <i class="fa-solid fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section" style="background-image: url('images/skincare-hero.jpg');">
+        <div class="hero-content">
+            <h1>Skincare</h1>
+            <p>Discover our range of nourishing skincare products designed to hydrate, protect, and rejuvenate your skin for a radiant glow.</p>
+        </div>
+    </section>
+
+    <section class="products-container">
+        <div class="product" data-id="2" data-name="Shea Butter Cream" data-price="1200" data-image="../images/skincare/Shea Butter.jpg" data-description="Rich shea butter cream hydrates, nourishes skin for a radiant, smooth glow.">
+            <img src="../images/skincare/Shea Butter.jpg" alt="Shea Butter Cream">
+            <h3>Shea Butter Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Rich shea butter cream hydrates, nourishes skin for a radiant, smooth glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Aloe Vera Gel" data-price="900" data-image="../images/skincare/Aloe Vera Gel.jpeg" data-description="Soothing aloe vera gel calms, hydrates skin for a refreshed, dewy complexion.">
+            <img src="../images/skincare/Aloe Vera Gel.jpeg" alt="Aloe Vera Gel">
+            <h3>Aloe Vera Gel</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Soothing aloe vera gel calms, hydrates skin for a refreshed, dewy complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4" data-name="Black Soap Bar" data-price="800" data-image="../images/skincare/black soap.jpg" data-description="Black soap bar cleanses deeply, balances oil for clearer, healthier skin.">
+            <img src="../images/skincare/black soap.jpg" alt="Black Soap Bar">
+            <h3>Black Soap Bar</h3>
+            <p class="price">Ksh 800</p>
+            <p class="description">Black soap bar cleanses deeply, balances oil for clearer, healthier skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="5" data-name="NIVEA Perfect & Radiant Cleanser" data-price="850" data-image="../images/skincare/Nivea Hidratante Labial Hidra Color Rosé 4,8g.jpg" data-description="NIVEA Perfect & Radiant Cleanser gently removes impurities, brightens skin tone daily.">
+            <img src="../images/skincare/Nivea Hidratante Labial Hidra Color Rosé 4,8g.jpg" alt="NIVEA Perfect & Radiant Cleanser">
+            <h3>NIVEA Radiant Cleanser</h3>
+            <p class="price">Ksh 850</p>
+            <p class="description">NIVEA Perfect & Radiant Cleanser gently removes impurities, brightens skin tone daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="6" data-name="Garnier Even & Matte Moisturizer" data-price="1000" data-image="../images/skincare/Garnier Bright Complete Night Vitamin C Serum With….jpg" data-description="Garnier Even & Matte Moisturizer hydrates, controls oil for smooth, even skin.">
+            <img src="../images/skincare/Garnier Bright Complete Night Vitamin C Serum With….jpg" alt="Garnier Even & Matte Moisturizer">
+            <h3>Garnier Even & Matte Moisturizer</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">Garnier Even & Matte Moisturizer hydrates, controls oil for smooth, even skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="7" data-name="L’Oréal Paris UV Defender SPF 50" data-price="1500" data-image="../images/skincare/L'Oreal Paris Dark Spot & SPF Power Duo Skincare Collection.jpg" data-description="L’Oréal UV Defender SPF 50 protects skin from UV rays, prevents hyperpigmentation.">
+            <img src="../images/skincare/L'Oreal Paris Dark Spot & SPF Power Duo Skincare Collection.jpg" alt="L’Oréal Paris UV Defender SPF 50">
+            <h3>L’Oréal Paris UV Defender SPF 50</h3>
+            <p class="price">Ksh 1500</p>
+            <p class="description">L’Oréal UV Defender SPF 50 protects skin from UV rays, prevents hyperpigmentation.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="8" data-name="Pink Beauty Clay Mask" data-price="1400" data-image="../images/skincare/clay mask.jpg" data-description="Pink Clay Mask detoxifies, reduces oil, refines pores for clearer skin.">
+            <img src="../images/skincare/clay mask.jpg" alt="SuzieBeauty Clay Mask">
+            <h3>Pink Clay Mask</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">Pink Clay Mask detoxifies, reduces oil, refines pores for clearer skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="9" data-name="The Ordinary Niacinamide Serum" data-price="1800" data-image="../images/skincare/The Ordinary Hyaluronic Acid.jpg" data-description="The Ordinary Niacinamide Serum minimizes pores, evens skin tone, reduces blemishes.">
+            <img src="../images/skincare/The Ordinary Hyaluronic Acid.jpg" alt="The Ordinary Niacinamide Serum">
+            <h3>The Ordinary Niacinamide Serum</h3>
+            <p class="price">Ksh 1800</p>
+            <p class="description">The Ordinary Niacinamide Serum minimizes pores, evens skin tone, reduces blemishes.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="10" data-name="Shea Naturals Body Butter" data-price="1300" data-image="../images/skincare/Shea Butter.jpg" data-description="Shea Naturals Body Butter deeply moisturizes skin, leaves it soft, radiant.">
+            <img src="../images/skincare/Shea Butter.jpg" alt="Sheth Naturals Body Butter">
+            <h3>Shea Naturals Body Butter</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Shea Naturals Body Butter deeply moisturizes skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="11" data-name="Vaseline Lip Therapy" data-price="600" data-image="../images/skincare/vaseline lip therapy.jpg" data-description="Vaseline Lip Therapy hydrates dry lips, provides long-lasting moisture, smooth finish.">
+            <img src="../images/skincare/vaseline lip therapy.jpg" alt="Vaseline Lip Therapy">
+            <h3>Vaseline Lip Therapy</h3>
+            <p class="price">Ksh 600</p>
+            <p class="description">Vaseline Lip Therapy hydrates dry lips, provides long-lasting moisture, smooth finish.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="12" data-name="Garnier Micellar Water" data-price="1100" data-image="../images/skincare/micellar water 2.jpg" data-description="Garnier Micellar Water gently cleanses, removes makeup, hydrates skin without irritation.">
+            <img src="../images/skincare/micellar water 2.jpg" alt="Garnier Micellar Water">
+            <h3>Garnier Micellar Water</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">Garnier Micellar Water gently cleanses, removes makeup, hydrates skin without irritation.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="13" data-name="NIVEA Makeup Remover Wipes" data-price="750" data-image="../images/skincare/NIVEA 3in1 Rose Care Cleansing Wipes (2x25 Wipes), Plant-Based Makeup Remover Wipes, Face Wipes with Organic Rose Water, Gentle yet Effective Makeup Removal.jpg" data-description="NIVEA Makeup Remover Wipes cleanse skin, remove makeup gently, no residue.">
+            <img src="../images/skincare/NIVEA 3in1 Rose Care Cleansing Wipes (2x25 Wipes), Plant-Based Makeup Remover Wipes, Face Wipes with Organic Rose Water, Gentle yet Effective Makeup Removal.jpg" alt="NIVEA Makeup Remover Wipes">
+            <h3>NIVEA Makeup Remover Wipes</h3>
+            <p class="price">Ksh 750</p>
+            <p class="description">NIVEA Makeup Remover Wipes cleanse skin, remove makeup gently, no residue.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="14" data-name="Shea Butter Hand Cream" data-price="900" data-image="../images/skincare/Check out ÉCLAT NATUREL Shea Butter Hand Cream… (1).jpg" data-description="Shea Hand Cream hydrates dry hands, leaves them soft, smooth, protected.">
+            <img src="../images/skincare/Check out ÉCLAT NATUREL Shea Butter Hand Cream… (1).jpg" alt="Shea Butter Hand Cream">
+            <h3>Shea Hand Cream</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Shea Hand Cream hydrates dry hands, leaves them soft, smooth, protected.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="15" data-name="Melao Face Scrub" data-price="1200" data-image="../images/skincare/melao face scrub.jpg" data-description="Melao Face Scrub exfoliates, smooths skin, reveals brighter, radiant complexion.">
+            <img src="../images/skincare/melao face scrub.jpg" alt="Melao Face Scrub">
+            <h3>Organic Savanna Face Scrub</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Melao Face Scrub exfoliates, smooths skin, reveals brighter, radiant complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="16" data-name="NIVEA Q10 Anti-Aging Cream" data-price="1600" data-image="../images/skincare/Nivea Q10 Anti-Wrinkle 60+ Extra Nourishing Day….jpg" data-description="NIVEA Q10 Anti-Aging Cream reduces wrinkles, firms skin for youthful radiance.">
+            <img src="../images/skincare/Nivea Q10 Anti-Wrinkle 60+ Extra Nourishing Day….jpg" alt="NIVEA Q10 Anti-Aging Cream">
+            <h3>NIVEA Q10 Anti-Aging Cream</h3>
+            <p class="price">Ksh 1600</p>
+            <p class="description">NIVEA Q10 Anti-Aging Cream reduces wrinkles, firms skin for youthful radiance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="17" data-name="The Ordinary Vitamin C Serum" data-price="1900" data-image="../images/skincare/vitamic c serum.jpg" data-description="The Ordinary Vitamin C Serum brightens skin, reduces dark spots, evens tone.">
+            <img src="../images/skincare/vitamic c serum.jpg" alt="The Ordinary Vitamin C Serum">
+            <h3>The Ordinary Vitamin C Serum</h3>
+            <p class="price">Ksh 1900</p>
+            <p class="description">The Ordinary Vitamin C Serum brightens skin, reduces dark spots, evens tone.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="18" data-name="Qasil Beauty Foot Cream" data-price="1000" data-image="../images/skincare/Eva Naturals Tea Tree Foot Cream - Foot Lotion….jpg" data-description="Qasil Beauty Foot Cream moisturizes cracked heels, leaves feet soft, smooth.">
+            <img src="../images/skincare/Eva Naturals Tea Tree Foot Cream - Foot Lotion….jpg" alt="Qasil Beauty Foot Cream">
+            <h3>Qasil Beauty Foot Cream</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">Qasil Beauty Foot Cream moisturizes cracked heels, leaves feet soft, smooth.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="19" data-name="Organics Coconut Cream" data-price="1100" data-image="../images/skincare/Organic Coconut Cream - 400ml - EACH.jpg" data-description="Ceres Organics Coconut Cream hydrates skin, leaves it silky, soft, nourished.">
+            <img src="../images/skincare/Organic Coconut Cream - 400ml - EACH.jpg" alt="Organics Coconut Cream">
+            <h3>Organics Coconut Cream</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">Ceres Organics Coconut Cream hydrates skin, leaves it silky, soft, nourished.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="20" data-name="Garnier Bright Complete Serum" data-price="1500" data-image="../images/skincare/Garnier Bright Complete Night Vitamin C Serum With….jpg" data-description="Garnier Bright Complete Serum reduces dark spots, brightens skin for radiant glow.">
+            <img src="../images/skincare/Garnier Bright Complete Night Vitamin C Serum With….jpg" alt="Garnier Bright Complete Serum">
+            <h3>Garnier Bright Complete Serum</h3>
+            <p class="price">Ksh 1500</p>
+            <p class="description">Garnier Bright Complete Serum reduces dark spots, brightens skin for radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="21" data-name="Beauty Face Oil" data-price="1400" data-image="../images/skincare/beauty face oil.jpg" data-description="Alphah Face Oil nourishes, hydrates skin, restores glow, reduces dryness daily.">
+            <img src="../images/skincare/beauty face oil.jpg" alt="Alphah Beauty Face Oil">
+            <h3>Alphah Beauty Face Oil</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">Alphah Beauty Face Oil nourishes, hydrates skin, restores glow, reduces dryness daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="22" data-name="Activated Charcoal Soap" data-price="900" data-image="../images/skincare/charcoal soap.jpg" data-description="Activated Charcoal Soap detoxifies skin, controls oil, promotes clear complexion.">
+            <img src="../images/skincare/charcoal soap.jpg" alt="Activated Charcoal Soap">
+            <h3>Activated Charcoal Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Activated Charcoal Soap detoxifies skin, controls oil, promotes clear complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="23" data-name="Rose Moisturizing Toner" data-price="1000" data-image="../images/skincare/Rose Water for Face, Rose Spray for Women, Rose Moisturizing toner for face,Hydrating Face Mist, Natural Rosewater Toner Face Mist, Vegan Rose Water for face Women,Rejuvenating and Soothing Skin Toner.jpg" data-description="Rose Moisturizing Toner hydrates, soothes skin, balances pH for radiant glow.">
+            <img src="../images/skincare/Rose Water for Face, Rose Spray for Women, Rose Moisturizing toner for face,Hydrating Face Mist, Natural Rosewater Toner Face Mist, Vegan Rose Water for face Women,Rejuvenating and Soothing Skin Toner.jpg" alt="Lheritier Rosewater Toner">
+            <h3>Rose Moisturizing Toner</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">Rose Moisturizing Toner hydrates, soothes skin, balances pH for radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="25" data-name="NIVEA Hydrating Face Cream" data-price="1100" data-image="../images/skincare/NIVEA MEN SENSITIVE FACE MOISTURIZER, 75ML.jpg" data-description="NIVEA Hydrating Face Cream locks moisture, leaves skin soft, dewy, radiant.">
+            <img src="../images/skincare/NIVEA MEN SENSITIVE FACE MOISTURIZER, 75ML.jpg" alt="NIVEA Hydrating Face Cream">
+            <h3>NIVEA Hydrating Face Cream</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">NIVEA Hydrating Face Cream locks moisture, leaves skin soft, dewy, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="26" data-name="Keyara Organics Tea Tree Oil" data-price="1100" data-image="../images/skincare/tea tree oil.jpg" data-description="Keyara Organics Tea Tree Oil soothes acne, reduces inflammation, clears skin.">
+            <img src="../images/skincare/tea tree oil.jpg" alt="Keyara Organics Tea Tree Oil">
+            <h3>Honey Skin Tea Tree Oil</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">Honey Skin Tea Tree Oil soothes acne, reduces inflammation, clears skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="27" data-name="Organic Savanna Body Scrub" data-price="1300" data-image="../images/skincare/body scrub.jpg" data-description="Organic Savanna Body Scrub exfoliates, smooths skin, enhances radiant, soft glow.">
+            <img src="../images/skincare/body scrub.jpg" alt="Organic Savanna Body Scrub">
+            <h3>Organic Savanna Body Scrub</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Organic Savanna Body Scrub exfoliates, smooths skin, enhances radiant, soft glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="28" data-name="Garnier Pure Active SPF 50" data-price="1400" data-image="../images/skincare/Pure Active Fluido UV com BHA + Niacinamida SPF50+.jpg" data-description="Garnier Pure Active SPF 50 shields skin from UV, prevents dark spots.">
+            <img src="../images/skincare/Pure Active Fluido UV com BHA + Niacinamida SPF50+.jpg" alt="Garnier Pure Active SPF 50">
+            <h3>Garnier Pure Active SPF 50</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">Garnier Pure Active SPF 50 shields skin from UV, prevents dark spots.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="29" data-name="NIVEA Cocoa Butter Lotion" data-price="1000" data-image="../images/skincare/NIVEA Body Lotion Moisturizing Dry Skin, Cocoa….jpg" data-description="NIVEA Cocoa Butter Lotion moisturizes skin, leaves it smooth, soft, radiant.">
+            <img src="../images/skincare/NIVEA Body Lotion Moisturizing Dry Skin, Cocoa….jpg" alt="NIVEA Cocoa Butter Lotion">
+            <h3>NIVEA Cocoa Butter Lotion</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">NIVEA Cocoa Butter Lotion moisturizes skin, leaves it smooth, soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="30" data-name="Qasil Beauty Oatmeal Mask" data-price="1300" data-image="../images/skincare/Oatmeal mask.jpg" data-description="Qasil Beauty Oatmeal Mask soothes sensitive skin, hydrates, reduces redness, glows.">
+            <img src="../images/skincare/Oatmeal mask.jpg" alt="Qasil Beauty Oatmeal Mask">
+            <h3>Qasil Beauty Oatmeal Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Qasil Beauty Oatmeal Mask soothes sensitive skin, hydrates, reduces redness, glows.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="31" data-name="Clear Essence Pimple Patch" data-price="900" data-image="../images/skincare/GARNIER 8 Hours Pimple Patch.jpg" data-description="Clear Essence Pimple Patch reduces acne overnight, absorbs impurities, heals skin.">
+            <img src="../images/skincare/GARNIER 8 Hours Pimple Patch.jpg" alt="Clear Essence Pimple Patch">
+            <h3>Garnier Pimple Patch</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Clear Essence Pimple Patch reduces acne overnight, absorbs impurities, heals skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="32" data-name="L’Oréal Paris Eye Cream" data-price="1500" data-image="../images/skincare/L’Oréal Paris Eye Defense _.jpg" data-description="L’Oréal Paris Eye Cream reduces puffiness, dark circles, smooths skin daily.">
+            <img src="../images/skincare/L’Oréal Paris Eye Defense _.jpg" alt="L’Oréal Paris Eye Cream">
+            <h3>L’Oréal Paris Eye Cream</h3>
+            <p class="price">Ksh 1500</p>
+            <p class="description">L’Oréal Paris Eye Cream reduces puffiness, dark circles, smooths skin daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="33" data-name="Sheth Naturals Honey Mask" data-price="1300" data-image="../images/skincare/honey mask.jpg" data-description="Sheth Naturals Honey Mask hydrates, soothes skin, promotes radiant, healthy glow.">
+            <img src="../images/skincare/honey mask.jpg" alt="Sheth Naturals Honey Mask">
+            <h3>Sheth Naturals Honey Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Sheth Naturals Honey Mask hydrates, soothes skin, promotes radiant, healthy glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="34" data-name="NIVEA Nourishing Body Wash" data-price="950" data-image="../images/skincare/NIVEA Nourishing Care Body Wash.jpg" data-description="NIVEA Nourishing Body Wash cleanses, moisturizes skin, leaves it soft, radiant.">
+            <img src="../images/skincare/NIVEA Nourishing Care Body Wash.jpg" alt="NIVEA Nourishing Body Wash">
+            <h3>NIVEA Nourishing Body Wash</h3>
+            <p class="price">Ksh 950</p>
+            <p class="description">NIVEA Nourishing Body Wash cleanses, moisturizes skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="35" data-name="Garnier SkinActive Whitening Cream" data-price="1600" data-image="../images/skincare/Garnier Whitening cream.jpg" data-description="Garnier SkinActive Whitening Cream brightens skin, reduces dark spots, evens tone.">
+            <img src="../images/skincare/Garnier Whitening cream.jpg" alt="Garnier SkinActive Whitening Cream">
+            <h3>Garnier SkinActive Whitening Cream</h3>
+            <p class="price">Ksh 1600</p>
+            <p class="description">Garnier SkinActive Whitening Cream brightens skin, reduces dark spots, evens tone.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="36" data-name="Avocado Cream" data-price="1200" data-image="../images/skincare/avocado cream 2.jpg" data-description="Avocado Cream nourishes dry skin, leaves it soft, radiant.">
+            <img src="../images/skincare/avocado cream 2.jpg" alt="Keyara Organics Avocado Cream">
+            <h3>Avocado Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Organics Avocado Cream nourishes dry skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="37" data-name="Turmeric Soap" data-price="900" data-image="../images/skincare/Turmeric Soap Natural Turmeric Soap Bar for Body….jpg" data-description="Turmeric Soap brightens skin, reduces blemishes, promotes radiant complexion.">
+            <img src="../images/skincare/Turmeric Soap Natural Turmeric Soap Bar for Body….jpg" alt="Turmeric Soap">
+            <h3>Turmeric Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Turmeric Soap brightens skin, reduces blemishes, promotes radiant complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="38" data-name="StrawBerry Lip Scrub" data-price="800" data-image="../images/skincare/Amazon_com _ Lip Scrub, Exfoliator & Moisturizer….jpg" data-description="StrawBerry Lip Scrub exfoliates dry lips, leaves them soft, smooth, hydrated.">
+            <img src="../images/skincare/Amazon_com _ Lip Scrub, Exfoliator & Moisturizer….jpg" alt="Qasil Beauty Lip Scrub">
+            <h3>StrawBerry Lip Scrub</h3>
+            <p class="price">Ksh 800</p>
+            <p class="description">StrawBerry Lip Scrub exfoliates dry lips, leaves them soft, smooth, hydrated.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="40" data-name="Organic Savanna Charcoal Mask" data-price="1300" data-image="../images/skincare/Organic charcoal mask.jpg" data-description="Organic Savanna Charcoal Mask detoxifies, unclogs pores, clears skin effectively.">
+            <img src="../images/skincare/Organic charcoal mask.jpg" alt="Organic Savanna Charcoal Mask">
+            <h3>Organic Charcoal Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Organic Savanna Charcoal Mask detoxifies, unclogs pores, clears skin effectively.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="41" data-name="The Ordinary Retinol Serum" data-price="1900" data-image="../images/skincare/Garnier Retinol Berry.jpg" data-description="The Ordinary Retinol Serum smooths wrinkles, boosts collagen, refines skin texture.">
+            <img src="../images/skincare/Garnier Retinol Berry.jpg" alt="The Ordinary Retinol Serum">
+            <h3>Garnier Retinol Berry</h3>
+            <p class="price">Ksh 1900</p>
+            <p class="description">The Garnier Retinol Berry smooths wrinkles, boosts collagen, refines skin texture.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="42" data-name="Neem Soap" data-price="900" data-image="../images/skincare/Neem Soap.jpg" data-description="Neem Soap cleanses, soothes acne, promotes clearer skin daily.">
+            <img src="../images/skincare/Neem Soap.jpg" alt="Neem Soap">
+            <h3>Neem Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Neem Soap cleanses, soothes acne, promotes clearer skin daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="43" data-name="NIVEA Rich Body Cream" data-price="1200" data-image="../images/skincare/NIVEA Soothing Night Cream provides your skin with….jpg" data-description="NIVEA Rich Body Cream deeply hydrates skin, leaves it smooth, soft, radiant.">
+            <img src="../images/skincare/NIVEA Soothing Night Cream provides your skin with….jpg" alt="NIVEA Rich Body Cream">
+            <h3>NIVEA Night Body Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">NIVEA Rich Body Cream deeply hydrates skin, leaves it smooth, soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="44" data-name="L’Oréal Paris Sunscreen Stick" data-price="1100" data-image="../images/skincare/Light And Refreshing Sunscreen Stick.jpg" data-description="L’Oréal Paris Sunscreen Stick offers SPF protection, non-greasy, easy for skin.">
+            <img src="../images/skincare/Light And Refreshing Sunscreen Stick.jpg" alt="Sunscreen Stick">
+            <h3>Sunscreen Stick</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">L’Oréal Paris Sunscreen Stick offers SPF protection, non-greasy, easy for skin.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="45" data-name="SuzieBeauty Green Tea Mask" data-price="1300" data-image="../images/skincare/Hoygi Green Tea Cleansing Mask Stick Facial Cleansing Pore Tightening Smooth Skin Moisturizing Pore Solid Mask Stick.jpg" data-description="Green Tea Mask soothes skin, reduces redness, promotes radiant complexion.">
+            <img src="../images/skincare/Hoygi Green Tea Cleansing Mask Stick Facial Cleansing Pore Tightening Smooth Skin Moisturizing Pore Solid Mask Stick.jpg" alt="Green Tea Mask">
+            <h3>Green Tea Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Green Tea Mask soothes skin, reduces redness, promotes radiant complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="47" data-name="NIVEA Soft Hand Lotion" data-price="850" data-image="../images/skincare/NIVEA Rich Nourishing Body Lotion (400ml), NIVEA….jpg" data-description="NIVEA Soft Hand Lotion hydrates, softens hands, protects from dryness daily.">
+            <img src="../images/skincare/NIVEA Rich Nourishing Body Lotion (400ml), NIVEA….jpg" alt="NIVEA Soft Hand Lotion">
+            <h3>NIVEA Soft Hand Lotion</h3>
+            <p class="price">Ksh 850</p>
+            <p class="description">NIVEA Soft Hand Lotion hydrates, softens hands, protects from dryness daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="48" data-name="Ahava Mud Mask" data-price="1300" data-image="../images/skincare/Ahava 24k Gold Mineral Mud Mask Value_ $68 Size….jpg" data-description="Ahava Mud Mask detoxifies, purifies skin, refines pores, clears complexion.">
+            <img src="../images/skincare/Ahava 24k Gold Mineral Mud Mask Value_ $68 Size….jpg" alt="Ahava Mud Mask">
+            <h3>Ahava Mud Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Ahava Mud Mask detoxifies, purifies skin, refines pores, clears complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="49" data-name="Keyara Organics Argan Cream" data-price="1400" data-image="../images/skincare/Moroccan Argan Oil.jpg" data-description="Keyara Organics Argan Cream nourishes, hydrates skin, leaves it soft, radiant.">
+            <img src="../images/skincare/Moroccan Argan Oil.jpg" alt="Keyara Organics Argan Cream">
+            <h3>Argan Cream</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">Argan Cream nourishes, hydrates skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="51" data-name="SuzieBeauty Body Oil" data-price="1200" data-image="../images/skincare/Beauty Body Oil.jpeg" data-description="SuzieBeauty Body Oil hydrates, nourishes skin, leaves it silky, glowing daily.">
+            <img src="../images/skincare/Beauty Body Oil.jpeg" alt="SuzieBeauty Body Oil">
+            <h3>Beauty Body Oil</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">SuzieBeauty Body Oil hydrates, nourishes skin, leaves it silky, glowing daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="55" data-name="Coconut Milk Mask" data-price="1300" data-image="../images/skincare/Coconut Milk Mask.jpeg" data-description="Coconut Milk Mask hydrates, softens skin, promotes smooth, radiant complexion.">
+            <img src="../images/skincare/Coconut Milk Mask.jpeg" alt="Coconut Milk Mask">
+            <h3>Coconut Milk Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Coconut Milk Mask hydrates, softens skin, promotes smooth, radiant complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="56" data-name="NIVEA Sunscreen Cream SPF 30" data-price="1200" data-image="../images/skincare/NIVEA Sunscreen Cream SPF 30.jpeg" data-description="NIVEA Sunscreen Cream SPF 30 protects skin, hydrates, prevents UV damage.">
+            <img src="../images/skincare/NIVEA Sunscreen Cream SPF 30.jpeg" alt="NIVEA Sunscreen Cream SPF 30">
+            <h3>NIVEA Sunscreen Cream SPF 30</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">NIVEA Sunscreen Cream SPF 30 protects skin, hydrates, prevents UV damage.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="57" data-name="Keyara Organics Jojoba Oil" data-price="1200" data-image="../images/skincare/Keyara Organics Jojoba Oil.jpeg" data-description="Keyara Organics Jojoba Oil hydrates, balances skin, promotes radiant, healthy glow.">
+            <img src="../images/skincare/Keyara Organics Jojoba Oil.jpeg" alt="Keyara Organics Jojoba Oil">
+            <h3>Keyara Organics Jojoba Oil</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Keyara Organics Jojoba Oil hydrates, balances skin, promotes radiant, healthy glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="58" data-name="L’Oréal Paris Anti-Wrinkle Serum" data-price="1800" data-image="../images/skincare/L’Oréal Paris Anti-Wrinkle Serum.jpeg" data-description="L’Oréal Paris Anti-Wrinkle Serum smooths lines, firms skin, boosts youthful glow.">
+            <img src="../images/skincare/L’Oréal Paris Anti-Wrinkle Serum.jpeg" alt="L’Oréal Paris Anti-Wrinkle Serum">
+            <h3>L’Oréal Paris Anti-Wrinkle Serum</h3>
+            <p class="price">Ksh 1800</p>
+            <p class="description">L’Oréal Paris Anti-Wrinkle Serum smooths lines, firms skin, boosts youthful glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="59" data-name="Garnier Cucumber Toner" data-price="1000" data-image="../images/skincare/Bio Cucumber Toner.jpeg" data-description="Garnier Cucumber Toner refreshes, hydrates skin, soothes irritation for balanced glow.">
+            <img src="../images/skincare/Bio Cucumber Toner.jpeg" alt="Garnier Cucumber Toner">
+            <h3>Garnier Cucumber Toner</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">Garnier Cucumber Toner refreshes, hydrates skin, soothes irritation for balanced glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="60" data-name="NIVEA Body Moisturizer" data-price="1100" data-image="../images/skincare/NIVEA Body Moisturizer.jpeg" data-description="NIVEA Body Moisturizer hydrates, softens skin, leaves it smooth, radiant daily.">
+            <img src="../images/skincare/NIVEA Body Moisturizer.jpeg" alt="NIVEA Body Moisturizer">
+            <h3>NIVEA Body Moisturizer</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">NIVEA Body Moisturizer hydrates, softens skin, leaves it smooth, radiant daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="61" data-name="Sheth Naturals Papaya Soap" data-price="900" data-image="../images/skincare/Sheth Naturals Papaya Soap.jpeg" data-description="Sheth Naturals Papaya Soap cleanses, brightens skin, promotes radiant, even complexion.">
+            <img src="../images/skincare/Sheth Naturals Papaya Soap.jpeg" alt="Sheth Naturals Papaya Soap">
+            <h3>Papaya Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Papaya Soap cleanses, brightens skin, promotes radiant, even complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="62" data-name="Vitamin C Face Exfoliator" data-price="1200" data-image="../images/skincare/SuzieBeauty Face Exfoliator.jpeg" data-description="Vitamin C Face Exfoliator removes dead skin, reveals smoother, brighter complexion daily.">
+            <img src="../images/skincare/SuzieBeauty Face Exfoliator.jpeg" alt="SuzieBeauty Face Exfoliator">
+            <h3>Vitamin C Face Exfoliator</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Vitamin C Face Exfoliator removes dead skin, reveals smoother, brighter complexion daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="65" data-name="Organic Savanna Coffee Scrub" data-price="1200" data-image="../images/skincare/Arabica Coffee Body Scrub.jpeg" data-description="Organic Savanna Coffee Scrub exfoliates skin, smooths texture, boosts radiant glow.">
+            <img src="../images/skincare/Arabica Coffee Body Scrub.jpeg" alt="Organic Savanna Coffee Scrub">
+            <h3>Arabica Coffee Body Scrub</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Arabica Coffee Body Scrub exfoliates skin, smooths texture, boosts radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="66" data-name="Garnier Face Sunscreen SPF 50" data-price="1400" data-image="../images/skincare/Garnier Face Sunscreen SPF.jpeg" data-description="Garnier Face Sunscreen SPF 50 protects skin, hydrates, prevents UV damage daily.">
+            <img src="../images/skincare/Garnier Face Sunscreen SPF.jpeg" alt="Garnier Face Sunscreen SPF 50">
+            <h3>Garnier Face Sunscreen SPF 50</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">Garnier Face Sunscreen SPF 50 protects skin, hydrates, prevents UV damage daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="67" data-name="Sheth Naturals Aloe Cream" data-price="1100" data-image="../images/skincare/Aloe Vera cream.jpeg" data-description="Sheth Naturals Aloe Cream soothes, hydrates skin, promotes healthy, radiant glow.">
+            <img src="../images/skincare/Aloe Vera cream.jpeg" alt="Sheth Naturals Aloe Cream">
+            <h3>Natural Aloe Cream</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">Sheth Naturals Aloe Cream soothes, hydrates skin, promotes healthy, radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="68" data-name="SuzieBeauty Charcoal Scrub" data-price="1200" data-image="../images/skincare/Beauty Charcoal Scrub.jpeg" data-description="Beauty Charcoal Scrub exfoliates, detoxifies skin, smooths for radiant, clear finish.">
+            <img src="../images/skincare/Beauty Charcoal Scrub.jpeg" alt="Charcoal Scrub">
+            <h3>Beauty Charcoal Scrub</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Beauty Charcoal Scrub exfoliates, detoxifies skin, smooths for radiant, clear finish.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="69" data-name="NIVEA Lip Moisturizer" data-price="650" data-image="../images/skincare/NIVEA Lip Moisturizer.jpeg" data-description="NIVEA Lip Moisturizer hydrates, softens lips, protects for smooth, radiant finish.">
+            <img src="../images/skincare/NIVEA Lip Moisturizer.jpeg" alt="NIVEA Lip Moisturizer">
+            <h3>NIVEA Lip Moisturizer</h3>
+            <p class="price">Ksh 650</p>
+            <p class="description">NIVEA Lip Moisturizer hydrates, softens lips, protects for smooth, radiant finish.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="71" data-name="Sheth Naturals Turmeric Mask" data-price="1300" data-image="../images/skincare/TURMERIC FACE MASK.jpeg" data-description="Naturals Turmeric Mask brightens, soothes skin, promotes radiant, even complexion.">
+            <img src="../images/skincare/TURMERIC FACE MASK.jpeg" alt="Naturals Turmeric Mask">
+            <h3>Naturals Turmeric Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Naturals Turmeric Mask brightens, soothes skin, promotes radiant, even complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="72" data-name="NIVEA Hand Moisturizer" data-price="850" data-image="../images/skincare/NIVEA Hand Moisturizer.jpeg" data-description="NIVEA Hand Moisturizer hydrates, softens hands, protects from dryness, smooths daily.">
+            <img src="../images/skincare/NIVEA Hand Moisturizer.jpeg" alt="NIVEA Hand Moisturizer">
+            <h3>NIVEA Hand Moisturizer</h3>
+            <p class="price">Ksh 850</p>
+            <p class="description">NIVEA Hand Moisturizer hydrates, softens hands, protects from dryness, smooths daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="73" data-name="Beauty Oatmeal Soap" data-price="900" data-image="../images/skincare/Beauty Oatmeal Soap.jpeg" data-description="Oatmeal Soap cleanses, soothes sensitive skin, promotes hydration, radiant glow.">
+            <img src="../images/skincare/Beauty Oatmeal Soap.jpeg" alt="Oatmeal Soap">
+            <h3>Oatmeal Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Oatmeal Soap cleanses, soothes sensitive skin, promotes hydration, radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="74" data-name="Garnier Hydrating Face Cream" data-price="1200" data-image="../images/skincare/Garnier Hydrating Face Cream.jpeg" data-description="Garnier Hydrating Face Cream nourishes, hydrates skin, leaves it soft, radiant.">
+            <img src="../images/skincare/Garnier Hydrating Face Cream.jpeg" alt="Garnier Hydrating Face Cream">
+            <h3>Garnier Hydrating Face Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Garnier Hydrating Face Cream nourishes, hydrates skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="75" data-name="Beauty Foot Lotion" data-price="1000" data-image="../images/skincare/Beauty Foot Lotion.jpeg" data-description="Beauty Foot Lotion hydrates, softens heels, smooths rough skin daily.">
+            <img src="../images/skincare/Beauty Foot Lotion.jpeg" alt="Beauty Foot Lotion">
+            <h3>Beauty Foot Lotion</h3>
+            <p class="price">Ksh 1000</p>
+            <p class="description">Beauty Foot Lotion hydrates, softens heels, smooths rough skin daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="76" data-name="Naturals Honey Soap" data-price="900" data-image="../images/skincare/Naturals Honey Soap.jpeg" data-description="Honey Soap cleanses, hydrates skin, leaves it soft, radiant.">
+            <img src="../images/skincare/Naturals Honey Soap.jpeg" alt="Naturals Honey Soap">
+            <h3>Naturals Honey Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Honey Soap cleanses, hydrates skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="77" data-name="L’Oréal Paris Brightening Cream" data-price="1600" data-image="../images/skincare/L’Oréal Paris Brightening Cream.jpeg" data-description="L’Oréal Paris Brightening Cream evens skin tone, reduces dark spots, radiates.">
+            <img src="../images/skincare/L’Oréal Paris Brightening Cream.jpeg" alt="L’Oréal Paris Brightening Cream">
+            <h3>L’Oréal Paris Brightening Cream</h3>
+            <p class="price">Ksh 1600</p>
+            <p class="description">L’Oréal Paris Brightening Cream evens skin tone, reduces dark spots, radiates.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="78" data-name="Beauty Coconut Soap" data-price="900" data-image="../images/skincare/Beauty Coconut Soap.jpeg" data-description="Beauty Coconut Soap cleanses, moisturizes skin, leaves soft, radiant glow.">
+            <img src="../images/skincare/Beauty Coconut Soap.jpeg" alt="Beauty Coconut Soap">
+            <h3>Beauty Coconut Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Beauty Coconut Soap cleanses, moisturizes skin, leaves soft, radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="81" data-name="NIVEA Sunscreen Gel SPF 50" data-price="1400" data-image="../images/skincare/NIVEA Sunscreen Gel SPF 50.jpeg" data-description="NIVEA Sunscreen Gel SPF 50 protects skin, lightweight, non-greasy, absorbs quickly.">
+            <img src="../images/skincare/NIVEA Sunscreen Gel SPF 50.jpeg" alt="NIVEA Sunscreen Gel SPF 50">
+            <h3>NIVEA Sunscreen Gel SPF 50</h3>
+            <p class="price">Ksh 1400</p>
+            <p class="description">NIVEA Sunscreen Gel SPF 50 protects skin, lightweight, non-greasy, absorbs quickly.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="82" data-name="Organics Rosehip Oil" data-price="1300" data-image="../images/skincare/Organics Rosehip Oil.jpeg" data-description="Organics Rosehip Oil hydrates, nourishes skin, reduces scars, radiant glow.">
+            <img src="../images/skincare/Organics Rosehip Oil.jpeg" alt="Organics Rosehip Oil">
+            <h3>Organics Rosehip Oil</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">Organics Rosehip Oil hydrates, nourishes skin, reduces scars, radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="85" data-name="Beauty Foot Mask" data-price="1100" data-image="../images/skincare/Beauty Foot Mask.jpeg" data-description="Beauty Foot Mask hydrates, softens heels, repairs dry skin overnight.">
+            <img src="../images/skincare/Beauty Foot Mask.jpeg" alt="Beauty Foot Mask">
+            <h3>Beauty Foot Mask</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">Beauty Foot Mask hydrates, softens heels, repairs dry skin overnight.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="86" data-name="SuzieBeauty Green Tea Soap" data-price="900" data-image="../images/skincare/Beauty Green Tea Soap.jpeg" data-description="Green Tea Soap cleanses, soothes skin, leaves it refreshed, radiant.">
+            <img src="../images/skincare/Beauty Green Tea Soap.jpeg" alt="SuzieBeauty Green Tea Soap">
+            <h3>Green Tea Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Green Tea Soap cleanses, soothes skin, leaves it refreshed, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="87" data-name="NIVEA Body Lotion" data-price="1100" data-image="../images/skincare/NIVEA Body Lotion.jpeg" data-description="NIVEA Body Lotion hydrates, softens skin, leaves it smooth, radiant daily.">
+            <img src="../images/skincare/NIVEA Body Lotion.jpeg" alt="NIVEA Body Lotion">
+            <h3>NIVEA Body Lotion</h3>
+            <p class="price">Ksh 1100</p>
+            <p class="description">NIVEA Body Lotion hydrates, softens skin, leaves it smooth, radiant daily.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="88" data-name="Laneige Naturals Lip Mask" data-price="800" data-image="../images/skincare/Naturals Lip Mask.jpeg" data-description="Laneige Naturals Lip Mask hydrates, softens lips, repairs chapped skin overnight.">
+            <img src="../images/skincare/Naturals Lip Mask.jpeg" alt="Laneige Naturals Lip Mask">
+            <h3>Laneige Naturals Lip Mask</h3>
+            <p class="price">Ksh 800</p>
+            <p class="description">Laneige Naturals Lip Mask hydrates, softens lips, repairs chapped skin overnight.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="89" data-name="himalaya Neem Mask" data-price="1300" data-image="../images/skincare/himalaya Neem Mask.jpeg" data-description="himalaya Neem Mask soothes acne, purifies skin, promotes clear complexion.">
+            <img src="../images/skincare/himalaya Neem Mask.jpeg" alt="himalaya Neem Mask">
+            <h3>himalaya Neem Mask</h3>
+            <p class="price">Ksh 1300</p>
+            <p class="description">himalaya Neem Mask soothes acne, purifies skin, promotes clear complexion.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="91" data-name="NIVEA Cocoa Butter Cream" data-price="1200" data-image="../images/skincare/NIVEA Cocoa Butter Cream.jpeg" data-description="NIVEA Cocoa Butter Cream hydrates, softens skin, nourishes for radiant glow.">
+            <img src="../images/skincare/NIVEA Cocoa Butter Cream.jpeg" alt="NIVEA Cocoa Butter Cream">
+            <h3>NIVEA Cocoa Butter Cream</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">NIVEA Cocoa Butter Cream hydrates, softens skin, nourishes for radiant glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="92" data-name="Raw Honey Face Scrub" data-price="1200" data-image="../images/skincare/Raw Honey Face Scrub.jpeg" data-description="Raw Honey Face Scrub exfoliates skin, smooths texture, reveals radiant, clear glow.">
+            <img src="../images/skincare/Raw Honey Face Scrub.jpeg" alt="Raw Honey Face Scrub">
+            <h3>Raw Honey Face Scrub</h3>
+            <p class="price">Ksh 1200</p>
+            <p class="description">Raw Honey Face Scrub exfoliates skin, smooths texture, reveals radiant, clear glow.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="99" data-name="Sheth Naturals Milk Soap" data-price="900" data-image="../images/skincare/Goat Milk Soap.jpeg" data-description="Sheth Naturals Milk Soap cleanses, hydrates skin, leaves it soft, radiant.">
+            <img src="../images/skincare/Goat Milk Soap.jpeg" alt="Sheth Naturals Milk Soap">
+            <h3>Sheth Naturals Milk Soap</h3>
+            <p class="price">Ksh 900</p>
+            <p class="description">Sheth Naturals Milk Soap cleanses, hydrates skin, leaves it soft, radiant.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Details -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> support@beautystore.com</p>
+                <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Official Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="footer-section contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 BeautyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/product.js"></script>
+    <script src="../scripts/main.js"></script>
+    
+</body>
+</html>
