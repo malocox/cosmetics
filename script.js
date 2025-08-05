@@ -1,3 +1,6 @@
+// Set backend URL
+const backendURL = "https://visa-login-signup.onrender.com/api/auth";
+
 // Switch Forms
 function switchToSignup() {
     document.getElementById("loginForm").style.display = "none";
@@ -17,7 +20,7 @@ document.getElementById("signup").addEventListener("submit", async function (eve
     const password = document.getElementById("signupPassword").value;
     const message = document.getElementById("signupMessage");
 
-    const response = await fetch("http://localhost:5000/api/auth/signup", {
+    const response = await fetch(`${backendURL}/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -38,7 +41,7 @@ document.getElementById("login").addEventListener("submit", async function (even
     const password = document.getElementById("loginPassword").value;
     const message = document.getElementById("loginMessage");
 
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${backendURL}/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
