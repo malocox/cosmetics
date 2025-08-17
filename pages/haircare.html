@@ -3,684 +3,674 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haircare - Beauty & Cosmetics Store</title>
+    <title>Skincare - Beauty & Cosmetics Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/products.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../images/logoo.png" alt="Beauty Store Logo">
-        </div>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./homepage.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./skincare.html">Skincare</a></li>
-                        <li><a href="./deodorants.html">Deodorants</a></li>
-                        <li><a href="./haircare.html">Haircare</a></li>
-                        <li><a href="./Beautytool.html">Beauty Tools</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="cart-login-container">
-            <a href="cart.html" class="cart-btn">
-                <i class="fa fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </a>
-            <button class="login-btn">
-                <i class="fa-solid fa-user"></i> Login
-            </button>
-        </div>
-    </header>
+<header>
+    <div class="logo">
+        <img src="../images/logoo.png" alt="Beauty Store Logo" />
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/skincare.html">Skincare</a></li>
+            <li><a href="../pages/haircare.html">Haircare</a></li>
+            <li><a href="../pages/deodorants.html">Deodorants</a></li>
+            <li><a href="../pages/Beautytool.html">Beauty Tools</a></li>
+        </ul>
+    </nav>
+    <div class="actions">
+        <button class="search-toggle" aria-label="Toggle search">
+            <i class="fas fa-search"></i>
+        </button>
+        <a href="../pages/cart.html" class="cart-btn" aria-label="View cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </a>
+        <button class="login-btn">
+            <i class="fa-solid fa-user"></i> Login
+        </button>
+    </div>
+    <div class="search-bar-container">
+        <input type="text" id="search-input" placeholder="Search products..." aria-label="Search products" />
+        <div id="search-results" class="search-results"></div>
+    </div>
+</header>
 
-    <section class="hero-section" style="background-image: url('images/haircare-hero.jpg');">
-        <div class="hero-content">
-            <h1>Haircare</h1>
-            <p>Explore our nourishing haircare products to hydrate, strengthen, and enhance shine daily.</p>
-        </div>
-    </section>
+<section class="hero-section" style="background-image: url('../images/hero/haircare.png');">
+    <div class="hero-content">
+        <h1>Haircare</h1>
+        <p>Explore our nourishing haircare products to hydrate, strengthen, and enhance shine daily.</p>
+    </div>
+</section>
 
-    <section class="products-container">
-        <div class="product" data-id="1" data-name="Creme Of Nature Argan Oil" data-price="800" data-image="../images/haircare/Creme Of Nature Argan Oil.jpeg" data-description="Gently cleanses, hydrates, promotes growth, sulfate-free for curly hair daily use.">
-            <img src="../images/haircare/Creme Of Nature Argan Oil.jpeg" alt="Marini Naturals Moisturizing Shampoo">
-            <h3>Creme Of Nature Argan Oil</h3>
-            <p class="price">Ksh 800</p>
-            <p class="description">Gently cleanses, hydrates, promotes growth, sulfate-free for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="2" data-name="Cantu Curl Activator Cream" data-price="1200" data-image="../images/haircare/Cantu Curl Activator Cream.jpeg" data-description="Defines curls, reduces frizz, deeply hydrates for vibrant, manageable hair daily.">
-            <img src="../images/haircare/Cantu Curl Activator Cream.jpeg" alt="Cantu Curl Activator Cream">
-            <h3>Cantu Curl Activator Cream</h3>
-            <p class="price">Ksh 1200</p>
-            <p class="description">Defines curls, reduces frizz, deeply hydrates for vibrant, manageable hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="3" data-name="Dark & Lovely Anti-Breakage Shampoo" data-price="650" data-image="../images/haircare/Dark & Lovely Anti-Breakage Shampoo.jpeg" data-description="Cleanses, strengthens, reduces breakage, nourishes curly hair for healthy daily shine.">
-            <img src="../images/haircare/Dark & Lovely Anti-Breakage Shampoo.jpeg" alt="Dark & Lovely Anti-Breakage Shampoo">
-            <h3>Dark & Lovely Anti-Breakage Shampoo</h3>
-            <p class="price">Ksh 650</p>
-            <p class="description">Cleanses, strengthens, reduces breakage, nourishes curly hair for healthy daily shine.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="4" data-name="Tresemmé Keratin Smooth Shampoo" data-price="600" data-image="../images/haircare/Tresemmé Keratin Smooth Shampoo.jpeg" data-description="Tames frizz, smoothens, adds shine, nourishes all hair types for daily use.">
-            <img src="../images/haircare/Tresemmé Keratin Smooth Shampoo.jpeg" alt="Tresemmé Keratin Smooth Shampoo">
-            <h3>Tresemmé Keratin Smooth Shampoo</h3>
-            <p class="price">Ksh 600</p>
-            <p class="description">Tames frizz, smoothens, adds shine, nourishes all hair types for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="5" data-name="L’Oréal Elseve Extraordinary Oil" data-price="800" data-image="../images/haircare/L’Oréal Elseve Extraordinary Oil.jpeg" data-description="Nourishes, softens, adds radiant shine to dry hair for daily smooth styling.">
-            <img src="../images/haircare/L’Oréal Elseve Extraordinary Oil.jpeg" alt="L’Oréal Elseve Extraordinary Oil">
-            <h3>L’Oréal Elseve Extraordinary Oil</h3>
-            <p class="price">Ksh 800</p>
-            <p class="description">Nourishes, softens, adds radiant shine to dry hair for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="6" data-name="Naturals Coconut Hair Oil" data-price="700" data-image="../images/haircare/Naturals Coconut Hair Oil.jpeg" data-description="Strengthens, moisturizes, reduces breakage, adds shine for curly hair daily use.">
-            <img src="../images/haircare/Naturals Coconut Hair Oil.jpeg" alt="Naturals Coconut Hair Oil">
-            <h3>Naturals Coconut Hair Oil</h3>
-            <p class="price">Ksh 700</p>
-            <p class="description">Strengthens, moisturizes, reduces breakage, adds shine for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="7" data-name="Dove Intense Repair Conditioner" data-price="400" data-image="../images/haircare/Dove Intense Repair Conditioner.jpeg" data-description="Restores damaged hair, hydrates, strengthens, promotes smooth, healthy strands daily use.">
-            <img src="../images/haircare/Dove Intense Repair Conditioner.jpeg" alt="Dove Intense Repair Conditioner">
-            <h3>Dove Intense Repair Conditioner</h3>
-            <p class="price">Ksh 400</p>
-            <p class="description">Restores damaged hair, hydrates, strengthens, promotes smooth, healthy strands daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="8" data-name="Head & Shoulders Dandruff Shampoo" data-price="500" data-image="../images/haircare/Head & Shoulders Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.">
-            <img src="../images/haircare/Head & Shoulders Dandruff Shampoo.jpeg" alt="Head & Shoulders Dandruff Shampoo">
-            <h3>Head & Shoulders Dandruff Shampoo</h3>
-            <p class="price">Ksh 500</p>
-            <p class="description">Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="9" data-name="Garnier Fructis Hair Food Banana" data-price="700" data-image="../images/haircare/Garnier Fructis Hair Food Banana.jpeg" data-description="Nourishes, hydrates dry hair, adds shine, natural ingredients for daily smooth styling.">
-            <img src="../images/haircare/Garnier Fructis Hair Food Banana.jpeg" alt="Garnier Fructis Hair Food Banana">
-            <h3>Garnier Fructis Hair Food Banana</h3>
-            <p class="price">Ksh 700</p>
-            <p class="description">Nourishes, hydrates dry hair, adds shine, natural ingredients for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="10" data-name="Pantene Pro-V Daily Moisture Shampoo" data-price="550" data-image="../images/haircare/Pantene Pro-V Daily Moisture Shampoo.jpeg" data-description="Hydrates, strengthens, adds shine, nourishes all hair types for daily healthy look.">
-            <img src="../images/haircare/Pantene Pro-V Daily Moisture Shampoo.jpeg" alt="Pantene Pro-V Daily Moisture Shampoo">
-            <h3>Pantene Pro-V Daily Moisture Shampoo</h3>
-            <p class="price">Ksh 550</p>
-            <p class="description">Hydrates, strengthens, adds shine, nourishes all hair types for daily healthy look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="11" data-name="Sunsilk Thick & Long Shampoo" data-price="350" data-image="../images/haircare/Sunsilk Thick & Long Shampoo.jpeg" data-description="Nourishes, strengthens, promotes longer, thicker hair for all types daily use.">
-            <img src="../images/haircare/Sunsilk Thick & Long Shampoo.jpeg" alt="Sunsilk Thick & Long Shampoo">
-            <h3>Sunsilk Thick & Long Shampoo</h3>
-            <p class="price">Ksh 350</p>
-            <p class="description">Nourishes, strengthens, promotes longer, thicker hair for all types daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="12" data-name="Herbal Essences Argan Oil Shampoo" data-price="900" data-image="../images/haircare/Herbal Essences Argan Oil Shampoo.jpeg" data-description="Repairs, nourishes, adds shine, natural ingredients for smooth hair daily use.">
-            <img src="../images/haircare/Herbal Essences Argan Oil Shampoo.jpeg" alt="Herbal Essences Argan Oil Shampoo">
-            <h3>Herbal Essences Argan Oil Shampoo</h3>
-            <p class="price">Ksh 900</p>
-            <p class="description">Repairs, nourishes, adds shine, natural ingredients for smooth hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="13" data-name="Mizani True Textures Shampoo" data-price="1100" data-image="../images/haircare/Mizani True Textures Shampoo.jpeg" data-description="Cleanses, hydrates curly hair, sulfate-free, promotes defined curls for daily use.">
-            <img src="../images/haircare/Mizani True Textures Shampoo.jpeg" alt="Mizani True Textures Shampoo">
-            <h3>Mizani True Textures Shampoo</h3>
-            <p class="price">Ksh 1100</p>
-            <p class="description">Cleanses, hydrates curly hair, sulfate-free, promotes defined curls for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="14" data-name="Organics Hair Mayonnaise" data-price="850" data-image="../images/haircare/Organics Hair Mayonnaise.jpeg" data-description="Deeply conditions, repairs damage, strengthens curly hair for weekly nourishing treatment.">
-            <img src="../images/haircare/Organics Hair Mayonnaise.jpeg" alt="Organics Hair Mayonnaise">
-            <h3>Organics Hair Mayonnaise</h3>
-            <p class="price">Ksh 850</p>
-            <p class="description">Deeply conditions, repairs damage, strengthens curly hair for weekly nourishing treatment.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="15" data-name="NIVEA Repair & Care Shampoo" data-price="450" data-image="../images/haircare/NIVEA Repair & Care Shampoo.jpeg" data-description="Hydrates, repairs damaged hair, adds shine, strengthens strands for daily use.">
-            <img src="../images/haircare/NIVEA Repair & Care Shampoo.jpeg" alt="NIVEA Repair & Care Shampoo">
-            <h3>NIVEA Repair & Care Shampoo</h3>
-            <p class="price">Ksh 450</p>
-            <p class="description">Hydrates, repairs damaged hair, adds shine, strengthens strands for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="16" data-name="As I Am Curl Clarity Shampoo" data-price="1300" data-image="../images/haircare/As I Am Curl Clarity Shampoo.jpeg" data-description="Cleanses, defines curls, hydrates, sulfate-free for curly hair daily use.">
-            <img src="../images/haircare/As I Am Curl Clarity Shampoo.jpeg" alt="As I Am Curl Clarity Shampoo">
-            <h3>As I Am Curl Clarity Shampoo</h3>
-            <p class="price">Ksh 1300</p>
-            <p class="description">Cleanses, defines curls, hydrates, sulfate-free for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="17" data-name="SheaMoisture Coconut & Hibiscus Shampoo" data-price="1200" data-image="../images/haircare/SheaMoisture Coconut & Hibiscus Shampoo.jpeg" data-description="Hydrates, defines curls, adds shine, natural ingredients for curly hair daily.">
-            <img src="../images/haircare/SheaMoisture Coconut & Hibiscus Shampoo.jpeg" alt="SheaMoisture Coconut & Hibiscus Shampoo">
-            <h3>SheaMoisture Coconut & Hibiscus Shampoo</h3>
-            <p class="price">Ksh 1200</p>
-            <p class="description">Hydrates, defines curls, adds shine, natural ingredients for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="18" data-name="Hello Hydration Shampoo" data-price="300" data-image="../images/haircare/Hello Hydration Shampoo.jpeg" data-description="Cleanses, nourishes, strengthens hair, natural extracts for all types daily use.">
-            <img src="../images/haircare/Hello Hydration Shampoo.jpeg" alt="Hello Hydration Shampoo">
-            <h3>Hello Hydration Shampoo</h3>
-            <p class="price">Ksh 300</p>
-            <p class="description">Cleanses, nourishes, strengthens hair, natural extracts for all types daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="19" data-name="Coconut Shampoo 500ml" data-price="350" data-image="../images/haircare/Coconut Shampoo 500ml.jpeg" data-description="Cleanses, hydrates, adds shine, nourishes all hair types for daily use.">
-            <img src="../images/haircare/Coconut Shampoo 500ml.jpeg" alt="Coconut Shampoo 500ml">
-            <h3>Coconut Shampoo 500ml</h3>
-            <p class="price">Ksh 350</p>
-            <p class="description">Cleanses, hydrates, adds shine, nourishes all hair types for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="20" data-name="Moroccanoil Moisture Repair Shampoo" data-price="2000" data-image="../images/haircare/Moroccanoil Moisture Repair Shampoo.jpeg" data-description="Restores, hydrates damaged hair, adds shine, premium formula for daily use.">
-            <img src="../images/haircare/Moroccanoil Moisture Repair Shampoo.jpeg" alt="Moroccanoil Moisture Repair Shampoo">
-            <h3>Moroccanoil Moisture Repair Shampoo</h3>
-            <p class="price">Ksh 2000</p>
-            <p class="description">Restores, hydrates damaged hair, adds shine, premium formula for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="21" data-name="Olaplex No.4 Bond Maintenance Shampoo" data-price="3000" data-image="../images/haircare/Olaplex No.4 Bond Maintenance Shampoo.jpeg" data-description="Repairs, strengthens, hydrates all hair types, premium formula for daily use.">
-            <img src="../images/haircare/Olaplex No.4 Bond Maintenance Shampoo.jpeg" alt="Olaplex No.4 Bond Maintenance Shampoo">
-            <h3>Olaplex No.4 Bond Maintenance Shampoo</h3>
-            <p class="price">Ksh 3000</p>
-            <p class="description">Repairs, strengthens, hydrates all hair types, premium formula for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="22" data-name="Mielle Organics Rosemary Mint Oil" data-price="1500" data-image="../images/haircare/Mielle Organics Rosemary Mint Oil.jpeg" data-description="Promotes growth, strengthens, nourishes scalp, natural ingredients for curly hair daily.">
-            <img src="../images/haircare/Mielle Organics Rosemary Mint Oil.jpeg" alt="Mielle Organics Rosemary Mint Oil">
-            <h3>Mielle Organics Rosemary Mint Oil</h3>
-            <p class="price">Ksh 1500</p>
-            <p class="description">Promotes growth, strengthens, nourishes scalp, natural ingredients for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="23" data-name="Cantu Leave-In Conditioning Cream" data-price="1100" data-image="../images/haircare/Cantu Leave-In Conditioning Cream.jpeg" data-description="Hydrates, detangles, reduces frizz, defines curls for curly hair daily use.">
-            <img src="../images/haircare/Cantu Leave-In Conditioning Cream.jpeg" alt="Cantu Leave-In Conditioning Cream">
-            <h3>Cantu Leave-In Conditioning Cream</h3>
-            <p class="price">Ksh 1100</p>
-            <p class="description">Hydrates, detangles, reduces frizz, defines curls for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="24" data-name="Dark & Lovely Moisture Plus Conditioner" data-price="660" data-image="../images/haircare/Dark & Lovely Moisture Plus Conditioner.jpeg" data-description="Hydrates, detangles, softens curly hair, adds shine for daily smooth styling.">
-            <img src="../images/haircare/Dark & Lovely Moisture Plus Conditioner.jpeg" alt="Dark & Lovely Moisture Plus Conditioner">
-            <h3>Dark & Lovely Moisture Plus Conditioner</h3>
-            <p class="price">Ksh 660</p>
-            <p class="description">Hydrates, detangles, softens curly hair, adds shine for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="25" data-name="Tresemme Conditioner Colour Revitalise 940ml" data-price="620" data-image="../images/haircare/Tresemme Conditioner Colour Revitalise 940ml.jpeg" data-description="Protects, hydrates colored hair, enhances shine, maintains vibrancy for daily use.">
-            <img src="../images/haircare/Tresemme Conditioner Colour Revitalise 940ml.jpeg" alt="Tresemme Conditioner Colour Revitalise 940ml">
-            <h3>Tresemme Conditioner Colour Revitalise 940ml</h3>
-            <p class="price">Ksh 620</p>
-            <p class="description">Protects, hydrates colored hair, enhances shine, maintains vibrancy for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="26" data-name="L’Oréal Paris Dream Lengths Conditioner" data-price="820" data-image="../images/haircare/L’Oréal Paris Dream Lengths Conditioner.jpeg" data-description="Detangles, strengthens, promotes longer hair, adds shine for daily smooth styling.">
-            <img src="../images/haircare/L’Oréal Paris Dream Lengths Conditioner.jpeg" alt="L’Oréal Paris Dream Lengths Conditioner">
-            <h3>L’Oréal Paris Dream Lengths Conditioner</h3>
-            <p class="price">Ksh 820</p>
-            <p class="description">Detangles, strengthens, promotes longer hair, adds shine for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="27" data-name="Garnier Fructis Hair Food Aloe Vera" data-price="710" data-image="../images/haircare/Garnier Fructis Hair Food Aloe Vera.jpeg" data-description="Hydrates, soothes scalp, nourishes hair, natural ingredients for daily smooth styling.">
-            <img src="../images/haircare/Garnier Fructis Hair Food Aloe Vera.jpeg" alt="Garnier Fructis Hair Food Aloe Vera">
-            <h3>Garnier Fructis Hair Food Aloe Vera</h3>
-            <p class="price">Ksh 710</p>
-            <p class="description">Hydrates, soothes scalp, nourishes hair, natural ingredients for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="28" data-name="Pantene Pro-V Smooth & Sleek Conditioner" data-price="560" data-image="../images/haircare/Pantene Pro-V Smooth & Sleek Conditioner.jpeg" data-description="Tames frizz, hydrates, adds shine, smoothens all hair types for daily use.">
-            <img src="../images/haircare/Pantene Pro-V Smooth & Sleek Conditioner.jpeg" alt="Pantene Pro-V Smooth & Sleek Conditioner">
-            <h3>Pantene Pro-V Smooth & Sleek Conditioner</h3>
-            <p class="price">Ksh 560</p>
-            <p class="description">Tames frizz, hydrates, adds shine, smoothens all hair types for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="29" data-name="Sunsilk Soft & Smooth Conditioner" data-price="360" data-image="../images/haircare/Sunsilk Soft & Smooth Conditioner.jpeg" data-description="Hydrates, softens, reduces frizz, nourishes all hair types for daily smooth styling.">
-            <img src="../images/haircare/Sunsilk Soft & Smooth Conditioner.jpeg" alt="Sunsilk Soft & Smooth Conditioner">
-            <h3>Sunsilk Soft & Smooth Conditioner</h3>
-            <p class="price">Ksh 360</p>
-            <p class="description">Hydrates, softens, reduces frizz, nourishes all hair types for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="30" data-name="Herbal Essences Coconut Milk Conditioner" data-price="910" data-image="../images/haircare/Herbal Essences Coconut Milk Conditioner.jpeg" data-description="Hydrates, nourishes, adds shine, natural ingredients for smooth hair daily use.">
-            <img src="../images/haircare/Herbal Essences Coconut Milk Conditioner.jpeg" alt="Herbal Essences Coconut Milk Conditioner">
-            <h3>Herbal Essences Coconut Milk Conditioner</h3>
-            <p class="price">Ksh 910</p>
-            <p class="description">Hydrates, nourishes, adds shine, natural ingredients for smooth hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="31" data-name="Mizani Butter Blend Conditioner" data-price="1200" data-image="../images/haircare/Mizani Butter Blend Conditioner.jpeg" data-description="Hydrates, detangles curly hair, adds shine, nourishes for daily smooth styling.">
-            <img src="../images/haircare/Mizani Butter Blend Conditioner.jpeg" alt="Mizani Butter Blend Conditioner">
-            <h3>Mizani Butter Blend Conditioner</h3>
-            <p class="price">Ksh 1200</p>
-            <p class="description">Hydrates, detangles curly hair, adds shine, nourishes for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="32" data-name="Avocado Oil - 16 OZ" data-price="550" data-image="../images/haircare/Avocado Oil - 16 OZ.jpeg" data-description="Nourishes, strengthens, reduces breakage, adds shine for curly hair daily use.">
-            <img src="../images/haircare/Avocado Oil - 16 OZ.jpeg" alt="Avocado Oil - 16 OZ">
-            <h3>Avocado Oil - 16 OZ</h3>
-            <p class="price">Ksh 550</p>
-            <p class="description">Nourishes, strengthens, reduces breakage, adds shine for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="33" data-name="Marini Naturals Leave-In Conditioner" data-price="850" data-image="../images/haircare/Marini Naturals Leave-In Conditioner.jpeg" data-description="Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.">
-            <img src="../images/haircare/Marini Naturals Leave-In Conditioner.jpeg" alt="Marini Naturals Leave-In Conditioner">
-            <h3>Marini Naturals Leave-In Conditioner</h3>
-            <p class="price">Ksh 850</p>
-            <p class="description">Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="34" data-name="SheaMoisture Manuka Honey Mask" data-price="1300" data-image="../images/haircare/SheaMoisture Manuka Honey Mask.jpeg" data-description="Deeply conditions, hydrates, strengthens curly hair, natural ingredients for weekly use.">
-            <img src="../images/haircare/SheaMoisture Manuka Honey Mask.jpeg" alt="SheaMoisture Manuka Honey Mask">
-            <h3>SheaMoisture Manuka Honey Mask</h3>
-            <p class="price">Ksh 1300</p>
-            <p class="description">Deeply conditions, hydrates, strengthens curly hair, natural ingredients for weekly use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="35" data-name="Anti Hair Loss Scalp Tonic - 100ml" data-price="600" data-image="../images/haircare/Anti Hair Loss Scalp Tonic - 100ml.jpeg" data-description="Soothes, nourishes scalp, promotes healthy hair growth, reduces loss daily use.">
-            <img src="../images/haircare/Anti Hair Loss Scalp Tonic - 100ml.jpeg" alt="Anti Hair Loss Scalp Tonic - 100ml">
-            <h3>Anti Hair Loss Scalp Tonic - 100ml</h3>
-            <p class="price">Ksh 600</p>
-            <p class="description">Soothes, nourishes scalp, promotes healthy hair growth, reduces loss daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="36" data-name="As I Am Dry & Itchy Shampoo" data-price="1400" data-image="../images/haircare/As I Am Dry & Itchy Shampoo.jpeg" data-description="Soothes scalp, cleanses, hydrates curly hair, reduces flakes for daily use.">
-            <img src="../images/haircare/As I Am Dry & Itchy Shampoo.jpeg" alt="As I Am Dry & Itchy Shampoo">
-            <h3>As I Am Dry & Itchy Shampoo</h3>
-            <p class="price">Ksh 1400</p>
-            <p class="description">Soothes scalp, cleanses, hydrates curly hair, reduces flakes for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="37" data-name="Moroccanoil Intense Curl Cream" data-price="2200" data-image="../images/haircare/Moroccanoil Intense Curl Cream.jpeg" data-description="Defines, hydrates curls, reduces frizz, adds shine, premium for daily styling.">
-            <img src="../images/haircare/Moroccanoil Intense Curl Cream.jpeg" alt="Moroccanoil Intense Curl Cream">
-            <h3>Moroccanoil Intense Curl Cream</h3>
-            <p class="price">Ksh 2200</p>
-            <p class="description">Defines, hydrates curls, reduces frizz, adds shine, premium for daily styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="38" data-name="Olaplex No.5 Bond Maintenance Conditioner" data-price="3000" data-image="../images/haircare/Olaplex No.5 Bond Maintenance Conditioner.jpeg" data-description="Repairs, hydrates, strengthens all hair types, premium formula for daily use.">
-            <img src="../images/haircare/Olaplex No.5 Bond Maintenance Conditioner.jpeg" alt="Olaplex No.5 Bond Maintenance Conditioner">
-            <h3>Olaplex No.5 Bond Maintenance Conditioner</h3>
-            <p class="price">Ksh 3000</p>
-            <p class="description">Repairs, hydrates, strengthens all hair types, premium formula for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="39" data-name="Mielle Organics Babassu Oil Conditioner" data-price="1400" data-image="../images/haircare/Mielle Organics Babassu Oil Conditioner.jpeg" data-description="Hydrates, detangles, strengthens curly hair, natural ingredients for daily smooth styling.">
-            <img src="../images/haircare/Mielle Organics Babassu Oil Conditioner.jpeg" alt="Mielle Organics Babassu Oil Conditioner">
-            <h3>Mielle Organics Babassu Oil Conditioner</h3>
-            <p class="price">Ksh 1400</p>
-            <p class="description">Hydrates, detangles, strengthens curly hair, natural ingredients for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="40" data-name="Cantu Apple Cider Vinegar Rinse" data-price="1000" data-image="../images/haircare/Cantu Apple Cider Vinegar Rinse.jpeg" data-description="Clarifies, soothes scalp, promotes healthy hair growth for curly hair daily.">
-            <img src="../images/haircare/Cantu Apple Cider Vinegar Rinse.jpeg" alt="Cantu Apple Cider Vinegar Rinse">
-            <h3>Cantu Apple Cider Vinegar Rinse</h3>
-            <p class="price">Ksh 1000</p>
-            <p class="description">Clarifies, soothes scalp, promotes healthy hair growth for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="41" data-name="Dark & Lovely Amla Legend Oil" data-price="700" data-image="../images/haircare/Dark & Lovely Amla Legend Oil.jpeg" data-description="Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.">
-            <img src="../images/haircare/Dark & Lovely Amla Legend Oil.jpeg" alt="Dark & Lovely Amla Legend Oil">
-            <h3>Dark & Lovely Amla Legend Oil</h3>
-            <p class="price">Ksh 700</p>
-            <p class="description">Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="42" data-name="Tresemmé Botanique Nourish Shampoo" data-price="650" data-image="../images/haircare/Tresemmé Botanique Nourish Shampoo.jpeg" data-description="Hydrates, strengthens, nourishes all hair types, natural ingredients for daily use.">
-            <img src="../images/haircare/Tresemmé Botanique Nourish Shampoo.jpeg" alt="Tresemmé Botanique Nourish Shampoo">
-            <h3>Tresemmé Botanique Nourish Shampoo</h3>
-            <p class="price">Ksh 650</p>
-            <p class="description">Hydrates, strengthens, nourishes all hair types, natural ingredients for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="43" data-name="L’Oréal Paris Elvive Total Repair" data-price="850" data-image="../images/haircare/L’Oréal Paris Elvive Total Repair.jpeg" data-description="Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.">
-            <img src="../images/haircare/L’Oréal Paris Elvive Total Repair.jpeg" alt="L’Oréal Paris Elvive Total Repair">
-            <h3>L’Oréal Paris Elvive Total Repair</h3>
-            <p class="price">Ksh 850</p>
-            <p class="description">Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="44" data-name="Garnier Ultimate Blends Oat Milk" data-price="720" data-image="../images/haircare/Garnier Ultimate Blends Oat Milk.jpeg" data-description="Soothes, hydrates sensitive scalps, nourishes hair, natural ingredients for daily use.">
-            <img src="../images/haircare/Garnier Ultimate Blends Oat Milk.jpeg" alt="Garnier Ultimate Blends Oat Milk">
-            <h3>Garnier Ultimate Blends Oat Milk</h3>
-            <p class="price">Ksh 720</p>
-            <p class="description">Soothes, hydrates sensitive scalps, nourishes hair, natural ingredients for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="45" data-name="Pantene Pro-V Anti-Dandruff Shampoo" data-price="560" data-image="../images/haircare/Pantene Pro-V Anti-Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, strengthens hair for daily healthy look.">
-            <img src="../images/haircare/Pantene Pro-V Anti-Dandruff Shampoo.jpeg" alt="Pantene Pro-V Anti-Dandruff Shampoo">
-            <h3>Pantene Pro-V Anti-Dandruff Shampoo</h3>
-            <p class="price">Ksh 560</p>
-            <p class="description">Cleanses, soothes scalp, reduces flakes, strengthens hair for daily healthy look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="46" data-name="Herbal Essences Passion Flower Shampoo" data-price="920" data-image="../images/haircare/Herbal Essences Passion Flower Shampoo.jpeg" data-description="Hydrates, adds vibrancy, nourishes hair, natural ingredients for daily smooth styling.">
-            <img src="../images/haircare/Herbal Essences Passion Flower Shampoo.jpeg" alt="Herbal Essences Passion Flower Shampoo">
-            <h3>Herbal Essences Passion Flower Shampoo</h3>
-            <p class="price">Ksh 920</p>
-            <p class="description">Hydrates, adds vibrancy, nourishes hair, natural ingredients for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="47" data-name="Mizani Scalp Care Conditioner" data-price="1150" data-image="../images/haircare/Mizani Scalp Care Conditioner.jpeg" data-description="Soothes, hydrates scalp, strengthens curly hair, adds shine for daily use.">
-            <img src="../images/haircare/Mizani Scalp Care Conditioner.jpeg" alt="Mizani Scalp Care Conditioner">
-            <h3>Mizani Scalp Care Conditioner</h3>
-            <p class="price">Ksh 1150</p>
-            <p class="description">Soothes, hydrates scalp, strengthens curly hair, adds shine for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="48" data-name="Africare Jojoba Oil" data-price="580" data-image="../images/haircare/Africare Jojoba Oil.jpeg" data-description="Nourishes, promotes growth, reduces dryness, adds shine for curly hair daily.">
-            <img src="../images/haircare/Africare Jojoba Oil.jpeg" alt="Africare Jojoba Oil">
-            <h3>Africare Jojoba Oil</h3>
-            <p class="price">Ksh 580</p>
-            <p class="description">Nourishes, promotes growth, reduces dryness, adds shine for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="49" data-name="Jamaican Black Castor Oil" data-price="1300" data-image="../images/haircare/Jamaican Black Castor Oil.jpeg" data-description="Strengthens, promotes growth, hydrates curly hair, natural ingredients for daily use.">
-            <img src="../images/haircare/Jamaican Black Castor Oil.jpeg" alt="Jamaican Black Castor Oil">
-            <h3>Jamaican Black Castor Oil</h3>
-            <p class="price">Ksh 1300</p>
-            <p class="description">Strengthens, promotes growth, hydrates curly hair, natural ingredients for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="50" data-name="As I Am Coconut CoWash" data-price="1350" data-image="../images/haircare/As I Am Coconut CoWash.jpeg" data-description="Cleanses, conditions curls, hydrates, prevents stripping for curly hair daily use.">
-            <img src="../images/haircare/As I Am Coconut CoWash.jpeg" alt="As I Am Coconut CoWash">
-            <h3>As I Am Coconut CoWash</h3>
-            <p class="price">Ksh 1350</p>
-            <p class="description">Cleanses, conditions curls, hydrates, prevents stripping for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="51" data-name="Moroccanoil Dry Scalp Treatment" data-price="2500" data-image="../images/haircare/Moroccanoil Dry Scalp Treatment.jpeg" data-description="Soothes, hydrates scalp, reduces flaking, premium formula for daily healthy hair.">
-            <img src="../images/haircare/Moroccanoil Dry Scalp Treatment.jpeg" alt="Moroccanoil Dry Scalp Treatment">
-            <h3>Moroccanoil Dry Scalp Treatment</h3>
-            <p class="price">Ksh 2500</p>
-            <p class="description">Soothes, hydrates scalp, reduces flaking, premium formula for daily healthy hair.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="52" data-name="Olaplex No.3 Hair Perfector" data-price="3500" data-image="../images/haircare/Olaplex No.3 Hair Perfector.jpeg" data-description="Repairs, strengthens damaged hair, premium treatment for weekly use, enhances shine.">
-            <img src="../images/haircare/Olaplex No.3 Hair Perfector.jpeg" alt="Olaplex No.3 Hair Perfector">
-            <h3>Olaplex No.3 Hair Perfector</h3>
-            <p class="price">Ksh 3500</p>
-            <p class="description">Repairs, strengthens damaged hair, premium treatment for weekly use, enhances shine.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="53" data-name="Mielle Organics Pomegranate Curl Serum" data-price="1600" data-image="../images/haircare/Mielle Organics Pomegranate Curl Serum.jpeg" data-description="Defines, hydrates curls, reduces frizz, natural ingredients for curly hair daily.">
-            <img src="../images/haircare/Mielle Organics Pomegranate Curl Serum.jpeg" alt="Mielle Organics Pomegranate Curl Serum">
-            <h3>Mielle Organics Pomegranate Curl Serum</h3>
-            <p class="price">Ksh 1600</p>
-            <p class="description">Defines, hydrates curls, reduces frizz, natural ingredients for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="54" data-name="Cantu Flaxseed Smoothing Oil" data-price="1100" data-image="../images/haircare/Cantu Flaxseed Smoothing Oil.jpeg" data-description="Hydrates, smoothens, reduces frizz, adds shine for curly hair daily use.">
-            <img src="../images/haircare/Cantu Flaxseed Smoothing Oil.jpeg" alt="Cantu Flaxseed Smoothing Oil">
-            <h3>Cantu Flaxseed Smoothing Oil</h3>
-            <p class="price">Ksh 1100</p>
-            <p class="description">Hydrates, smoothens, reduces frizz, adds shine for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="55" data-name="L’Oréal Paris Elvive Colour Protect" data-price="870" data-image="../images/haircare/L’Oréal Paris Elvive Colour Protect.jpeg" data-description="Preserves, hydrates colored hair, enhances shine, maintains vibrancy for daily use.">
-            <img src="../images/haircare/L’Oréal Paris Elvive Colour Protect.jpeg" alt="L’Oréal Paris Elvive Colour Protect">
-            <h3>L’Oréal Paris Elvive Colour Protect</h3>
-            <p class="price">Ksh 870</p>
-            <p class="description">Preserves, hydrates colored hair, enhances shine, maintains vibrancy for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="56" data-name="Garnier Ultimate Blends Honey Mask" data-price="730" data-image="../images/haircare/Garnier Ultimate Blends Honey Mask.jpeg" data-description="Deeply conditions, repairs damaged hair, adds shine, nourishes for weekly use.">
-            <img src="../images/haircare/Garnier Ultimate Blends Honey Mask.jpeg" alt="Garnier Ultimate Blends Honey Mask">
-            <h3>Garnier Ultimate Blends Honey Mask</h3>
-            <p class="price">Ksh 730</p>
-            <p class="description">Deeply conditions, repairs damaged hair, adds shine, nourishes for weekly use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="57" data-name="Pantene Pro-V Volume & Body Shampoo" data-price="570" data-image="../images/haircare/Pantene Pro-V Volume & Body Shampoo.jpeg" data-description="Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.">
-            <img src="../images/haircare/Pantene Pro-V Volume & Body Shampoo.jpeg" alt="Pantene Pro-V Volume & Body Shampoo">
-            <h3>Pantene Pro-V Volume & Body Shampoo</h3>
-            <p class="price">Ksh 570</p>
-            <p class="description">Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="58" data-name="Sunsilk Nourishing Oil Shampoo" data-price="360" data-image="../images/haircare/Sunsilk Nourishing Oil Shampoo.jpeg" data-description="Hydrates, strengthens, adds shine, nourishes dry hair for daily smooth styling.">
-            <img src="../images/haircare/Sunsilk Nourishing Oil Shampoo.jpeg" alt="Sunsilk Nourishing Oil Shampoo">
-            <h3>Sunsilk Nourishing Oil Shampoo</h3>
-            <p class="price">Ksh 360</p>
-            <p class="description">Hydrates, strengthens, adds shine, nourishes dry hair for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="59" data-name="Herbal Essences White Grapefruit Shampoo" data-price="930" data-image="../images/haircare/Herbal Essences White Grapefruit Shampoo.jpeg" data-description="Cleanses, adds volume, nourishes hair, natural ingredients for daily vibrant styling.">
-            <img src="../images/haircare/Herbal Essences White Grapefruit Shampoo.jpeg" alt="Herbal Essences White Grapefruit Shampoo">
-            <h3>Herbal Essences White Grapefruit Shampoo</h3>
-            <p class="price">Ksh 930</p>
-            <p class="description">Cleanses, adds volume, nourishes hair, natural ingredients for daily vibrant styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="60" data-name="Mizani Miracle Length Serum" data-price="1200" data-image="../images/haircare/Mizani Miracle Length Serum.jpeg" data-description="Promotes growth, strengthens, reduces breakage, nourishes curly hair for daily use.">
-            <img src="../images/haircare/Mizani Miracle Length Serum.jpeg" alt="Mizani Miracle Length Serum">
-            <h3>Mizani Miracle Length Serum</h3>
-            <p class="price">Ksh 1200</p>
-            <p class="description">Promotes growth, strengthens, reduces breakage, nourishes curly hair for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="61" data-name="SheaMoisture Moringa & Avocado Shampoo" data-price="1250" data-image="../images/haircare/SheaMoisture Moringa & Avocado Shampoo.jpeg" data-description="Hydrates, strengthens, nourishes curly hair, natural ingredients for daily smooth styling.">
-            <img src="../images/haircare/SheaMoisture Moringa & Avocado Shampoo.jpeg" alt="SheaMoisture Moringa & Avocado Shampoo">
-            <h3>SheaMoisture Moringa & Avocado Shampoo</h3>
-            <p class="price">Ksh 1250</p>
-            <p class="description">Hydrates, strengthens, nourishes curly hair, natural ingredients for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="62" data-name="NIVEA Anti-Dandruff Shampoo" data-price="470" data-image="../images/haircare/NIVEA Anti-Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.">
-            <img src="../images/haircare/NIVEA Anti-Dandruff Shampoo.jpeg" alt="NIVEA Anti-Dandruff Shampoo">
-            <h3>NIVEA Anti-Dandruff Shampoo</h3>
-            <p class="price">Ksh 470</p>
-            <p class="description">Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="63" data-name="As I Am Leave-In Conditioner" data-price="1400" data-image="../images/haircare/As I Am Leave-In Conditioner.jpeg" data-description="Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.">
-            <img src="../images/haircare/As I Am Leave-In Conditioner.jpeg" alt="As I Am Leave-In Conditioner">
-            <h3>As I Am Leave-In Conditioner</h3>
-            <p class="price">Ksh 1400</p>
-            <p class="description">Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="64" data-name="Moroccanoil Treatment Oil" data-price="2600" data-image="../images/haircare/Moroccanoil Treatment Oil.jpeg" data-description="Nourishes, smoothens, adds shine, strengthens all hair types, premium daily use.">
-            <img src="../images/haircare/Moroccanoil Treatment Oil.jpeg" alt="Moroccanoil Treatment Oil">
-            <h3>Moroccanoil Treatment Oil</h3>
-            <p class="price">Ksh 2600</p>
-            <p class="description">Nourishes, smoothens, adds shine, strengthens all hair types, premium daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="65" data-name="Olaplex No.6 Bond Smoother" data-price="3200" data-image="../images/haircare/Olaplex No.6 Bond Smoother.jpeg" data-description="Reduces frizz, hydrates, strengthens hair, premium formula for daily smooth styling.">
-            <img src="../images/haircare/Olaplex No.6 Bond Smoother.jpeg" alt="Olaplex No.6 Bond Smoother">
-            <h3>Olaplex No.6 Bond Smoother</h3>
-            <p class="price">Ksh 3200</p>
-            <p class="description">Reduces frizz, hydrates, strengthens hair, premium formula for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="66" data-name="Mielle Organics White Peony Serum" data-price="1550" data-image="../images/haircare/Mielle Organics White Peony Serum.jpeg" data-description="Hydrates, strengthens, promotes growth, reduces frizz for curly hair daily use.">
-            <img src="../images/haircare/Mielle Organics White Peony Serum.jpeg" alt="Mielle Organics White Peony Serum">
-            <h3>Mielle Organics White Peony Serum</h3>
-            <p class="price">Ksh 1550</p>
-            <p class="description">Hydrates, strengthens, promotes growth, reduces frizz for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="67" data-name="Cantu Shea Butter Hair Lotion" data-price="1150" data-image="../images/haircare/Cantu Shea Butter Hair Lotion.jpeg" data-description="Hydrates, softens, defines curls, reduces frizz for curly hair daily styling.">
-            <img src="../images/haircare/Cantu Shea Butter Hair Lotion.jpeg" alt="Cantu Shea Butter Hair Lotion">
-            <h3>Cantu Shea Butter Hair Lotion</h3>
-            <p class="price">Ksh 1150</p>
-            <p class="description">Hydrates, softens, defines curls, reduces frizz for curly hair daily styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="68" data-name="Dark & Lovely Hair Refresher" data-price="690" data-image="../images/haircare/Dark & Lovely Hair Refresher.jpeg" data-description="Revitalizes, hydrates curly hair, reduces frizz, adds shine for daily styling.">
-            <img src="../images/haircare/Dark & Lovely Hair Refresher.jpeg" alt="Dark & Lovely Hair Refresher">
-            <h3>Dark & Lovely Hair Refresher</h3>
-            <p class="price">Ksh 690</p>
-            <p class="description">Revitalizes, hydrates curly hair, reduces frizz, adds shine for daily styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="69" data-name="Tresemmé Moisture Rich Conditioner" data-price="680" data-image="../images/haircare/Tresemmé Moisture Rich Conditioner.jpeg" data-description="Hydrates, softens, detangles dry hair, adds shine for daily smooth styling.">
-            <img src="../images/haircare/Tresemmé Moisture Rich Conditioner.jpeg" alt="Tresemmé Moisture Rich Conditioner">
-            <h3>Tresemmé Moisture Rich Conditioner</h3>
-            <p class="price">Ksh 680</p>
-            <p class="description">Hydrates, softens, detangles dry hair, adds shine for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="70" data-name="L’Oréal Paris Elvive Low Shampoo" data-price="880" data-image="../images/haircare/L’Oréal Paris Elvive Low Shampoo.jpeg" data-description="Gently cleanses, conditions, hydrates hair, adds shine for daily smooth styling.">
-            <img src="../images/haircare/L’Oréal Paris Elvive Low Shampoo.jpeg" alt="L’Oréal Paris Elvive Low Shampoo">
-            <h3>L’Oréal Paris Elvive Low Shampoo</h3>
-            <p class="price">Ksh 880</p>
-            <p class="description">Gently cleanses, conditions, hydrates hair, adds shine for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="71" data-name="Garnier Ultimate Blends Avocado Oil" data-price="740" data-image="../images/haircare/Garnier Ultimate Blends Avocado Oil.jpeg" data-description="Nourishes, smoothens dry hair, adds shine, natural ingredients for daily styling.">
-            <img src="../images/haircare/Garnier Ultimate Blends Avocado Oil.jpeg" alt="Garnier Ultimate Blends Avocado Oil">
-            <h3>Garnier Ultimate Blends Avocado Oil</h3>
-            <p class="price">Ksh 740</p>
-            <p class="description">Nourishes, smoothens dry hair, adds shine, natural ingredients for daily styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="72" data-name="Pantene Pro-V Repair & Protect Conditioner" data-price="580" data-image="../images/haircare/Pantene Pro-V Repair & Protect Conditioner.jpeg" data-description="Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.">
-            <img src="../images/haircare/Pantene Pro-V Repair & Protect Conditioner.jpeg" alt="Pantene Pro-V Repair & Protect Conditioner">
-            <h3>Pantene Pro-V Repair & Protect Conditioner</h3>
-            <p class="price">Ksh 580</p>
-            <p class="description">Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="73" data-name="Sunsilk Damage Restore Shampoo" data-price="370" data-image="../images/haircare/Sunsilk Damage Restore Shampoo.jpeg" data-description="Repairs, strengthens damaged hair, adds shine, nourishes for daily healthy look.">
-            <img src="../images/haircare/Sunsilk Damage Restore Shampoo.jpeg" alt="Sunsilk Damage Restore Shampoo">
-            <h3>Sunsilk Damage Restore Shampoo</h3>
-            <p class="price">Ksh 370</p>
-            <p class="description">Repairs, strengthens damaged hair, adds shine, nourishes for daily healthy look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="74" data-name="Herbal Essences Rose Hips Shampoo" data-price="940" data-image="../images/haircare/Herbal Essences Rose Hips Shampoo.jpeg" data-description="Smoothens, adds shine, nourishes hair, natural ingredients for daily vibrant styling.">
-            <img src="../images/haircare/Herbal Essences Rose Hips Shampoo.jpeg" alt="Herbal Essences Rose Hips Shampoo">
-            <h3>Herbal Essences Rose Hips Shampoo</h3>
-            <p class="price">Ksh 940</p>
-            <p class="description">Smoothens, adds shine, nourishes hair, natural ingredients for daily vibrant styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="75" data-name="Mizani Thermasmooth Conditioner" data-price="1250" data-image="../images/haircare/Mizani Thermasmooth Conditioner.jpeg" data-description="Smoothens, protects heat-styled curly hair, hydrates, adds shine for daily use.">
-            <img src="../images/haircare/Mizani Thermasmooth Conditioner.jpeg" alt="Mizani Thermasmooth Conditioner">
-            <h3>Mizani Thermasmooth Conditioner</h3>
-            <p class="price">Ksh 1250</p>
-            <p class="description">Smoothens, protects heat-styled curly hair, hydrates, adds shine for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="76" data-name="Africare Olive Oil" data-price="600" data-image="../images/haircare/Africare Olive Oil.jpeg" data-description="Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.">
-            <img src="../images/haircare/Africare Olive Oil.jpeg" alt="Africare Olive Oil">
-            <h3>Africare Olive Oil</h3>
-            <p class="price">Ksh 600</p>
-            <p class="description">Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="77" data-name="SheaMoisture Raw Shea Butter Shampoo" data-price="1300" data-image="../images/haircare/SheaMoisture Raw Shea Butter Shampoo.jpeg" data-description="Hydrates, repairs dry curly hair, adds shine, natural ingredients for daily use.">
-            <img src="../images/haircare/SheaMoisture Raw Shea Butter Shampoo.jpeg" alt="SheaMoisture Raw Shea Butter Shampoo">
-            <h3>SheaMoisture Raw Shea Butter Shampoo</h3>
-            <p class="price">Ksh 1300</p>
-            <p class="description">Hydrates, repairs dry curly hair, adds shine, natural ingredients for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="78" data-name="NIVEA Volume Care Shampoo" data-price="480" data-image="../images/haircare/NIVEA Volume Care Shampoo.jpeg" data-description="Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.">
-            <img src="../images/haircare/NIVEA Volume Care Shampoo.jpeg" alt="NIVEA Volume Care Shampoo">
-            <h3>NIVEA Volume Care Shampoo</h3>
-            <p class="price">Ksh 480</p>
-            <p class="description">Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="79" data-name="As I Am Hydration Elation Conditioner" data-price="1450" data-image="../images/haircare/As I Am Hydration Elation Conditioner.jpeg" data-description="Deeply hydrates, strengthens curly hair, adds shine, detangles for weekly use.">
-            <img src="../images/haircare/As I Am Hydration Elation Conditioner.jpeg" alt="As I Am Hydration Elation Conditioner">
-            <h3>As I Am Hydration Elation Conditioner</h3>
-            <p class="price">Ksh 1450</p>
-            <p class="description">Deeply hydrates, strengthens curly hair, adds shine, detangles for weekly use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="80" data-name="Moroccanoil Clarifying Shampoo" data-price="2100" data-image="../images/haircare/Moroccanoil Clarifying Shampoo.jpeg" data-description="Deeply cleanses, removes buildup, hydrates hair, premium formula for daily use.">
-            <img src="../images/haircare/Moroccanoil Clarifying Shampoo.jpeg" alt="Moroccanoil Clarifying Shampoo">
-            <h3>Moroccanoil Clarifying Shampoo</h3>
-            <p class="price">Ksh 2100</p>
-            <p class="description">Deeply cleanses, removes buildup, hydrates hair, premium formula for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="81" data-name="Olaplex No.7 Bonding Oil" data-price="3300" data-image="../images/haircare/Olaplex No.7 Bonding Oil.jpeg" data-description="Repairs, smoothens, adds shine, strengthens hair, premium formula for daily use.">
-            <img src="../images/haircare/Olaplex No.7 Bonding Oil.jpeg" alt="Olaplex No.7 Bonding Oil">
-            <h3>Olaplex No.7 Bonding Oil</h3>
-            <p class="price">Ksh 3300</p>
-            <p class="description">Repairs, smoothens, adds shine, strengthens hair, premium formula for daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="82" data-name="Mielle Organics Mongongo Oil Pomade" data-price="1500" data-image="../images/haircare/Mielle Organics Mongongo Oil Pomade.jpeg" data-description="Hydrates, styles, reduces frizz, nourishes curly hair, natural ingredients daily use.">
-            <img src="../images/haircare/Mielle Organics Mongongo Oil Pomade.jpeg" alt="Mielle Organics Mongongo Oil Pomade">
-            <h3>Mielle Organics Mongongo Oil Pomade</h3>
-            <p class="price">Ksh 1500</p>
-            <p class="description">Hydrates, styles, reduces frizz, nourishes curly hair, natural ingredients daily use.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="83" data-name="Cantu Coconut Curling Cream" data-price="1200" data-image="../images/haircare/Cantu Coconut Curling Cream.jpeg" data-description="Defines, hydrates curls, reduces frizz, adds shine for curly hair daily.">
-            <img src="../images/haircare/Cantu Coconut Curling Cream.jpeg" alt="Cantu Coconut Curling Cream">
-            <h3>Cantu Coconut Curling Cream</h3>
-            <p class="price">Ksh 1200</p>
-            <p class="description">Defines, hydrates curls, reduces frizz, adds shine for curly hair daily.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="84" data-name="Tresemmé Anti-Frizz Serum" data-price="690" data-image="../images/haircare/Tresemmé Anti-Frizz Serum.jpeg" data-description="Smoothens, reduces frizz, adds shine, nourishes hair for daily sleek styling.">
-            <img src="../images/haircare/Tresemmé Anti-Frizz Serum.jpeg" alt="Tresemmé Anti-Frizz Serum">
-            <h3>Tresemmé Anti-Frizz Serum</h3>
-            <p class="price">Ksh 690</p>
-            <p class="description">Smoothens, reduces frizz, adds shine, nourishes hair for daily sleek styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="85" data-name="L’Oréal Paris Elvive Glycolic Gloss" data-price="900" data-image="../images/haircare/L’Oréal Paris Elvive Glycolic Gloss.jpeg" data-description="Enhances shine, smoothens hair, premium formula for vibrant daily styling.">
-            <img src="../images/haircare/L’Oréal Paris Elvive Glycolic Gloss.jpeg" alt="L’Oréal Paris Elvive Glycolic Gloss">
-            <h3>L’Oréal Paris Elvive Glycolic Gloss</h3>
-            <p class="price">Ksh 900</p>
-            <p class="description">Enhances shine, smoothens hair, premium formula for vibrant daily styling.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-    </section>
+<section class="products-container">
+    <div class="product" data-id="h-1" data-name="Creme Of Nature Argan Oil" data-price="800" data-image="../images/haircare/Creme Of Nature Argan Oil.jpeg" data-description="Gently cleanses, hydrates, promotes growth, sulfate-free for curly hair daily use.">
+        <img src="../images/haircare/Creme Of Nature Argan Oil.jpeg" alt="Creme Of Nature Argan Oil">
+        <h3>Creme Of Nature Argan Oil</h3>
+        <p class="price">Ksh 800</p>
+        <p class="description">Gently cleanses, hydrates, promotes growth, sulfate-free for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-2" data-name="Cantu Curl Activator Cream" data-price="1200" data-image="../images/haircare/Cantu Curl Activator Cream.jpeg" data-description="Defines curls, reduces frizz, deeply hydrates for vibrant, manageable hair daily.">
+        <img src="../images/haircare/Cantu Curl Activator Cream.jpeg" alt="Cantu Curl Activator Cream">
+        <h3>Cantu Curl Activator Cream</h3>
+        <p class="price">Ksh 1200</p>
+        <p class="description">Defines curls, reduces frizz, deeply hydrates for vibrant, manageable hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-3" data-name="Dark & Lovely Anti-Breakage Shampoo" data-price="650" data-image="../images/haircare/Dark & Lovely Anti-Breakage Shampoo.jpeg" data-description="Cleanses, strengthens, reduces breakage, nourishes curly hair for healthy daily shine.">
+        <img src="../images/haircare/Dark & Lovely Anti-Breakage Shampoo.jpeg" alt="Dark & Lovely Anti-Breakage Shampoo">
+        <h3>Dark & Lovely Anti-Breakage Shampoo</h3>
+        <p class="price">Ksh 650</p>
+        <p class="description">Cleanses, strengthens, reduces breakage, nourishes curly hair for healthy daily shine.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-4" data-name="Tresemmé Keratin Smooth Shampoo" data-price="600" data-image="../images/haircare/Tresemmé Keratin Smooth Shampoo.jpeg" data-description="Tames frizz, smoothens, adds shine, nourishes all hair types for daily use.">
+        <img src="../images/haircare/Tresemmé Keratin Smooth Shampoo.jpeg" alt="Tresemmé Keratin Smooth Shampoo">
+        <h3>Tresemmé Keratin Smooth Shampoo</h3>
+        <p class="price">Ksh 600</p>
+        <p class="description">Tames frizz, smoothens, adds shine, nourishes all hair types for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-5" data-name="L’Oréal Elseve Extraordinary Oil" data-price="800" data-image="../images/haircare/L’Oréal Elseve Extraordinary Oil.jpeg" data-description="Nourishes, softens, adds radiant shine to dry hair for daily smooth styling.">
+        <img src="../images/haircare/L’Oréal Elseve Extraordinary Oil.jpeg" alt="L’Oréal Elseve Extraordinary Oil">
+        <h3>L’Oréal Elseve Extraordinary Oil</h3>
+        <p class="price">Ksh 800</p>
+        <p class="description">Nourishes, softens, adds radiant shine to dry hair for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-6" data-name="Naturals Coconut Hair Oil" data-price="700" data-image="../images/haircare/Naturals Coconut Hair Oil.jpeg" data-description="Strengthens, moisturizes, reduces breakage, adds shine for curly hair daily use.">
+        <img src="../images/haircare/Naturals Coconut Hair Oil.jpeg" alt="Naturals Coconut Hair Oil">
+        <h3>Naturals Coconut Hair Oil</h3>
+        <p class="price">Ksh 700</p>
+        <p class="description">Strengthens, moisturizes, reduces breakage, adds shine for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-7" data-name="Dove Intense Repair Conditioner" data-price="400" data-image="../images/haircare/Dove Intense Repair Conditioner.jpeg" data-description="Restores damaged hair, hydrates, strengthens, promotes smooth, healthy strands daily use.">
+        <img src="../images/haircare/Dove Intense Repair Conditioner.jpeg" alt="Dove Intense Repair Conditioner">
+        <h3>Dove Intense Repair Conditioner</h3>
+        <p class="price">Ksh 400</p>
+        <p class="description">Restores damaged hair, hydrates, strengthens, promotes smooth, healthy strands daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-8" data-name="Head & Shoulders Dandruff Shampoo" data-price="500" data-image="../images/haircare/Head & Shoulders Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.">
+        <img src="../images/haircare/Head & Shoulders Dandruff Shampoo.jpeg" alt="Head & Shoulders Dandruff Shampoo">
+        <h3>Head & Shoulders Dandruff Shampoo</h3>
+        <p class="price">Ksh 500</p>
+        <p class="description">Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-9" data-name="Garnier Fructis Hair Food Banana" data-price="700" data-image="../images/haircare/Garnier Fructis Hair Food Banana.jpeg" data-description="Nourishes, hydrates dry hair, adds shine, natural ingredients for daily smooth styling.">
+        <img src="../images/haircare/Garnier Fructis Hair Food Banana.jpeg" alt="Garnier Fructis Hair Food Banana">
+        <h3>Garnier Fructis Hair Food Banana</h3>
+        <p class="price">Ksh 700</p>
+        <p class="description">Nourishes, hydrates dry hair, adds shine, natural ingredients for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-10" data-name="Pantene Pro-V Daily Moisture Shampoo" data-price="550" data-image="../images/haircare/Pantene Pro-V Daily Moisture Shampoo.jpeg" data-description="Hydrates, strengthens, adds shine, nourishes all hair types for daily healthy look.">
+        <img src="../images/haircare/Pantene Pro-V Daily Moisture Shampoo.jpeg" alt="Pantene Pro-V Daily Moisture Shampoo">
+        <h3>Pantene Pro-V Daily Moisture Shampoo</h3>
+        <p class="price">Ksh 550</p>
+        <p class="description">Hydrates, strengthens, adds shine, nourishes all hair types for daily healthy look.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-11" data-name="Sunsilk Thick & Long Shampoo" data-price="350" data-image="../images/haircare/Sunsilk Thick & Long Shampoo.jpeg" data-description="Nourishes, strengthens, promotes longer, thicker hair for all types daily use.">
+        <img src="../images/haircare/Sunsilk Thick & Long Shampoo.jpeg" alt="Sunsilk Thick & Long Shampoo">
+        <h3>Sunsilk Thick & Long Shampoo</h3>
+        <p class="price">Ksh 350</p>
+        <p class="description">Nourishes, strengthens, promotes longer, thicker hair for all types daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-12" data-name="Herbal Essences Argan Oil Shampoo" data-price="900" data-image="../images/haircare/Herbal Essences Argan Oil Shampoo.jpeg" data-description="Repairs, nourishes, adds shine, natural ingredients for smooth hair daily use.">
+        <img src="../images/haircare/Herbal Essences Argan Oil Shampoo.jpeg" alt="Herbal Essences Argan Oil Shampoo">
+        <h3>Herbal Essences Argan Oil Shampoo</h3>
+        <p class="price">Ksh 900</p>
+        <p class="description">Repairs, nourishes, adds shine, natural ingredients for smooth hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-13" data-name="Mizani True Textures Shampoo" data-price="1100" data-image="../images/haircare/Mizani True Textures Shampoo.jpeg" data-description="Cleanses, hydrates curly hair, sulfate-free, promotes defined curls for daily use.">
+        <img src="../images/haircare/Mizani True Textures Shampoo.jpeg" alt="Mizani True Textures Shampoo">
+        <h3>Mizani True Textures Shampoo</h3>
+        <p class="price">Ksh 1100</p>
+        <p class="description">Cleanses, hydrates curly hair, sulfate-free, promotes defined curls for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-14" data-name="Organics Hair Mayonnaise" data-price="850" data-image="../images/haircare/Organics Hair Mayonnaise.jpeg" data-description="Deeply conditions, repairs damage, strengthens curly hair for weekly nourishing treatment.">
+        <img src="../images/haircare/Organics Hair Mayonnaise.jpeg" alt="Organics Hair Mayonnaise">
+        <h3>Organics Hair Mayonnaise</h3>
+        <p class="price">Ksh 850</p>
+        <p class="description">Deeply conditions, repairs damage, strengthens curly hair for weekly nourishing treatment.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-15" data-name="NIVEA Repair & Care Shampoo" data-price="450" data-image="../images/haircare/NIVEA Repair & Care Shampoo.jpeg" data-description="Hydrates, repairs damaged hair, adds shine, strengthens strands for daily use.">
+        <img src="../images/haircare/NIVEA Repair & Care Shampoo.jpeg" alt="NIVEA Repair & Care Shampoo">
+        <h3>NIVEA Repair & Care Shampoo</h3>
+        <p class="price">Ksh 450</p>
+        <p class="description">Hydrates, repairs damaged hair, adds shine, strengthens strands for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-16" data-name="As I Am Curl Clarity Shampoo" data-price="1300" data-image="../images/haircare/As I Am Curl Clarity Shampoo.jpeg" data-description="Cleanses, defines curls, hydrates, sulfate-free for curly hair daily use.">
+        <img src="../images/haircare/As I Am Curl Clarity Shampoo.jpeg" alt="As I Am Curl Clarity Shampoo">
+        <h3>As I Am Curl Clarity Shampoo</h3>
+        <p class="price">Ksh 1300</p>
+        <p class="description">Cleanses, defines curls, hydrates, sulfate-free for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-17" data-name="SheaMoisture Coconut & Hibiscus Shampoo" data-price="1200" data-image="../images/haircare/SheaMoisture Coconut & Hibiscus Shampoo.jpeg" data-description="Hydrates, defines curls, adds shine, natural ingredients for curly hair daily.">
+        <img src="../images/haircare/SheaMoisture Coconut & Hibiscus Shampoo.jpeg" alt="SheaMoisture Coconut & Hibiscus Shampoo">
+        <h3>SheaMoisture Coconut & Hibiscus Shampoo</h3>
+        <p class="price">Ksh 1200</p>
+        <p class="description">Hydrates, defines curls, adds shine, natural ingredients for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-18" data-name="Hello Hydration Shampoo" data-price="300" data-image="../images/haircare/Hello Hydration Shampoo.jpeg" data-description="Cleanses, nourishes, strengthens hair, natural extracts for all types daily use.">
+        <img src="../images/haircare/Hello Hydration Shampoo.jpeg" alt="Hello Hydration Shampoo">
+        <h3>Hello Hydration Shampoo</h3>
+        <p class="price">Ksh 300</p>
+        <p class="description">Cleanses, nourishes, strengthens hair, natural extracts for all types daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-19" data-name="Coconut Shampoo 500ml" data-price="350" data-image="../images/haircare/Coconut Shampoo 500ml.jpeg" data-description="Cleanses, hydrates, adds shine, nourishes all hair types for daily use.">
+        <img src="../images/haircare/Coconut Shampoo 500ml.jpeg" alt="Coconut Shampoo 500ml">
+        <h3>Coconut Shampoo 500ml</h3>
+        <p class="price">Ksh 350</p>
+        <p class="description">Cleanses, hydrates, adds shine, nourishes all hair types for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-20" data-name="Moroccanoil Moisture Repair Shampoo" data-price="2000" data-image="../images/haircare/Moroccanoil Moisture Repair Shampoo.jpeg" data-description="Restores, hydrates damaged hair, adds shine, premium formula for daily use.">
+        <img src="../images/haircare/Moroccanoil Moisture Repair Shampoo.jpeg" alt="Moroccanoil Moisture Repair Shampoo">
+        <h3>Moroccanoil Moisture Repair Shampoo</h3>
+        <p class="price">Ksh 2000</p>
+        <p class="description">Restores, hydrates damaged hair, adds shine, premium formula for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-21" data-name="Olaplex No.4 Bond Maintenance Shampoo" data-price="3000" data-image="../images/haircare/Olaplex No.4 Bond Maintenance Shampoo.jpeg" data-description="Repairs, strengthens, hydrates all hair types, premium formula for daily use.">
+        <img src="../images/haircare/Olaplex No.4 Bond Maintenance Shampoo.jpeg" alt="Olaplex No.4 Bond Maintenance Shampoo">
+        <h3>Olaplex No.4 Bond Maintenance Shampoo</h3>
+        <p class="price">Ksh 3000</p>
+        <p class="description">Repairs, strengthens, hydrates all hair types, premium formula for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-22" data-name="Mielle Organics Rosemary Mint Oil" data-price="1500" data-image="../images/haircare/Mielle Organics Rosemary Mint Oil.jpeg" data-description="Promotes growth, strengthens, nourishes scalp, natural ingredients for curly hair daily.">
+        <img src="../images/haircare/Mielle Organics Rosemary Mint Oil.jpeg" alt="Mielle Organics Rosemary Mint Oil">
+        <h3>Mielle Organics Rosemary Mint Oil</h3>
+        <p class="price">Ksh 1500</p>
+        <p class="description">Promotes growth, strengthens, nourishes scalp, natural ingredients for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-23" data-name="Cantu Leave-In Conditioning Cream" data-price="1100" data-image="../images/haircare/Cantu Leave-In Conditioning Cream.jpeg" data-description="Hydrates, detangles, reduces frizz, defines curls for curly hair daily use.">
+        <img src="../images/haircare/Cantu Leave-In Conditioning Cream.jpeg" alt="Cantu Leave-In Conditioning Cream">
+        <h3>Cantu Leave-In Conditioning Cream</h3>
+        <p class="price">Ksh 1100</p>
+        <p class="description">Hydrates, detangles, reduces frizz, defines curls for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-24" data-name="Dark & Lovely Moisture Plus Conditioner" data-price="660" data-image="../images/haircare/Dark & Lovely Moisture Plus Conditioner.jpeg" data-description="Hydrates, detangles, softens curly hair, adds shine for daily smooth styling.">
+        <img src="../images/haircare/Dark & Lovely Moisture Plus Conditioner.jpeg" alt="Dark & Lovely Moisture Plus Conditioner">
+        <h3>Dark & Lovely Moisture Plus Conditioner</h3>
+        <p class="price">Ksh 660</p>
+        <p class="description">Hydrates, detangles, softens curly hair, adds shine for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-25" data-name="Tresemme Conditioner Colour Revitalise 940ml" data-price="620" data-image="../images/haircare/Tresemme Conditioner Colour Revitalise 940ml.jpeg" data-description="Protects, hydrates colored hair, enhances shine, maintains vibrancy for daily use.">
+        <img src="../images/haircare/Tresemme Conditioner Colour Revitalise 940ml.jpeg" alt="Tresemme Conditioner Colour Revitalise 940ml">
+        <h3>Tresemme Conditioner Colour Revitalise 940ml</h3>
+        <p class="price">Ksh 620</p>
+        <p class="description">Protects, hydrates colored hair, enhances shine, maintains vibrancy for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-26" data-name="L’Oréal Paris Dream Lengths Conditioner" data-price="820" data-image="../images/haircare/L’Oréal Paris Dream Lengths Conditioner.jpeg" data-description="Detangles, strengthens, promotes longer hair, adds shine for daily smooth styling.">
+        <img src="../images/haircare/L’Oréal Paris Dream Lengths Conditioner.jpeg" alt="L’Oréal Paris Dream Lengths Conditioner">
+        <h3>L’Oréal Paris Dream Lengths Conditioner</h3>
+        <p class="price">Ksh 820</p>
+        <p class="description">Detangles, strengthens, promotes longer hair, adds shine for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-27" data-name="Garnier Fructis Hair Food Aloe Vera" data-price="710" data-image="../images/haircare/Garnier Fructis Hair Food Aloe Vera.jpeg" data-description="Hydrates, soothes scalp, nourishes hair, natural ingredients for daily smooth styling.">
+        <img src="../images/haircare/Garnier Fructis Hair Food Aloe Vera.jpeg" alt="Garnier Fructis Hair Food Aloe Vera">
+        <h3>Garnier Fructis Hair Food Aloe Vera</h3>
+        <p class="price">Ksh 710</p>
+        <p class="description">Hydrates, soothes scalp, nourishes hair, natural ingredients for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-28" data-name="Pantene Pro-V Smooth & Sleek Conditioner" data-price="560" data-image="../images/haircare/Pantene Pro-V Smooth & Sleek Conditioner.jpeg" data-description="Tames frizz, hydrates, adds shine, smoothens all hair types for daily use.">
+        <img src="../images/haircare/Pantene Pro-V Smooth & Sleek Conditioner.jpeg" alt="Pantene Pro-V Smooth & Sleek Conditioner">
+        <h3>Pantene Pro-V Smooth & Sleek Conditioner</h3>
+        <p class="price">Ksh 560</p>
+        <p class="description">Tames frizz, hydrates, adds shine, smoothens all hair types for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-29" data-name="Sunsilk Soft & Smooth Conditioner" data-price="360" data-image="../images/haircare/Sunsilk Soft & Smooth Conditioner.jpeg" data-description="Hydrates, softens, reduces frizz, nourishes all hair types for daily smooth styling.">
+        <img src="../images/haircare/Sunsilk Soft & Smooth Conditioner.jpeg" alt="Sunsilk Soft & Smooth Conditioner">
+        <h3>Sunsilk Soft & Smooth Conditioner</h3>
+        <p class="price">Ksh 360</p>
+        <p class="description">Hydrates, softens, reduces frizz, nourishes all hair types for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-30" data-name="Herbal Essences Coconut Milk Conditioner" data-price="910" data-image="../images/haircare/Herbal Essences Coconut Milk Conditioner.jpeg" data-description="Hydrates, nourishes, adds shine, natural ingredients for smooth hair daily use.">
+        <img src="../images/haircare/Herbal Essences Coconut Milk Conditioner.jpeg" alt="Herbal Essences Coconut Milk Conditioner">
+        <h3>Herbal Essences Coconut Milk Conditioner</h3>
+        <p class="price">Ksh 910</p>
+        <p class="description">Hydrates, nourishes, adds shine, natural ingredients for smooth hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-31" data-name="Mizani Butter Blend Conditioner" data-price="1200" data-image="../images/haircare/Mizani Butter Blend Conditioner.jpeg" data-description="Hydrates, detangles curly hair, adds shine, nourishes for daily smooth styling.">
+        <img src="../images/haircare/Mizani Butter Blend Conditioner.jpeg" alt="Mizani Butter Blend Conditioner">
+        <h3>Mizani Butter Blend Conditioner</h3>
+        <p class="price">Ksh 1200</p>
+        <p class="description">Hydrates, detangles curly hair, adds shine, nourishes for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-32" data-name="Avocado Oil - 16 OZ" data-price="550" data-image="../images/haircare/Avocado Oil - 16 OZ.jpeg" data-description="Nourishes, strengthens, reduces breakage, adds shine for curly hair daily use.">
+        <img src="../images/haircare/Avocado Oil - 16 OZ.jpeg" alt="Avocado Oil - 16 OZ">
+        <h3>Avocado Oil - 16 OZ</h3>
+        <p class="price">Ksh 550</p>
+        <p class="description">Nourishes, strengthens, reduces breakage, adds shine for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-33" data-name="Marini Naturals Leave-In Conditioner" data-price="850" data-image="../images/haircare/Marini Naturals Leave-In Conditioner.jpeg" data-description="Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.">
+        <img src="../images/haircare/Marini Naturals Leave-In Conditioner.jpeg" alt="Marini Naturals Leave-In Conditioner">
+        <h3>Marini Naturals Leave-In Conditioner</h3>
+        <p class="price">Ksh 850</p>
+        <p class="description">Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-34" data-name="SheaMoisture Manuka Honey Mask" data-price="1300" data-image="../images/haircare/SheaMoisture Manuka Honey Mask.jpeg" data-description="Deeply conditions, hydrates, strengthens curly hair, natural ingredients for weekly use.">
+        <img src="../images/haircare/SheaMoisture Manuka Honey Mask.jpeg" alt="SheaMoisture Manuka Honey Mask">
+        <h3>SheaMoisture Manuka Honey Mask</h3>
+        <p class="price">Ksh 1300</p>
+        <p class="description">Deeply conditions, hydrates, strengthens curly hair, natural ingredients for weekly use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-35" data-name="Anti Hair Loss Scalp Tonic - 100ml" data-price="600" data-image="../images/haircare/Anti Hair Loss Scalp Tonic - 100ml.jpeg" data-description="Soothes, nourishes scalp, promotes healthy hair growth, reduces loss daily use.">
+        <img src="../images/haircare/Anti Hair Loss Scalp Tonic - 100ml.jpeg" alt="Anti Hair Loss Scalp Tonic - 100ml">
+        <h3>Anti Hair Loss Scalp Tonic - 100ml</h3>
+        <p class="price">Ksh 600</p>
+        <p class="description">Soothes, nourishes scalp, promotes healthy hair growth, reduces loss daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-36" data-name="As I Am Dry & Itchy Shampoo" data-price="1400" data-image="../images/haircare/As I Am Dry & Itchy Shampoo.jpeg" data-description="Soothes scalp, cleanses, hydrates curly hair, reduces flakes for daily use.">
+        <img src="../images/haircare/As I Am Dry & Itchy Shampoo.jpeg" alt="As I Am Dry & Itchy Shampoo">
+        <h3>As I Am Dry & Itchy Shampoo</h3>
+        <p class="price">Ksh 1400</p>
+        <p class="description">Soothes scalp, cleanses, hydrates curly hair, reduces flakes for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-37" data-name="Moroccanoil Intense Curl Cream" data-price="2200" data-image="../images/haircare/Moroccanoil Intense Curl Cream.jpeg" data-description="Defines, hydrates curls, reduces frizz, adds shine, premium for daily styling.">
+        <img src="../images/haircare/Moroccanoil Intense Curl Cream.jpeg" alt="Moroccanoil Intense Curl Cream">
+        <h3>Moroccanoil Intense Curl Cream</h3>
+        <p class="price">Ksh 2200</p>
+        <p class="description">Defines, hydrates curls, reduces frizz, adds shine, premium for daily styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-38" data-name="Olaplex No.5 Bond Maintenance Conditioner" data-price="3000" data-image="../images/haircare/Olaplex No.5 Bond Maintenance Conditioner.jpeg" data-description="Repairs, hydrates, strengthens all hair types, premium formula for daily use.">
+        <img src="../images/haircare/Olaplex No.5 Bond Maintenance Conditioner.jpeg" alt="Olaplex No.5 Bond Maintenance Conditioner">
+        <h3>Olaplex No.5 Bond Maintenance Conditioner</h3>
+        <p class="price">Ksh 3000</p>
+        <p class="description">Repairs, hydrates, strengthens all hair types, premium formula for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-39" data-name="Mielle Organics Babassu Oil Conditioner" data-price="1400" data-image="../images/haircare/Mielle Organics Babassu Oil Conditioner.jpeg" data-description="Hydrates, detangles, strengthens curly hair, natural ingredients for daily smooth styling.">
+        <img src="../images/haircare/Mielle Organics Babassu Oil Conditioner.jpeg" alt="Mielle Organics Babassu Oil Conditioner">
+        <h3>Mielle Organics Babassu Oil Conditioner</h3>
+        <p class="price">Ksh 1400</p>
+        <p class="description">Hydrates, detangles, strengthens curly hair, natural ingredients for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-40" data-name="Cantu Apple Cider Vinegar Rinse" data-price="1000" data-image="../images/haircare/Cantu Apple Cider Vinegar Rinse.jpeg" data-description="Clarifies, soothes scalp, promotes healthy hair growth for curly hair daily.">
+        <img src="../images/haircare/Cantu Apple Cider Vinegar Rinse.jpeg" alt="Cantu Apple Cider Vinegar Rinse">
+        <h3>Cantu Apple Cider Vinegar Rinse</h3>
+        <p class="price">Ksh 1000</p>
+        <p class="description">Clarifies, soothes scalp, promotes healthy hair growth for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-41" data-name="Dark & Lovely Amla Legend Oil" data-price="700" data-image="../images/haircare/Dark & Lovely Amla Legend Oil.jpeg" data-description="Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.">
+        <img src="../images/haircare/Dark & Lovely Amla Legend Oil.jpeg" alt="Dark & Lovely Amla Legend Oil">
+        <h3>Dark & Lovely Amla Legend Oil</h3>
+        <p class="price">Ksh 700</p>
+        <p class="description">Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-42" data-name="Tresemmé Botanique Nourish Shampoo" data-price="650" data-image="../images/haircare/Tresemmé Botanique Nourish Shampoo.jpeg" data-description="Hydrates, strengthens, nourishes all hair types, natural ingredients for daily use.">
+        <img src="../images/haircare/Tresemmé Botanique Nourish Shampoo.jpeg" alt="Tresemmé Botanique Nourish Shampoo">
+        <h3>Tresemmé Botanique Nourish Shampoo</h3>
+        <p class="price">Ksh 650</p>
+        <p class="description">Hydrates, strengthens, nourishes all hair types, natural ingredients for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-43" data-name="L’Oréal Paris Elvive Total Repair" data-price="850" data-image="../images/haircare/L’Oréal Paris Elvive Total Repair.jpeg" data-description="Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.">
+        <img src="../images/haircare/L’Oréal Paris Elvive Total Repair.jpeg" alt="L’Oréal Paris Elvive Total Repair">
+        <h3>L’Oréal Paris Elvive Total Repair</h3>
+        <p class="price">Ksh 850</p>
+        <p class="description">Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-44" data-name="Garnier Ultimate Blends Oat Milk" data-price="720" data-image="../images/haircare/Garnier Ultimate Blends Oat Milk.jpeg" data-description="Soothes, hydrates sensitive scalps, nourishes hair, natural ingredients for daily use.">
+        <img src="../images/haircare/Garnier Ultimate Blends Oat Milk.jpeg" alt="Garnier Ultimate Blends Oat Milk">
+        <h3>Garnier Ultimate Blends Oat Milk</h3>
+        <p class="price">Ksh 720</p>
+        <p class="description">Soothes, hydrates sensitive scalps, nourishes hair, natural ingredients for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-45" data-name="Pantene Pro-V Anti-Dandruff Shampoo" data-price="560" data-image="../images/haircare/Pantene Pro-V Anti-Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, strengthens hair for daily healthy look.">
+        <img src="../images/haircare/Pantene Pro-V Anti-Dandruff Shampoo.jpeg" alt="Pantene Pro-V Anti-Dandruff Shampoo">
+        <h3>Pantene Pro-V Anti-Dandruff Shampoo</h3>
+        <p class="price">Ksh 560</p>
+        <p class="description">Cleanses, soothes scalp, reduces flakes, strengthens hair for daily healthy look.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-46" data-name="Herbal Essences Passion Flower Shampoo" data-price="920" data-image="../images/haircare/Herbal Essences Passion Flower Shampoo.jpeg" data-description="Hydrates, adds vibrancy, nourishes hair, natural ingredients for daily vibrant styling.">
+        <img src="../images/haircare/Herbal Essences Passion Flower Shampoo.jpeg" alt="Herbal Essences Passion Flower Shampoo">
+        <h3>Herbal Essences Passion Flower Shampoo</h3>
+        <p class="price">Ksh 920</p>
+        <p class="description">Hydrates, adds vibrancy, nourishes hair, natural ingredients for daily vibrant styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-47" data-name="Mizani Scalp Care Conditioner" data-price="1150" data-image="../images/haircare/Mizani Scalp Care Conditioner.jpeg" data-description="Soothes, hydrates scalp, strengthens curly hair, adds shine for daily use.">
+        <img src="../images/haircare/Mizani Scalp Care Conditioner.jpeg" alt="Mizani Scalp Care Conditioner">
+        <h3>Mizani Scalp Care Conditioner</h3>
+        <p class="price">Ksh 1150</p>
+        <p class="description">Soothes, hydrates scalp, strengthens curly hair, adds shine for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-48" data-name="Africare Jojoba Oil" data-price="580" data-image="../images/haircare/Africare Jojoba Oil.jpeg" data-description="Nourishes, promotes growth, reduces dryness, adds shine for curly hair daily.">
+        <img src="../images/haircare/Africare Jojoba Oil.jpeg" alt="Africare Jojoba Oil">
+        <h3>Africare Jojoba Oil</h3>
+        <p class="price">Ksh 580</p>
+        <p class="description">Nourishes, promotes growth, reduces dryness, adds shine for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-49" data-name="Jamaican Black Castor Oil" data-price="1300" data-image="../images/haircare/Jamaican Black Castor Oil.jpeg" data-description="Strengthens, promotes growth, hydrates curly hair, natural ingredients for daily use.">
+        <img src="../images/haircare/Jamaican Black Castor Oil.jpeg" alt="Jamaican Black Castor Oil">
+        <h3>Jamaican Black Castor Oil</h3>
+        <p class="price">Ksh 1300</p>
+        <p class="description">Strengthens, promotes growth, hydrates curly hair, natural ingredients for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-50" data-name="As I Am Coconut CoWash" data-price="1350" data-image="../images/haircare/As I Am Coconut CoWash.jpeg" data-description="Cleanses, conditions curls, hydrates, prevents stripping for curly hair daily use.">
+        <img src="../images/haircare/As I Am Coconut CoWash.jpeg" alt="As I Am Coconut CoWash">
+        <h3>As I Am Coconut CoWash</h3>
+        <p class="price">Ksh 1350</p>
+        <p class="description">Cleanses, conditions curls, hydrates, prevents stripping for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-51" data-name="Moroccanoil Dry Scalp Treatment" data-price="2500" data-image="../images/haircare/Moroccanoil Dry Scalp Treatment.jpeg" data-description="Soothes, hydrates scalp, reduces flaking, premium formula for daily healthy hair.">
+        <img src="../images/haircare/Moroccanoil Dry Scalp Treatment.jpeg" alt="Moroccanoil Dry Scalp Treatment">
+        <h3>Moroccanoil Dry Scalp Treatment</h3>
+        <p class="price">Ksh 2500</p>
+        <p class="description">Soothes, hydrates scalp, reduces flaking, premium formula for daily healthy hair.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-52" data-name="Olaplex No.3 Hair Perfector" data-price="3500" data-image="../images/haircare/Olaplex No.3 Hair Perfector.jpeg" data-description="Repairs, strengthens damaged hair, premium treatment for weekly use, enhances shine.">
+        <img src="../images/haircare/Olaplex No.3 Hair Perfector.jpeg" alt="Olaplex No.3 Hair Perfector">
+        <h3>Olaplex No.3 Hair Perfector</h3>
+        <p class="price">Ksh 3500</p>
+        <p class="description">Repairs, strengthens damaged hair, premium treatment for weekly use, enhances shine.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-53" data-name="Mielle Organics Pomegranate Curl Serum" data-price="1600" data-image="../images/haircare/Mielle Organics Pomegranate Curl Serum.jpeg" data-description="Defines, hydrates curls, reduces frizz, natural ingredients for curly hair daily.">
+        <img src="../images/haircare/Mielle Organics Pomegranate Curl Serum.jpeg" alt="Mielle Organics Pomegranate Curl Serum">
+        <h3>Mielle Organics Pomegranate Curl Serum</h3>
+        <p class="price">Ksh 1600</p>
+        <p class="description">Defines, hydrates curls, reduces frizz, natural ingredients for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-54" data-name="Cantu Flaxseed Smoothing Oil" data-price="1100" data-image="../images/haircare/Cantu Flaxseed Smoothing Oil.jpeg" data-description="Hydrates, smoothens, reduces frizz, adds shine for curly hair daily use.">
+        <img src="../images/haircare/Cantu Flaxseed Smoothing Oil.jpeg" alt="Cantu Flaxseed Smoothing Oil">
+        <h3>Cantu Flaxseed Smoothing Oil</h3>
+        <p class="price">Ksh 1100</p>
+        <p class="description">Hydrates, smoothens, reduces frizz, adds shine for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-55" data-name="L’Oréal Paris Elvive Colour Protect" data-price="870" data-image="../images/haircare/L’Oréal Paris Elvive Colour Protect.jpeg" data-description="Preserves, hydrates colored hair, enhances shine, maintains vibrancy for daily use.">
+        <img src="../images/haircare/L’Oréal Paris Elvive Colour Protect.jpeg" alt="L’Oréal Paris Elvive Colour Protect">
+        <h3>L’Oréal Paris Elvive Colour Protect</h3>
+        <p class="price">Ksh 870</p>
+        <p class="description">Preserves, hydrates colored hair, enhances shine, maintains vibrancy for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-56" data-name="Garnier Ultimate Blends Honey Mask" data-price="730" data-image="../images/haircare/Garnier Ultimate Blends Honey Mask.jpeg" data-description="Deeply conditions, repairs damaged hair, adds shine, nourishes for weekly use.">
+        <img src="../images/haircare/Garnier Ultimate Blends Honey Mask.jpeg" alt="Garnier Ultimate Blends Honey Mask">
+        <h3>Garnier Ultimate Blends Honey Mask</h3>
+        <p class="price">Ksh 730</p>
+        <p class="description">Deeply conditions, repairs damaged hair, adds shine, nourishes for weekly use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-57" data-name="Pantene Pro-V Volume & Body Shampoo" data-price="570" data-image="../images/haircare/Pantene Pro-V Volume & Body Shampoo.jpeg" data-description="Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.">
+        <img src="../images/haircare/Pantene Pro-V Volume & Body Shampoo.jpeg" alt="Pantene Pro-V Volume & Body Shampoo">
+        <h3>Pantene Pro-V Volume & Body Shampoo</h3>
+        <p class="price">Ksh 570</p>
+        <p class="description">Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-58" data-name="Sunsilk Nourishing Oil Shampoo" data-price="360" data-image="../images/haircare/Sunsilk Nourishing Oil Shampoo.jpeg" data-description="Hydrates, strengthens, adds shine, nourishes dry hair for daily smooth styling.">
+        <img src="../images/haircare/Sunsilk Nourishing Oil Shampoo.jpeg" alt="Sunsilk Nourishing Oil Shampoo">
+        <h3>Sunsilk Nourishing Oil Shampoo</h3>
+        <p class="price">Ksh 360</p>
+        <p class="description">Hydrates, strengthens, adds shine, nourishes dry hair for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-59" data-name="Herbal Essences White Grapefruit Shampoo" data-price="930" data-image="../images/haircare/Herbal Essences White Grapefruit Shampoo.jpeg" data-description="Cleanses, adds volume, nourishes hair, natural ingredients for daily vibrant styling.">
+        <img src="../images/haircare/Herbal Essences White Grapefruit Shampoo.jpeg" alt="Herbal Essences White Grapefruit Shampoo">
+        <h3>Herbal Essences White Grapefruit Shampoo</h3>
+        <p class="price">Ksh 930</p>
+        <p class="description">Cleanses, adds volume, nourishes hair, natural ingredients for daily vibrant styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-60" data-name="Mizani Miracle Length Serum" data-price="1200" data-image="../images/haircare/Mizani Miracle Length Serum.jpeg" data-description="Promotes growth, strengthens, reduces breakage, nourishes curly hair for daily use.">
+        <img src="../images/haircare/Mizani Miracle Length Serum.jpeg" alt="Mizani Miracle Length Serum">
+        <h3>Mizani Miracle Length Serum</h3>
+        <p class="price">Ksh 1200</p>
+        <p class="description">Promotes growth, strengthens, reduces breakage, nourishes curly hair for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-61" data-name="SheaMoisture Moringa & Avocado Shampoo" data-price="1250" data-image="../images/haircare/SheaMoisture Moringa & Avocado Shampoo.jpeg" data-description="Hydrates, strengthens, nourishes curly hair, natural ingredients for daily smooth styling.">
+        <img src="../images/haircare/SheaMoisture Moringa & Avocado Shampoo.jpeg" alt="SheaMoisture Moringa & Avocado Shampoo">
+        <h3>SheaMoisture Moringa & Avocado Shampoo</h3>
+        <p class="price">Ksh 1250</p>
+        <p class="description">Hydrates, strengthens, nourishes curly hair, natural ingredients for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-62" data-name="NIVEA Anti-Dandruff Shampoo" data-price="470" data-image="../images/haircare/NIVEA Anti-Dandruff Shampoo.jpeg" data-description="Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.">
+        <img src="../images/haircare/NIVEA Anti-Dandruff Shampoo.jpeg" alt="NIVEA Anti-Dandruff Shampoo">
+        <h3>NIVEA Anti-Dandruff Shampoo</h3>
+        <p class="price">Ksh 470</p>
+        <p class="description">Cleanses, soothes scalp, reduces flakes, promotes healthy hair for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-63" data-name="As I Am Leave-In Conditioner" data-price="1400" data-image="../images/haircare/As I Am Leave-In Conditioner.jpeg" data-description="Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.">
+        <img src="../images/haircare/As I Am Leave-In Conditioner.jpeg" alt="As I Am Leave-In Conditioner">
+        <h3>As I Am Leave-In Conditioner</h3>
+        <p class="price">Ksh 1400</p>
+        <p class="description">Hydrates, detangles, defines curls, reduces frizz for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-64" data-name="Moroccanoil Treatment Oil" data-price="2600" data-image="../images/haircare/Moroccanoil Treatment Oil.jpeg" data-description="Nourishes, smoothens, adds shine, strengthens all hair types, premium daily use.">
+        <img src="../images/haircare/Moroccanoil Treatment Oil.jpeg" alt="Moroccanoil Treatment Oil">
+        <h3>Moroccanoil Treatment Oil</h3>
+        <p class="price">Ksh 2600</p>
+        <p class="description">Nourishes, smoothens, adds shine, strengthens all hair types, premium daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-65" data-name="Olaplex No.6 Bond Smoother" data-price="3200" data-image="../images/haircare/Olaplex No.6 Bond Smoother.jpeg" data-description="Reduces frizz, hydrates, strengthens hair, premium formula for daily smooth styling.">
+        <img src="../images/haircare/Olaplex No.6 Bond Smoother.jpeg" alt="Olaplex No.6 Bond Smoother">
+        <h3>Olaplex No.6 Bond Smoother</h3>
+        <p class="price">Ksh 3200</p>
+        <p class="description">Reduces frizz, hydrates, strengthens hair, premium formula for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-66" data-name="Mielle Organics White Peony Serum" data-price="1550" data-image="../images/haircare/Mielle Organics White Peony Serum.jpeg" data-description="Hydrates, strengthens, promotes growth, reduces frizz for curly hair daily use.">
+        <img src="../images/haircare/Mielle Organics White Peony Serum.jpeg" alt="Mielle Organics White Peony Serum">
+        <h3>Mielle Organics White Peony Serum</h3>
+        <p class="price">Ksh 1550</p>
+        <p class="description">Hydrates, strengthens, promotes growth, reduces frizz for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-67" data-name="Cantu Shea Butter Hair Lotion" data-price="1150" data-image="../images/haircare/Cantu Shea Butter Hair Lotion.jpeg" data-description="Hydrates, softens, defines curls, reduces frizz for curly hair daily styling.">
+        <img src="../images/haircare/Cantu Shea Butter Hair Lotion.jpeg" alt="Cantu Shea Butter Hair Lotion">
+        <h3>Cantu Shea Butter Hair Lotion</h3>
+        <p class="price">Ksh 1150</p>
+        <p class="description">Hydrates, softens, defines curls, reduces frizz for curly hair daily styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-68" data-name="Dark & Lovely Hair Refresher" data-price="690" data-image="../images/haircare/Dark & Lovely Hair Refresher.jpeg" data-description="Revitalizes, hydrates curly hair, reduces frizz, adds shine for daily styling.">
+        <img src="../images/haircare/Dark & Lovely Hair Refresher.jpeg" alt="Dark & Lovely Hair Refresher">
+        <h3>Dark & Lovely Hair Refresher</h3>
+        <p class="price">Ksh 690</p>
+        <p class="description">Revitalizes, hydrates curly hair, reduces frizz, adds shine for daily styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-69" data-name="Tresemmé Moisture Rich Conditioner" data-price="680" data-image="../images/haircare/Tresemmé Moisture Rich Conditioner.jpeg" data-description="Hydrates, softens, detangles dry hair, adds shine for daily smooth styling.">
+        <img src="../images/haircare/Tresemmé Moisture Rich Conditioner.jpeg" alt="Tresemmé Moisture Rich Conditioner">
+        <h3>Tresemmé Moisture Rich Conditioner</h3>
+        <p class="price">Ksh 680</p>
+        <p class="description">Hydrates, softens, detangles dry hair, adds shine for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-70" data-name="L’Oréal Paris Elvive Low Shampoo" data-price="880" data-image="../images/haircare/L’Oréal Paris Elvive Low Shampoo.jpeg" data-description="Gently cleanses, conditions, hydrates hair, adds shine for daily smooth styling.">
+        <img src="../images/haircare/L’Oréal Paris Elvive Low Shampoo.jpeg" alt="L’Oréal Paris Elvive Low Shampoo">
+        <h3>L’Oréal Paris Elvive Low Shampoo</h3>
+        <p class="price">Ksh 880</p>
+        <p class="description">Gently cleanses, conditions, hydrates hair, adds shine for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-71" data-name="Garnier Ultimate Blends Avocado Oil" data-price="740" data-image="../images/haircare/Garnier Ultimate Blends Avocado Oil.jpeg" data-description="Nourishes, smoothens dry hair, adds shine, natural ingredients for daily styling.">
+        <img src="../images/haircare/Garnier Ultimate Blends Avocado Oil.jpeg" alt="Garnier Ultimate Blends Avocado Oil">
+        <h3>Garnier Ultimate Blends Avocado Oil</h3>
+        <p class="price">Ksh 740</p>
+        <p class="description">Nourishes, smoothens dry hair, adds shine, natural ingredients for daily styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-72" data-name="Pantene Pro-V Repair & Protect Conditioner" data-price="580" data-image="../images/haircare/Pantene Pro-V Repair & Protect Conditioner.jpeg" data-description="Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.">
+        <img src="../images/haircare/Pantene Pro-V Repair & Protect Conditioner.jpeg" alt="Pantene Pro-V Repair & Protect Conditioner">
+        <h3>Pantene Pro-V Repair & Protect Conditioner</h3>
+        <p class="price">Ksh 580</p>
+        <p class="description">Restores, strengthens damaged hair, adds shine, hydrates for daily smooth styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-73" data-name="Sunsilk Damage Restore Shampoo" data-price="370" data-image="../images/haircare/Sunsilk Damage Restore Shampoo.jpeg" data-description="Repairs, strengthens damaged hair, adds shine, nourishes for daily healthy look.">
+        <img src="../images/haircare/Sunsilk Damage Restore Shampoo.jpeg" alt="Sunsilk Damage Restore Shampoo">
+        <h3>Sunsilk Damage Restore Shampoo</h3>
+        <p class="price">Ksh 370</p>
+        <p class="description">Repairs, strengthens damaged hair, adds shine, nourishes for daily healthy look.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-74" data-name="Herbal Essences Rose Hips Shampoo" data-price="940" data-image="../images/haircare/Herbal Essences Rose Hips Shampoo.jpeg" data-description="Smoothens, adds shine, nourishes hair, natural ingredients for daily vibrant styling.">
+        <img src="../images/haircare/Herbal Essences Rose Hips Shampoo.jpeg" alt="Herbal Essences Rose Hips Shampoo">
+        <h3>Herbal Essences Rose Hips Shampoo</h3>
+        <p class="price">Ksh 940</p>
+        <p class="description">Smoothens, adds shine, nourishes hair, natural ingredients for daily vibrant styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-75" data-name="Mizani Thermasmooth Conditioner" data-price="1250" data-image="../images/haircare/Mizani Thermasmooth Conditioner.jpeg" data-description="Smoothens, protects heat-styled curly hair, hydrates, adds shine for daily use.">
+        <img src="../images/haircare/Mizani Thermasmooth Conditioner.jpeg" alt="Mizani Thermasmooth Conditioner">
+        <h3>Mizani Thermasmooth Conditioner</h3>
+        <p class="price">Ksh 1250</p>
+        <p class="description">Smoothens, protects heat-styled curly hair, hydrates, adds shine for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-76" data-name="Africare Olive Oil" data-price="600" data-image="../images/haircare/Africare Olive Oil.jpeg" data-description="Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.">
+        <img src="../images/haircare/Africare Olive Oil.jpeg" alt="Africare Olive Oil">
+        <h3>Africare Olive Oil</h3>
+        <p class="price">Ksh 600</p>
+        <p class="description">Nourishes, strengthens, adds shine, reduces breakage for curly hair daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-77" data-name="SheaMoisture Raw Shea Butter Shampoo" data-price="1300" data-image="../images/haircare/SheaMoisture Raw Shea Butter Shampoo.jpeg" data-description="Hydrates, repairs dry curly hair, adds shine, natural ingredients for daily use.">
+        <img src="../images/haircare/SheaMoisture Raw Shea Butter Shampoo.jpeg" alt="SheaMoisture Raw Shea Butter Shampoo">
+        <h3>SheaMoisture Raw Shea Butter Shampoo</h3>
+        <p class="price">Ksh 1300</p>
+        <p class="description">Hydrates, repairs dry curly hair, adds shine, natural ingredients for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-78" data-name="NIVEA Volume Care Shampoo" data-price="480" data-image="../images/haircare/NIVEA Volume Care Shampoo.jpeg" data-description="Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.">
+        <img src="../images/haircare/NIVEA Volume Care Shampoo.jpeg" alt="NIVEA Volume Care Shampoo">
+        <h3>NIVEA Volume Care Shampoo</h3>
+        <p class="price">Ksh 480</p>
+        <p class="description">Cleanses, adds volume, strengthens hair, enhances body for daily healthy look.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-79" data-name="As I Am Hydration Elation Conditioner" data-price="1450" data-image="../images/haircare/As I Am Hydration Elation Conditioner.jpeg" data-description="Deeply hydrates, strengthens curly hair, adds shine, detangles for weekly use.">
+        <img src="../images/haircare/As I Am Hydration Elation Conditioner.jpeg" alt="As I Am Hydration Elation Conditioner">
+        <h3>As I Am Hydration Elation Conditioner</h3>
+        <p class="price">Ksh 1450</p>
+        <p class="description">Deeply hydrates, strengthens curly hair, adds shine, detangles for weekly use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-80" data-name="Moroccanoil Clarifying Shampoo" data-price="2100" data-image="../images/haircare/Moroccanoil Clarifying Shampoo.jpeg" data-description="Deeply cleanses, removes buildup, hydrates hair, premium formula for daily use.">
+        <img src="../images/haircare/Moroccanoil Clarifying Shampoo.jpeg" alt="Moroccanoil Clarifying Shampoo">
+        <h3>Moroccanoil Clarifying Shampoo</h3>
+        <p class="price">Ksh 2100</p>
+        <p class="description">Deeply cleanses, removes buildup, hydrates hair, premium formula for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-81" data-name="Olaplex No.7 Bonding Oil" data-price="3300" data-image="../images/haircare/Olaplex No.7 Bonding Oil.jpeg" data-description="Repairs, smoothens, adds shine, strengthens hair, premium formula for daily use.">
+        <img src="../images/haircare/Olaplex No.7 Bonding Oil.jpeg" alt="Olaplex No.7 Bonding Oil">
+        <h3>Olaplex No.7 Bonding Oil</h3>
+        <p class="price">Ksh 3300</p>
+        <p class="description">Repairs, smoothens, adds shine, strengthens hair, premium formula for daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-82" data-name="Mielle Organics Mongongo Oil Pomade" data-price="1500" data-image="../images/haircare/Mielle Organics Mongongo Oil Pomade.jpeg" data-description="Hydrates, styles, reduces frizz, nourishes curly hair, natural ingredients daily use.">
+        <img src="../images/haircare/Mielle Organics Mongongo Oil Pomade.jpeg" alt="Mielle Organics Mongongo Oil Pomade">
+        <h3>Mielle Organics Mongongo Oil Pomade</h3>
+        <p class="price">Ksh 1500</p>
+        <p class="description">Hydrates, styles, reduces frizz, nourishes curly hair, natural ingredients daily use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-83" data-name="Cantu Coconut Curling Cream" data-price="1200" data-image="../images/haircare/Cantu Coconut Curling Cream.jpeg" data-description="Defines, hydrates curls, reduces frizz, adds shine for curly hair daily.">
+        <img src="../images/haircare/Cantu Coconut Curling Cream.jpeg" alt="Cantu Coconut Curling Cream">
+        <h3>Cantu Coconut Curling Cream</h3>
+        <p class="price">Ksh 1200</p>
+        <p class="description">Defines, hydrates curls, reduces frizz, adds shine for curly hair daily.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-84" data-name="Tresemmé Anti-Frizz Serum" data-price="690" data-image="../images/haircare/Tresemmé Anti-Frizz Serum.jpeg" data-description="Smoothens, reduces frizz, adds shine, nourishes hair for daily sleek styling.">
+        <img src="../images/haircare/Tresemmé Anti-Frizz Serum.jpeg" alt="Tresemmé Anti-Frizz Serum">
+        <h3>Tresemmé Anti-Frizz Serum</h3>
+        <p class="price">Ksh 690</p>
+        <p class="description">Smoothens, reduces frizz, adds shine, nourishes hair for daily sleek styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="h-85" data-name="L’Oréal Paris Elvive Glycolic Gloss" data-price="900" data-image="../images/haircare/L’Oréal Paris Elvive Glycolic Gloss.jpeg" data-description="Enhances shine, smoothens hair, premium formula for vibrant daily styling.">
+        <img src="../images/haircare/L’Oréal Paris Elvive Glycolic Gloss.jpeg" alt="L’Oréal Paris Elvive Glycolic Gloss">
+        <h3>L’Oréal Paris Elvive Glycolic Gloss</h3>
+        <p class="price">Ksh 900</p>
+        <p class="description">Enhances shine, smoothens hair, premium formula for vibrant daily styling.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</section>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><strong>Phone:</strong> +123 456 7890</p>
-                <p><strong>Email:</strong> support@beautystore.com</p>
-                <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
+    <div class="footer-container">
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> support@beautystore.com</p>
+            <p><strong>Location:</strong> 123 Beauty Street, New York, USA</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">About Us</a></
-
-        <!-- Official Links -->
+        </div>
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/skincare.html">Skincare</a></li>
+                <li><a href="../pages/haircare.html">Haircare</a></li>
+                <li><a href="../pages/deodorants.html">Deodorants</a></li>
+                <li><a href="../pages/Beautytool.html">Beauty Tools</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
         </div>
-
-        <!-- Contact Form -->
         <div class="footer-section contact-form">
             <h3>Get in Touch</h3>
             <form action="#" method="POST">
@@ -691,17 +681,12 @@
             </form>
         </div>
     </div>
-
-    <!-- Copyright -->
     <div class="footer-bottom">
-        <p>&copy; 2025 BeautyStore. All rights reserved.</p>
+        <p>© 2025 BeautyStore. All rights reserved.</p>
     </div>
 </footer>
 
-
-
-
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/product.js"></script>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/product.js"></script>
 </body>
 </html>

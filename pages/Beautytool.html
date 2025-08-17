@@ -3,214 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skincare - Beauty & Cosmetics Store</title>
+    <title>Beauty Tools - Beauty & Cosmetics Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/products.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../images/logoo.png" alt="Beauty Store Logo">
-        </div>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./homepage.html">Home</a></li>
-    
-                <li class="dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./skincare.html">Skincare</a></li>
-                        <li><a href="./deodorants.html">Deodorants</a></li>
-                        <li><a href="./haircare.html">Haircare</a></li>
-                        <li><a href="Beautytool.html">Beauty Tools</a></li>
-                    </ul>
-                </li>
-                
-            </ul>
-        </nav>
-        <div class="cart-login-container">
-            <a href="cart.html" class="cart-btn">
-                <i class="fa fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </a>
-            <button class="login-btn">
-                <i class="fa-solid fa-user"></i> Login
-            </button>
-        </div>
-    </header>
+<header>
+    <div class="logo">
+        <img src="../images/logoo.png" alt="Beauty Store Logo" />
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/skincare.html">Skincare</a></li>
+            <li><a href="../pages/haircare.html">Haircare</a></li>
+            <li><a href="../pages/deodorants.html">Deodorants</a></li>
+            <li><a href="../pages/beautytool.html">Beauty Tools</a></li>
+        </ul>
+    </nav>
+    <div class="actions">
+        <button class="search-toggle" aria-label="Toggle search">
+            <i class="fas fa-search"></i>
+        </button>
+        <a href="../pages/cart.html" class="cart-btn" aria-label="View cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </a>
+        <button class="login-btn">
+            <i class="fa-solid fa-user"></i> Login
+        </button>
+    </div>
+    <div class="search-bar-container">
+        <input type="text" id="search-input" placeholder="Search products..." aria-label="Search products" />
+        <button id="clear-search" class="clear-search" aria-label="Clear search"><i class="fas fa-times"></i></button>
+        <div id="search-results" class="search-results"></div>
+    </div>
+</header>
 
-    <section class="hero-section" style="background-image: url('images/skincare-hero.jpg');">
-        <div class="hero-content">
-            <h1>Beauty Tools</h1>
-            <p>Discover our range of nourishing skincare products designed to hydrate, protect, and rejuvenate your skin for a radiant glow.</p>
-        </div>
-    </section>
+<section class="hero-section" style="background-image: url('../images/hero/skintools.png');">
+    <div class="hero-content">
+        <h1>Beauty Tools</h1>
+        <p>Discover our range of innovative beauty tools designed to enhance your skincare routine and achieve a radiant glow.</p>
+    </div>
+</section>
 
-    <section class="products-container">
-        <div class="product" data-id="1" data-name="facial-Brush" data-price="300" data-image="../images/beautytool/facial-brush.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/facial-brush.jpg" width="400" height="220" alt="facial-brush">
-            <h3>facial Brush</h3>
-            <p class="price">Ksh 300</p>
-            <p class="description">Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="2" data-name="guasha-stone" data-price="300" data-image="../images/beautytool/guasha-stone.jpg" data-description="Sculpting tool for lymphatic drainage; popular among skincare enthusiasts.">
-            <img src="../images/beautytool/guasha-stone.jpg" width="400" height="220" alt="guasha-stone">
-            <h3>Guasha Stone</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Sculpting tool for lymphatic drainage; popular among skincare enthusiasts.   </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="3" data-name="jade-roller" data-price="300" data-image="../images/beautytool/jade-roller.jpg" data-description="Green jade stone rolls gently, reduces puffiness, boosts blood flow for glowing skin.">
-            <img src="../images/beautytool/jade-roller.jpg" width="400" height="220" alt="jade-roller">
-            <h3>Jade Roller</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Green jade stone rolls gently, reduces puffiness, boosts blood flow for glowing skin. </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="4" data-name="Microcurrent-Facial-Device" data-price="300" data-image="../images/beautytool/Microcurrent-FacialDv.jpg" data-description="Hand-held device for toning facial muscles; gaining traction for anti-aging.">
-            <img src="../images/beautytool/Microcurrent-FacialDv.jpg" width="400" height="220" alt="Microcurrent-Facial-Device">
-            <h3>Facial Massager</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Hand-held device for toning facial muscles; gaining traction for anti-aging. </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="5" data-name="LED-Light-Therapy-Mask" data-price="300" data-image="../images/beautytool/LED-mask.jpg" data-description="Colored lights fight acne, wrinkles, redness, rejuvenate skin for healthy, glowing look.">
-            <img src="../images/beautytool/LED-mask.jpg" width="400" height="220" alt="LED-Light-Therapy-Mask">
-            <h3>LED Light Therapy Mask</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Colored lights fight acne, wrinkles, redness, rejuvenate skin for healthy, glowing look. </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="6" data-name="acne-patch application" data-price="300" data-image="../images/beautytool/acne-patch.jpg" data-description="Precision tool applies patches, targets blemishes effectively for clearer skin.">
-            <img src="../images/beautytool/acne-patch.jpg" width="400" height="220" alt="guasha-stone">
-            <h3>Pimple Patch Applicator </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description"> Precision tool applies patches, targets blemishes effectively for clearer skin.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="7" data-name="amethyst roller" data-price="300" data-image="../images/beautytool/amethyst-roller.jpg" data-description="Purple amethyst reduces puffiness, boosts circulation, detoxifies for radiant skin.">
-            <img src="../images/beautytool/amethyst-roller.jpg" width="400" height="220" alt="Amethyst Roller ">
-            <h3>Amethyst Roller </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Purple amethyst reduces puffiness, boosts circulation, detoxifies for radiant skin.            </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="8" data-name="blackhead remover" data-price="300" data-image="../images/beautytool/blackhead-remover.jpg" data-description="Suction tool pulls out blackheads, cleans pores, leaves skin smooth, clear, refreshed.">
-            <img src="../images/beautytool/blackhead-remover.jpg" width="400" height="220" alt="blackhead-remover">
-            <h3>Blackhead Remover </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Suction tool pulls out blackheads, cleans pores, leaves skin smooth, clear, refreshed.  </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="9" data-name="clay-spatula" data-price="300" data-image="../images/beautytool/clay-spatula.jpg" data-description="Silicone spatula applies clay masks evenly, mess-free for flawless skincare.">
-            <img src="../images/beautytool/clay-spatula.jpg" width="400" height="220" alt="clay-spatula">
-            <h3>Clay Spatula </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Silicone spatula applies clay masks evenly, mess-free for flawless skincare.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="10" data-name="dermarloller" data-price="300" data-image="../images/beautytool/dermarloller.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating  ">
-            <img src="../images/beautytool/dermarloller.jpg" width="400" height="220" alt="dermarloller ">
-            <h3>Dermaroller (0.5mm)</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="11" data-name="Electric pore clearner" data-price="300" data-image="../images/beautytool/elec-poreclnr.jpg" data-description="Suction device unclogs pores, removes blackheads for smoother, clearer skin.">
-            <img src="../images/beautytool/elec-poreclnr.jpg" width="400" height="220" alt="Electric pore clearner">
-            <h3>Electric pore clearer</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Suction device unclogs pores, removes blackheads for smoother, clearer skin.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="12" data-name="exfoliation pad" data-price="300" data-image="../images/beautytool/exfoliation-pad.jpg" data-description="Soft pad scrubs dead skin, smooths face, boosts glow for fresh, radiant look. ">
-            <img src="../images/beautytool/exfoliation-pad.jpg" width="400" height="220" alt="exfoliation pad">
-            <h3>exfoliation pad</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Soft pad scrubs dead skin, smooths face, boosts glow for fresh, radiant look.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="13" data-name="Eye Massager " data-price="300" data-image="../images/beautytool/eye-masgwnd.jpg" data-description="Heated wand reduces dark circles, puffiness, reviving tired, youthful eyes ">
-            <img src="../images/beautytool/eye-masgwnd.jpg" width="400" height="220" alt="Eye Massager">
-            <h3>Eye Massager  </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description"> Heated wand reduces dark circles, puffiness, reviving tired, youthful eyes  </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="14" data-name="facial steamer" data-price="300" data-image="../images/beautytool/facial-steamer.jpg" data-description="Warm steam opens pores, cleans skin deeply, adds moisture for soft, spa-like glow.">
-            <img src="../images/beautytool/facial-steamer.jpg" width="400" height="220" alt="facial-steamer">
-            <h3>facial steamer</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Warm steam opens pores, cleans skin deeply, adds moisture for soft, spa-like glow.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="15" data-name="facial mask sprayer" data-price="300" data-image="../images/beautytool/facialmask-brush.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/facialmask-brush.jpg" width="400" height="220" alt="facialmask-brush">
-            <h3>Facial Mask sprayer</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Soft brush spreads masks evenly, keeps hands clean, makes skincare quick and easy.  </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="16" data-name="Ice Roller" data-price="300" data-image="../images/beautytool/ice-roller.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/ice-roller.jpg" width="400" height="220" alt="Ice Roller">
-            <h3>Ice Roller</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description"> Cold roller calms redness, tightens skin, reduces puffiness for fresh morning face.            </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="17" data-name="Nano Mist Sprayer" data-price="300" data-image="../images/beautytool/nano-mistspry.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/nano-mistspry.jpg" width="400" height="220" alt="Nano Mist Sprayer">
-            <h3>Nano Mist Sprayer</h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Tiny mist hydrates skin, sets makeup, refreshes face for glowing, dewy look.            </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="18" data-name="Skincare Fridge" data-price="300" data-image="../images/beautytool/skincare-fridge.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/skincare-fridge.jpg" width="400" height="220" alt="Skincare Fridge">
-            <h3>Skincare Fridge  </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Mini fridge cools creams, serums, extends shelf life, soothes skin during use.  </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="19" data-name="Smart Skin Analyzer " data-price="300" data-image="../images/beautytool/smrt-skinanlyzr.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/smrt-skinanlyzr.jpg" width="400" height="220" alt="Smart Skin Analyzer">
-            <h3>Smart Skin Analyzer </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Device scans skin, checks moisture, oil, suggests products for better care.            </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="20" data-name="Ultrasonic Scrubber" data-price="300" data-image="../images/beautytool/ultrasonic-scrubber.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating ">
-            <img src="../images/beautytool/ultrasonic-scrubber.jpg" width="400" height="220" alt="Ultrasonic Scrubber">
-            <h3>Ultrasonic Scrubber </h3>
-            <p class="price">Ksh 250</p>
-            <p class="description">Spatula vibrates, exfoliates skin, pushes creams deeper for smooth, glowing face.            </p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-       
-        <!-- Add new products here, e.g.:
-        <div class="product" data-id="3" data-name="Cleanser" data-price="900" data-image="images/product3.jpg" data-description="A gentle cleanser for all skin types.">
-            <img src="images/product3.jpg" alt="Cleanser">
-            <h3>Cleanser</h3>
-            <p class="price">Ksh 900</p>
-            <p class="description">A gentle cleanser for all skin types.</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        -->
-    </section>
+<section class="products-container">
+    <div class="product" data-id="b-1" data-name="Facial Brush" data-price="300" data-image="../images/beautytool/facial-brush.jpg" data-description="Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating">
+        <img src="../images/beautytool/facial-brush.jpg" width="400" height="220" alt="Facial Brush">
+        <h3>Facial Brush</h3>
+        <p class="price">Ksh 300</p>
+        <p class="description">Soft-bristled brush for deep cleansing; popular for removing makeup and exfoliating</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-2" data-name="Guasha Stone" data-price="250" data-image="../images/beautytool/guasha-stone.jpg" data-description="Sculpting tool for lymphatic drainage; popular among skincare enthusiasts">
+        <img src="../images/beautytool/guasha-stone.jpg" width="400" height="220" alt="Guasha Stone">
+        <h3>Guasha Stone</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Sculpting tool for lymphatic drainage; popular among skincare enthusiasts</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-3" data-name="Jade Roller" data-price="250" data-image="../images/beautytool/jade-roller.jpg" data-description="Green jade stone rolls gently, reduces puffiness, boosts blood flow for glowing skin">
+        <img src="../images/beautytool/jade-roller.jpg" width="400" height="220" alt="Jade Roller">
+        <h3>Jade Roller</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Green jade stone rolls gently, reduces puffiness, boosts blood flow for glowing skin</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-4" data-name="Microcurrent Facial Device" data-price="250" data-image="../images/beautytool/Microcurrent-FacialDv.jpg" data-description="Hand-held device for toning facial muscles; gaining traction for anti-aging">
+        <img src="../images/beautytool/Microcurrent-FacialDv.jpg" width="400" height="220" alt="Microcurrent Facial Device">
+        <h3>Facial Massager</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Hand-held device for toning facial muscles; gaining traction for anti-aging</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-5" data-name="LED Light Therapy Mask" data-price="250" data-image="../images/beautytool/LED-mask.jpg" data-description="Colored lights fight acne, wrinkles, redness, rejuvenate skin for healthy, glowing look">
+        <img src="../images/beautytool/LED-mask.jpg" width="400" height="220" alt="LED Light Therapy Mask">
+        <h3>LED Light Therapy Mask</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Colored lights fight acne, wrinkles, redness, rejuvenate skin for healthy, glowing look</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-6" data-name="Acne Patch Applicator" data-price="250" data-image="../images/beautytool/acne-patch.jpg" data-description="Precision tool applies patches, targets blemishes effectively for clearer skin">
+        <img src="../images/beautytool/acne-patch.jpg" width="400" height="220" alt="Acne Patch Applicator">
+        <h3>Pimple Patch Applicator</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Precision tool applies patches, targets blemishes effectively for clearer skin</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-7" data-name="Amethyst Roller" data-price="250" data-image="../images/beautytool/amethyst-roller.jpg" data-description="Purple amethyst reduces puffiness, boosts circulation, detoxifies for radiant skin">
+        <img src="../images/beautytool/amethyst-roller.jpg" width="400" height="220" alt="Amethyst Roller">
+        <h3>Amethyst Roller</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Purple amethyst reduces puffiness, boosts circulation, detoxifies for radiant skin</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-8" data-name="Blackhead Remover" data-price="250" data-image="../images/beautytool/blackhead-remover.jpg" data-description="Suction tool pulls out blackheads, cleans pores, leaves skin smooth, clear, refreshed">
+        <img src="../images/beautytool/blackhead-remover.jpg" width="400" height="220" alt="Blackhead Remover">
+        <h3>Blackhead Remover</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Suction tool pulls out blackheads, cleans pores, leaves skin smooth, clear, refreshed</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-9" data-name="Clay Spatula" data-price="250" data-image="../images/beautytool/clay-spatula.jpg" data-description="Silicone spatula applies clay masks evenly, mess-free for flawless skincare">
+        <img src="../images/beautytool/clay-spatula.jpg" width="400" height="220" alt="Clay Spatula">
+        <h3>Clay Spatula</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Silicone spatula applies clay masks evenly, mess-free for flawless skincare</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-10" data-name="Dermaroller" data-price="250" data-image="../images/beautytool/dermaroller.jpg" data-description="Micro-needling tool for skin rejuvenation; promotes collagen production">
+        <img src="../images/beautytool/dermaroller.jpg" width="400" height="220" alt="Dermaroller">
+        <h3>Dermaroller (0.5mm)</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Micro-needling tool for skin rejuvenation; promotes collagen production</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-11" data-name="Electric Pore Cleanser" data-price="250" data-image="../images/beautytool/elec-poreclnr.jpg" data-description="Suction device unclogs pores, removes blackheads for smoother, clearer skin">
+        <img src="../images/beautytool/elec-poreclnr.jpg" width="400" height="220" alt="Electric Pore Cleanser">
+        <h3>Electric Pore Cleanser</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Suction device unclogs pores, removes blackheads for smoother, clearer skin</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-12" data-name="Exfoliation Pad" data-price="250" data-image="../images/beautytool/exfoliation-pad.jpg" data-description="Soft pad scrubs dead skin, smooths face, boosts glow for fresh, radiant look">
+        <img src="../images/beautytool/exfoliation-pad.jpg" width="400" height="220" alt="Exfoliation Pad">
+        <h3>Exfoliation Pad</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Soft pad scrubs dead skin, smooths face, boosts glow for fresh, radiant look</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-13" data-name="Eye Massager" data-price="250" data-image="../images/beautytool/eye-massager.jpg" data-description="Heated wand reduces dark circles, puffiness, reviving tired, youthful eyes">
+        <img src="../images/beautytool/eye-massager.jpg" width="400" height="220" alt="Eye Massager">
+        <h3>Eye Massager</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Heated wand reduces dark circles, puffiness, reviving tired, youthful eyes</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-14" data-name="Facial Steamer" data-price="250" data-image="../images/beautytool/facial-steamer.jpg" data-description="Warm steam opens pores, cleans skin deeply, adds moisture for soft, spa-like glow">
+        <img src="../images/beautytool/facial-steamer.jpg" width="400" height="220" alt="Facial Steamer">
+        <h3>Facial Steamer</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Warm steam opens pores, cleans skin deeply, adds moisture for soft, spa-like glow</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-15" data-name="Facial Mask Sprayer" data-price="250" data-image="../images/beautytool/facial-mask-sprayer.jpg" data-description="Soft brush spreads masks evenly, keeps hands clean, makes skincare quick and easy">
+        <img src="../images/beautytool/facial-mask-sprayer.jpg" width="400" height="220" alt="Facial Mask Sprayer">
+        <h3>Facial Mask Sprayer</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Soft brush spreads masks evenly, keeps hands clean, makes skincare quick and easy</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-16" data-name="Ice Roller" data-price="250" data-image="../images/beautytool/ice-roller.jpg" data-description="Cold roller calms redness, tightens skin, reduces puffiness for fresh morning face">
+        <img src="../images/beautytool/ice-roller.jpg" width="400" height="220" alt="Ice Roller">
+        <h3>Ice Roller</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Cold roller calms redness, tightens skin, reduces puffiness for fresh morning face</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-17" data-name="Nano Mist Sprayer" data-price="250" data-image="../images/beautytool/nano-mist-sprayer.jpg" data-description="Tiny mist hydrates skin, sets makeup, refreshes face for glowing, dewy look">
+        <img src="../images/beautytool/nano-mist-sprayer.jpg" width="400" height="220" alt="Nano Mist Sprayer">
+        <h3>Nano Mist Sprayer</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Tiny mist hydrates skin, sets makeup, refreshes face for glowing, dewy look</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-18" data-name="Skincare Fridge" data-price="250" data-image="../images/beautytool/skincare-fridge.jpg" data-description="Mini fridge cools creams, serums, extends shelf life, soothes skin during use">
+        <img src="../images/beautytool/skincare-fridge.jpg" width="400" height="220" alt="Skincare Fridge">
+        <h3>Skincare Fridge</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Mini fridge cools creams, serums, extends shelf life, soothes skin during use</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-19" data-name="Smart Skin Analyzer" data-price="250" data-image="../images/beautytool/smart-skin-analyzer.jpg" data-description="Device scans skin, checks moisture, oil, suggests products for better care">
+        <img src="../images/beautytool/smart-skin-analyzer.jpg" width="400" height="220" alt="Smart Skin Analyzer">
+        <h3>Smart Skin Analyzer</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Device scans skin, checks moisture, oil, suggests products for better care</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="b-20" data-name="Ultrasonic Scrubber" data-price="250" data-image="../images/beautytool/ultrasonic-scrubber.jpg" data-description="Spatula vibrates, exfoliates skin, pushes creams deeper for smooth, glowing face">
+        <img src="../images/beautytool/ultrasonic-scrubber.jpg" width="400" height="220" alt="Ultrasonic Scrubber">
+        <h3>Ultrasonic Scrubber</h3>
+        <p class="price">Ksh 250</p>
+        <p class="description">Spatula vibrates, exfoliates skin, pushes creams deeper for smooth, glowing face</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</section>
 
-
-
-
-    <!-- footer -->
 <footer>
     <div class="footer-container">
-        <!-- Contact Details -->
         <div class="footer-section contact">
             <h3>Contact Us</h3>
             <p><strong>Phone:</strong> +123 456 7890</p>
@@ -222,20 +205,18 @@
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
-
-        <!-- Official Links -->
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/skincare.html">Skincare</a></li>
+                <li><a href="../pages/haircare.html">Haircare</a></li>
+                <li><a href="../pages/deodorants.html">Deodorants</a></li>
+                <li><a href="../pages/beautytool.html">Beauty Tools</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
         </div>
-
-        <!-- Contact Form -->
         <div class="footer-section contact-form">
             <h3>Get in Touch</h3>
             <form action="#" method="POST">
@@ -246,14 +227,11 @@
             </form>
         </div>
     </div>
-
-    <!-- Copyright -->
     <div class="footer-bottom">
         <p>&copy; 2025 BeautyStore. All rights reserved.</p>
     </div>
 </footer>
-<script src="../scripts/productz.js"></script>
 <script src="../scripts/main.js"></script>
-
+<script src="../scripts/product.js"></script>
 </body>
 </html>

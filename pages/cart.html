@@ -8,37 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    
+
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="../images/logoo.png" alt="Beauty Store Logo">
-        </div>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./homepage.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart-login-container">
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search products...">
-                <i class="fas fa-search"></i>
-            </div>
-            <a href="./cart.html" class="cart-btn">
-                <i class="fa fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </a>
-            <button class="login-btn">
-                <i class="fa-solid fa-user"></i> Login
-            </button>
-        </div>
-    </header>
+<header>
+  <div class="logo">
+    <img src="../images/logoo.png" alt="Beauty Store Logo" />
+  </div>
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/skincare.html">Skincare</a></li>
+      <li><a href="../pages/haircare.html">Haircare</a></li>
+      <li><a href="../pages/deodorants.html">Deodorants</a></li>
+      <li><a href="../pages/Beautytool.html">Beauty Tools</a></li>
+    </ul>
+  </nav>
+
+  <div class="actions">
+    <button class="search-toggle" aria-label="Toggle search">
+      <i class="fas fa-search"></i>
+    </button>
+
+    <a href="../pages/cart.html" class="cart-btn" aria-label="View cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </a>
+
+    <button class="login-btn">
+      <i class="fa-solid fa-user"></i> Login
+    </button>
+  </div>
+
+  <div class="search-bar-container">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search products..."
+      aria-label="Search products"
+    />
+  </div>
+</header>
 
     <!-- Cart Section -->
     <section class="cart-page">

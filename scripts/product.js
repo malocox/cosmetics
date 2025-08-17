@@ -65,13 +65,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
     updateCartCount();
 });
-
-
-// Product Page Specific Logic
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize cart count
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-    const cartCountElement = document.querySelector('#cart-count');
-    if (cartCountElement) cartCountElement.textContent = cartCount;
-});
