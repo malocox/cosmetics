@@ -1,5 +1,6 @@
 // Global Variables
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cart = JSON.parse(localStorage.getItem('cart')) || []; // Single declaration of cart
+window.cart = cart; // Expose cart to global scope for other scripts
 
 // Cart Management Functions
 // Update Cart Count
@@ -15,7 +16,7 @@ function updateCart() {
     updateCartCount();
 }
 
-// Add Item to Cart (Integrated from product.js)
+// Add Item to Cart
 function addToCart(product) {
     const existingItem = cart.find(item => item.id === product.id);
     if (existingItem) {
@@ -176,7 +177,7 @@ async function searchProducts() {
     });
 
     // Fetch products from other categories
-    const categories = ['skincare', 'haircare', 'deodorants', 'beautytools'];
+    const categories = ['skincare', 'haircare', 'deodorants', 'beautytool'];
     let allProducts = [];
 
     for (const category of categories) {
@@ -327,14 +328,14 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 if (nav.classList.contains('active')) {
                     nav.classList.remove('active');
-                    mobileToggleBtn.classList.remove('open');      
+                    mobileToggleBtn.classList.remove('open');
                     mobileToggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
                 }
             });
         });
     }
 
-    // Add to Cart
+    // Add to Cart (Single event listener)
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', () => {
             const productElement = button.closest('.product');
@@ -405,3 +406,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     initializeSlideshow();
 });
+
+// Expose functions for use in other scripts (e.g., cart.html)
+window.updateCart = updateCart;
+window.displayCartItems = displayCartItems;
+window.proceedToPayment = proceedToPayment;
